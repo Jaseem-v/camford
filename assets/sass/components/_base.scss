@@ -30,15 +30,14 @@ body {
   height: 100%;
 }
 
-.bxslider{
-  padding: 0;
-  margin: 0;
+.bg-f1f1f2 {
+  background-color: #f1f1f2;
 }
 /* ---------const------------*/
 
 $bp-xlarge: 112.5em; //1800px
 $bp-largest: 75em; //1200px
-$bp-990: 61.875em; //990
+$bp-992: 61.875em; //990
 $bp-small: 52.25em; //900px
 $bp-xsmall: 37.5em; //600px
 $bp-380: 23.75em; //380

@@ -27,7 +27,8 @@ p {
     margin-bottom: 2rem;
     font-size: 4.8rem;
     font-weight: 800;
-    @media only screen and (max-width: $bp-small) {
+
+    @media only screen and (max-width: $bp-992) {
       text-align: center;
     }
   }
@@ -46,7 +47,7 @@ p {
     color: #d2d2d2;
     font-weight: 600;
     font-size: 1.7rem;
-    @media only screen and (max-width: $bp-small) {
+    @media only screen and (max-width: $bp-992) {
       text-align: center;
     }
   }

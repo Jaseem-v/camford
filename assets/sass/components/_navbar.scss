@@ -24,7 +24,7 @@
     justify-content: flex-start;
     flex-wrap: wrap;
 
-    @media only screen and (max-width: $bp-small) {
+    @media only screen and (max-width: $bp-992) {
       overflow: hidden;
       flex-direction: column;
       position: relative;
@@ -34,7 +34,7 @@
     width: 8rem;
     cursor: pointer;
     z-index: 1;
-    @media only screen and (max-width: $bp-small) {
+    @media only screen and (max-width: $bp-992) {
       order: 0;
     }
   }
@@ -47,7 +47,7 @@
     padding-top: 1rem;
     margin-left: auto;
 
-    @media only screen and (max-width: $bp-small) {
+    @media only screen and (max-width: $bp-992) {
       display: none;
       margin-top: 3rem;
       order: 2;
@@ -78,7 +78,7 @@
     transition: all 0.2s;
     color: #000;
 
-    @media only screen and (max-width: $bp-small) {
+    @media only screen and (max-width: $bp-992) {
       margin-top: 1.5rem;
     }
 
@@ -95,7 +95,7 @@
     padding: 2.5rem 0;
     margin-left: 1.3rem;
     margin-right: 1.3rem;
-    @media only screen and (max-width: $bp-small) {
+    @media only screen and (max-width: $bp-992) {
       font-size: 1.8rem;
     }
 
@@ -115,7 +115,7 @@
     right: 2rem;
     margin-top: 1rem;
 
-    @media only screen and (max-width: $bp-small) {
+    @media only screen and (max-width: $bp-992) {
       display: inline-block;
       order: 1;
     }
