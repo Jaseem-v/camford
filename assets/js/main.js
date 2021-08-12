@@ -43,8 +43,9 @@ var swiper = new Swiper(".expert-swiper", {
         },
         1024: {
             slidesPerView: 2,
-            spaceBetween: 50,
+            spaceBetween: 10,
         },
+       
     },
     autoplay: {
         delay: 2500,
