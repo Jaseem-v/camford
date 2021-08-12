@@ -98,7 +98,9 @@
   background-color: #fe4a55;
   border-radius: 50%;
   color: #fff;
-
+  @media only screen and (max-width: $bp-xsmall) {
+    display: none;
+  }
   &::after,
   &::before {
     content: '';
