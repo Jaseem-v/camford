@@ -867,6 +867,12 @@ body {
   height: 38vh;
 }
 
+@media only screen and (max-width: 37.5em) {
+  .features__content-box {
+    height: auto;
+  }
+}
+
 .features__content-box:hover {
   transform: translateY(-1rem);
 }
