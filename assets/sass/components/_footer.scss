@@ -1,0 +1,107 @@
+/* ---------footer------------*/
+
+.footer {
+  background: #100f1f;
+  padding: 8rem 1rem;
+
+  &__list {
+    display: grid;
+    grid-template-columns: minmax(30%, min-content) repeat(3, 1fr);
+    column-gap: 30px;
+
+    @media only screen and (max-width: $bp-990) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      row-gap: 30px;
+    }
+    @media only screen and (max-width: $bp-380) {
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+      row-gap: 30px;
+    }
+  }
+
+  & ul {
+    list-style: none;
+    padding-left: 1rem;
+  }
+
+  &__items {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    // justify-content: center; 
+
+    @media only screen and (max-width: $bp-small) {
+      align-items: flex-start;
+      justify-content: flex-start;
+    }
+
+    & img {
+      @media only screen and (max-width: $bp-380) {
+        width: 40%;
+      }
+    }
+  }
+
+  &__sub-heading {
+    margin-bottom: 2rem;
+    position: relative;
+    color: #fff;
+    font-size: 2.4rem;
+    font-weight: 800;
+  }
+
+  &__nav-li {
+    margin-bottom: 1rem;
+    text-align: start;
+  }
+
+  &__nav-items {
+    cursor: pointer;
+    color: #fff;
+    font-size: 1.8rem;
+    text-decoration: none;
+
+    &:hover {
+      color: coral;
+    }
+  }
+
+  &__hr {
+    margin: 4rem 0 2rem;
+    color: #fff;
+  }
+
+  &__copyright {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+
+    @media only screen and (max-width: $bp-xsmall) {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    h2 {
+      color: #fff;
+    }
+
+    a {
+      margin-left: auto;
+      color: #fe4a55;
+      margin-right: 2rem;
+      @media only screen and (max-width: $bp-xsmall) {
+        margin-left: 0;
+        text-align: center;
+        margin-top: 1rem;
+      }
+      span{
+          color: #fff;
+      }
+    }
+  }
+}
+
+/* -----xx----footer------xx------*/

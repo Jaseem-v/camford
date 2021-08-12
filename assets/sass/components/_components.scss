@@ -1,0 +1,261 @@
+////////////////////////////////////////
+// BUTTON
+.btn {
+  border: none;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  overflow: hidden;
+  z-index: 1;
+  color: #fff;
+  background-color: #fe4a55;
+  transition: 0.5s;
+  border-radius: 0.5rem;
+  font-weight: 700;
+  font-size: 1.6rem;
+  padding: 1.1rem 3rem 1.1rem 3rem;
+  margin-top: 3rem;
+
+  & span {
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    border-radius: 5px;
+  }
+
+  &:active {
+    transform: translateY(-5px);
+  }
+
+  &:hover {
+    color: #221638;
+    & span {
+      width: 225%;
+      height: 562.5px;
+    }
+  }
+
+  &--cta {
+    &:hover {
+      color: #221638;
+      & span {
+        background-color: #fff;
+      }
+    }
+  }
+
+  &--contact {
+    margin-top: 0;
+    @media only screen and (max-width: $bp-small) {
+      display: none;
+      order: 2;
+      margin-left: auto;
+    }
+
+    &:hover {
+      color: #fff;
+      & span {
+        background-color: #221638;
+      }
+    }
+  }
+}
+
+.line-btn {
+  display: inline-block;
+  color: #fe4a55;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-top: 1rem;
+
+  &:hover {
+    color: #221638;
+  }
+}
+
+//////////////////////////////////////
+//  video button
+
+.video-btn {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  font-size: 35px;
+  text-align: center;
+  line-height: 80px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  -webkit-transform: translateY(-50%) translateX(-50%);
+  -moz-transform: translateY(-50%) translateX(-50%);
+  transform: translateY(-50%) translateX(-50%);
+  background-color: #fe4a55;
+  border-radius: 50%;
+  color: #fff;
+
+  &::after,
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    bottom: 0;
+    left: 0;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+    border-radius: 50%;
+    border: 1px solid #fe4a55;
+  }
+
+  &::before {
+    animation: ripple 2s linear infinite;
+  }
+
+  &::after {
+    animation: ripple 2s linear 1s infinite;
+  }
+
+  &:hover {
+    color: #fff;
+    background-color: #221638;
+
+    &::after,
+    &::before {
+      border: 1px solid #221638;
+    }
+  }
+  i {
+    transform: translate(0.5rem);
+  }
+}
+@keyframes ripple {
+  0% {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    transform: scale(1);
+  }
+  75% {
+    -webkit-transform: scale(1.75);
+    -moz-transform: scale(1.75);
+    transform: scale(1.75);
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: scale(2);
+    -moz-transform: scale(2);
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+///////////////////////////////////////////
+//tabs
+body {
+  background-color: #f1f1f2;
+}
+
+#tile-1 {
+  .tab-pane {
+    margin-top: 2rem;
+    padding: 15px;
+    height: auto;
+  }
+  .nav-tabs {
+    position: relative;
+    border: none;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 3rem;
+    margin: auto;
+    li {
+      margin-right: 2rem;
+      background-color: #221638;
+
+      a {
+        // position: relative;
+        margin-right: 0px;
+        padding: 1rem 1rem;
+        font-size: 1.6rem;
+        border: none;
+        color: #fff;
+      }
+    }
+    a {
+      &:hover {
+        background-color: #fff;
+        border: none;
+        color: #fe4a55;
+      }
+    }
+    .active {
+      background-color: #fe4a55;
+      border: none;
+      color: #fff;
+    }
+  }
+  .slider {
+    display: inline-block;
+    width: 30px;
+    height: 4px;
+    border-radius: 3px;
+    background-color: #39bcd3;
+    position: absolute;
+    z-index: 1200;
+    bottom: 0;
+    transition: all 0.4s linear;
+  }
+}
+
+///////////////////////////////////
+//SOCIAL LINK
+
+.social-link {
+  padding-left: 0;
+  list-style-type: none;
+  margin-top: 1.7rem;
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 50%;
+
+  li {
+    a {
+      width: 3rem;
+      height: 3rem;
+      text-align: center;
+      background-color: #e1e1e1;
+      font-size: 1.8rem;
+      color: #221638;
+      border-radius: 2px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0.5rem;
+      transition: 0.2s;
+
+      i {
+        transform: translateY(-0.4rem);
+      }
+    }
+    &:hover {
+      a {
+        background-color: #fe4a55;
+        color: #fff;
+      }
+    }
+  }
+}
+
+////////////////////////////////////////////////////////////////
+/////// YOUTUBE

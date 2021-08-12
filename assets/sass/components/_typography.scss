@@ -1,0 +1,79 @@
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #221638;
+  font-family: Nunito, sans-serif;
+}
+
+p {
+  color: #606060;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+  font-size: 1.8rem;
+}
+
+.heading {
+  &--primary {
+    color: #fff;
+    margin-bottom: 2rem;
+    font-size: 4.8rem;
+    font-weight: 800;
+    @media only screen and (max-width: $bp-small) {
+      text-align: center;
+    }
+  }
+  &--secondary {
+    margin-bottom: 0;
+    font-size: 3.6rem;
+    font-weight: 800;
+    color: #221638;
+    // max-width: 61.5rem;
+  }
+}
+
+.paragraph {
+  &--primary {
+    max-width: 45rem;
+    color: #d2d2d2;
+    font-weight: 600;
+    font-size: 1.7rem;
+    @media only screen and (max-width: $bp-small) {
+      text-align: center;
+    }
+  }
+
+  &--secondary {
+    max-width: 70.5rem;
+    margin-top: 1.5rem;
+  }
+
+  &--footer {
+    font-size: 1.7rem;
+    color: #fff;
+    margin-bottom: 2rem;
+  }
+}
+
+.heading-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.section-heading {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 1rem auto 1rem;
+}
