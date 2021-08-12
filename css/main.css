@@ -700,6 +700,12 @@ body {
   margin: auto;
 }
 
+@media only screen and (max-width: 37.5em) {
+  #tile-1 .nav-tabs {
+    padding: 0rem 0rem;
+  }
+}
+
 #tile-1 .nav-tabs li {
   margin-right: 2rem;
   background-color: #221638;
