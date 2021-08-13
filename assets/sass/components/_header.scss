@@ -5,12 +5,19 @@
     height: auto;
   }
   &__bg {
-    background-image: url(../../../assets/img/banner-bg.jpg);
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
     width: 100vw;
     height: 90vh;
     z-index: 0;
+
+    &--1 {
+      background-image: url(../../../assets/img/banner-bg.jpg);
+    }
+    &--2 {
+      background-image: url(../../../assets/img/banner-bg.jpg);
+    }
 
     @media only screen and (max-width: $bp-992) {
       height: auto;
@@ -140,7 +147,6 @@
 }
 
 /////////////////////
-
 
 // header {
 // }
