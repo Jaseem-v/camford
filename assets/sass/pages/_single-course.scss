@@ -1,7 +1,7 @@
 .single-course {
   &__image {
     background-image: url(../../../assets/img/teacher-register-bg.jpg);
-    background-position:top center;
+    background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100vw;
@@ -21,6 +21,9 @@
     padding-left: 3rem;
     padding-right: 3rem;
     justify-content: flex-start !important;
+    @media only screen and (max-width: $bp-xsmall) {
+      padding: 1rem !important;
+    }
 
     li {
       background-color: #f8f9f8 !important;
