@@ -185,7 +185,7 @@
     margin: auto;
     li {
       margin-right: 2rem;
-      background-color: #221638 ;
+      background-color: #221638;
 
       a {
         // position: relative;
@@ -271,7 +271,8 @@
   z-index: 1;
   padding-top: 2rem;
   padding-bottom: 8rem;
-  background-color: rgba($color: #000000, $alpha: .2);
+  background-color: #f8f9f8;
+
 
   &__content {
     ul {
@@ -314,7 +315,7 @@
     h2 {
       text-align: center;
       max-width: 80rem;
-      margin: 5rem auto 0;
+      margin: 8rem auto 0;
       font-size: 3.6rem;
       font-weight: 800;
     }

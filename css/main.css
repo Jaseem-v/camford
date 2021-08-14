@@ -814,7 +814,7 @@ p {
   z-index: 1;
   padding-top: 2rem;
   padding-bottom: 8rem;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: #f8f9f8;
 }
 
 .bread-crumbs__content ul {
@@ -854,7 +854,7 @@ p {
 .bread-crumbs__content h2 {
   text-align: center;
   max-width: 80rem;
-  margin: 5rem auto 0;
+  margin: 8rem auto 0;
   font-size: 3.6rem;
   font-weight: 800;
 }
@@ -1271,7 +1271,7 @@ p {
   position: relative;
   border-radius: 0.5rem;
   background-color: #fff;
-  box-shadow: 0 0.8rem 16rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
   align-self: stretch;
   height: 95%;
 }
@@ -1332,16 +1332,16 @@ p {
 /*             courses-page  End                 */
 /*=================================================*/
 .single-course__image {
-  background-image: url(../../../assets/img/main-banner2.jpg);
-  background-position: left;
+  background-image: url(../../../assets/img/main-banner1.jpg);
+  background-position: right;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100vw;
-  height: 0vh;
+  height: 40vh;
 }
 
 .single-course__content {
-  padding: 8rem 0;
+  padding: 5rem 0;
 }
 
 .single-course__nav-tabs {
@@ -1356,7 +1356,7 @@ p {
 }
 
 .single-course__nav-tabs li {
-  background-color: #fff !important;
+  background-color: #f8f9f8 !important;
 }
 
 .single-course__nav-tabs li a {
@@ -1421,6 +1421,13 @@ p {
 .single-course__details {
   margin-left: 2rem;
   padding: 2rem;
+  background-color: #f8f9f8;
+}
+
+@media only screen and (min-width: 61.875em) {
+  .single-course__details {
+    margin-top: -20rem;
+  }
 }
 
 .single-course__download-image {
@@ -1510,7 +1517,6 @@ p {
   color: #221638;
   position: relative;
   padding-left: 2.5rem;
-  padding-top: 1rem;
 }
 
 .single-course__info-item i {
@@ -1519,7 +1525,7 @@ p {
   margin-right: 1.2rem;
   position: absolute;
   left: 0;
-  top: 0.5rem;
+  top: -0.5rem;
 }
 
 @keyframes bounce {
