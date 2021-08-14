@@ -1436,6 +1436,12 @@ p {
   }
 }
 
+@media only screen and (max-width: 61.875em) {
+  .single-course__details {
+    margin-left: 0;
+  }
+}
+
 .single-course__download-image {
   position: relative;
 }

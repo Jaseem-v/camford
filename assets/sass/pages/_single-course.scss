@@ -92,8 +92,11 @@
     padding: 2rem;
     background-color: #f8f9f8;
     @media only screen and (min-width: $bp-992) {
-      margin-top: -20rem;
+      margin-top: -20rem; 
     }
+    @media only screen and (max-width: $bp-992) {
+       margin-left: 0;
+      }
   }
 
   &__download-image {
