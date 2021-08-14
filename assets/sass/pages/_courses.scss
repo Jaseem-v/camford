@@ -7,14 +7,13 @@
 
   &__single-box {
     margin-bottom: 3rem;
-    margin-left: .5rem;
+    margin-left: 0.5rem;
     position: relative;
     border-radius: 0.5rem;
     background-color: #fff;
     box-shadow: 0 0.8rem 16rem rgba($color: #000000, $alpha: 0.2);
     align-self: stretch;
     height: 95%;
-  
   }
 
   &__image {
@@ -55,9 +54,16 @@
     &__item {
       font-size: 1.6rem;
       color: #606060;
+      padding-left: 2.4rem;
+      padding-top: .8rem;
+      position: relative;
 
       i {
         color: #fe4a55;
+        position: absolute;
+        left: 0;
+        top: 0.65rem;
+        font-size: 1.5rem;
       }
     }
   }

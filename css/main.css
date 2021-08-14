@@ -1267,7 +1267,7 @@ p {
 
 .courses__single-box {
   margin-bottom: 3rem;
-  margin-left: .5rem;
+  margin-left: 0.5rem;
   position: relative;
   border-radius: 0.5rem;
   background-color: #fff;
@@ -1315,10 +1315,17 @@ p {
 .courses__box-footer__item {
   font-size: 1.6rem;
   color: #606060;
+  padding-left: 2.4rem;
+  padding-top: .8rem;
+  position: relative;
 }
 
 .courses__box-footer__item i {
   color: #fe4a55;
+  position: absolute;
+  left: 0;
+  top: 0.65rem;
+  font-size: 1.5rem;
 }
 
 /*=================================================*/
@@ -1501,13 +1508,18 @@ p {
 .single-course__info-item span {
   font-weight: 800;
   color: #221638;
-  transform: translateY(0.5rem);
+  position: relative;
+  padding-left: 2.5rem;
+  padding-top: 1rem;
 }
 
 .single-course__info-item i {
   color: #fe4a55;
   font-size: 2rem;
-  margin-right: 1rem;
+  margin-right: 1.2rem;
+  position: absolute;
+  left: 0;
+  top: 0.5rem;
 }
 
 @keyframes bounce {
