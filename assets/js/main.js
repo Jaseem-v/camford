@@ -58,20 +58,7 @@ var swiper = new Swiper(".expert-swiper", {
 //////////////////////////////////////////
 // youtube
 
-// $(document).ready(function () {
-//     $('.youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
-//         disableOn: 700,
-//         type: 'iframe',
-//         mainClass: 'mfp-fade',
-//         removalDelay: 160,
-//         preloader: false,
-
-//         fixedContentPos: false
-//     });
-// });
-
-
-$('.video-btn ').magnificPopup({
+$('.popup-youtube ').magnificPopup({
     type: 'iframe',
     disableOn: function () { // don't use a popup for mobile
         if ($(window).width() < 600) {

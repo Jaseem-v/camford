@@ -1,4 +1,6 @@
-/* ---------footer------------*/
+/*=================================================*/
+/*             Footer  start                     */
+/*=================================================*/
 
 .footer {
   background: #100f1f;
@@ -6,7 +8,10 @@
 
   &__list {
     display: grid;
-    grid-template-columns: minmax(30%, min-content) repeat(3, 1fr);
+    grid-template-columns:
+      minmax(30%, min-content) repeat(2, minmax(15%, min-content))
+      1fr;
+    grid-template-rows: repeat(1, 1fr);
     column-gap: 30px;
 
     @media only screen and (max-width: $bp-992) {
@@ -14,10 +19,9 @@
       grid-template-rows: repeat(2, 1fr);
       row-gap: 30px;
     }
-    @media only screen and (max-width: $bp-380) {
+    @media only screen and (max-width: $bp-xsmall) {
       grid-template-columns: repeat(1, 1fr);
-      grid-template-rows: repeat(4, 1fr);
-      row-gap: 30px;
+      grid-template-rows: max-content repeat(3, 1fr);
     }
   }
 
@@ -30,7 +34,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    // justify-content: center; 
+    // justify-content: center;
 
     @media only screen and (max-width: $bp-small) {
       align-items: flex-start;
@@ -42,6 +46,11 @@
         width: 40%;
       }
     }
+  }
+
+  &__logo{
+      width: 15rem;
+      margin-bottom: 1rem;
   }
 
   &__sub-heading {
@@ -65,6 +74,19 @@
 
     &:hover {
       color: coral;
+    }
+  }
+
+  &__address {
+    color: #fff;
+    font-size: 1.6rem;
+    padding-left: 2.5rem;
+    position: relative;
+
+    i {
+      position: absolute;
+      left: 0;
+      top: 0;
     }
   }
 
@@ -97,11 +119,13 @@
         text-align: center;
         margin-top: 1rem;
       }
-      span{
-          color: #fff;
+      span {
+        color: #fff;
       }
     }
   }
 }
 
-/* -----xx----footer------xx------*/
+/*=================================================*/
+/*             Footer  End                   */
+/*=================================================*/

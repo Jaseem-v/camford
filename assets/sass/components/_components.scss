@@ -1,3 +1,7 @@
+/*=================================================*/
+/*             componenst start                     */
+/*=================================================*/
+
 ////////////////////////////////////////
 // BUTTON
 .btn {
@@ -161,7 +165,6 @@
 ///////////////////////////////////////////
 //tabs
 
-
 #tile-1 {
   .tab-pane {
     margin-top: 2rem;
@@ -182,7 +185,7 @@
     margin: auto;
     li {
       margin-right: 2rem;
-      background-color: #221638;
+      background-color: #221638 ;
 
       a {
         // position: relative;
@@ -260,5 +263,93 @@
   }
 }
 
-////////////////////////////////////////////////////////////////
-/////// YOUTUBE
+//////////////////////////////////////
+// BreadCrumb
+
+.bread-crumbs {
+  position: relative;
+  z-index: 1;
+  padding-top: 2rem;
+  padding-bottom: 8rem;
+  background-color: rgba($color: #000000, $alpha: .2);
+
+  &__content {
+    ul {
+      padding-left: 0;
+      margin-bottom: 0;
+      list-style: none;
+      li {
+        display: inline-block;
+        margin-right: 2rem;
+        position: relative;
+        color: #221638;
+        font-size: 1.6rem;
+        font-weight: 600;
+
+        a {
+          color: #fe4a55;
+        }
+
+        &::before {
+          content: '';
+          position: absolute;
+          right: -1rem;
+          top: 0.5rem;
+          -webkit-transform: rotate(10deg);
+          -moz-transform: rotate(10deg);
+          transform: rotate(10deg);
+          background-color: #696969;
+          height: 1.5rem;
+          width: 1px;
+        }
+
+        &:last-child {
+          &::before {
+            display: none;
+          }
+        }
+      }
+    }
+
+    h2 {
+      text-align: center;
+      max-width: 80rem;
+      margin: 5rem auto 0;
+      font-size: 3.6rem;
+      font-weight: 800;
+    }
+  }
+}
+///////////////////////////////////////
+//PAGINATION
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+  &__numbers {
+    width: 33px;
+    height: 33px;
+    background-color: #f3f0f0;
+    color: #606060;
+    text-align: center;
+    display: inline-block;
+    border-radius: 3px;
+    line-height: 34px;
+    position: relative;
+    margin-left: 3px;
+    margin-right: 3px;
+    font-size: 16px;
+    font-weight: 800;
+
+    &.current,
+    &:hover {
+      color: #fff;
+      background-color: #fe4a55;
+    }
+  }
+}
+
+/*=================================================*/
+/*             componenst End                      */
+/*=================================================*/

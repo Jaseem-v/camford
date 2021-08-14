@@ -1,3 +1,7 @@
+/*=================================================*/
+/*             Typography start                    */
+/*=================================================*/
+
 .h1,
 .h2,
 .h3,
@@ -39,6 +43,12 @@ p {
     color: #221638;
     // max-width: 61.5rem;
   }
+  &--teritiary {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #221638;
+    margin-bottom: 1.5rem;
+  }
 }
 
 .paragraph {
@@ -55,6 +65,7 @@ p {
   &--secondary {
     max-width: 70.5rem;
     margin-top: 1.5rem;
+    font-size: 1.7rem;
   }
 
   &--footer {
@@ -78,3 +89,6 @@ p {
   width: 100%;
   margin: 1rem auto 1rem;
 }
+/*=================================================*/
+/*             Typography End                      */
+/*=================================================*/
