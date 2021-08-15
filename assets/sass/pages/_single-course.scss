@@ -1,11 +1,14 @@
 .single-course {
   &__image {
-    background-image: url(../../../assets/img/teacher-register-bg.jpg);
+    background-image: url(../../../assets/img/camford-programestop.jpg);
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100vw;
     height: 40vh;
+    @media only screen and (max-width: $bp-xsmall) {
+      background-position:left;
+    }
   }
 
   &__content {
@@ -21,30 +24,38 @@
     padding-left: 3rem;
     padding-right: 3rem;
     justify-content: flex-start !important;
+    margin-top: 5rem !important;
     @media only screen and (max-width: $bp-xsmall) {
       padding: 1rem !important;
     }
-
-    li {
-      background-color: #f8f9f8 !important;
-
-      a {
-        color: #221638 !important;
-        &:hover {
-          background-color: #fe4a55 !important;
-          color: #fff !important;
-        }
-      }
-      .active {
-        background-color: #fe4a55;
-        border: none;
-        color: #fff !important;
-      }
-    }
-
     .slider {
       height: 2px !important;
       background-color: #fe4a55 !important;
+    }
+  }
+
+  &__nav-item {
+    background-color: #f8f9f8;
+    margin-right: 2rem;
+    padding: 1rem 0;
+
+    .active {
+      background-color: #fe4a55;
+      border: none;
+      color: #fff;
+    }
+  }
+
+  &__nav-link {
+    color: #221638;
+    font-size: 1.5rem;
+    padding: 1rem 1rem;
+    font-size: 1.6rem;
+    border: none;
+    margin-bottom: 1rem;
+    &:hover {
+      background-color: #fe4a55;
+      color: #fff;
     }
   }
 
@@ -92,11 +103,11 @@
     padding: 2rem;
     background-color: #f8f9f8;
     @media only screen and (min-width: $bp-992) {
-      margin-top: -20rem; 
+      margin-top: -20rem;
     }
     @media only screen and (max-width: $bp-992) {
-       margin-left: 0;
-      }
+      margin-left: 0;
+    }
   }
 
   &__download-image {
@@ -192,26 +203,28 @@
       }
     }
   }
-}
-@keyframes bounce {
-  0%,
-  20%,
-  50%,
-  80%,
-  100% {
-    transform: translateY(0);
-  }
-  40% {
-    transform: translateY(-20px);
-  }
-  60% {
-    transform: translateY(-15px);
-  }
-}
 
-.bounce {
-  //   animation: bounce 2s infinite !important;
-  transform: translateY(-0.5rem);
+ 
+}
+.reviews{
+  display: flex;
+  align-items: center;
+
+  &__image{
+    width: 20%;
+    margin-right: 2rem;
+    img{
+      width: 100%;
+      border-radius: 3rem;
+    }
+  }
+
+  &__stars{
+    i{
+      font-size: 2rem;
+      color: #fe4a55;
+    }
+  }
 }
 
 /////////////////////////////////////////////////////

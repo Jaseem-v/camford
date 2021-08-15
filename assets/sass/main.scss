@@ -1,16 +1,13 @@
+@import 'components/base';
+@import 'components/typography';
 
-@import "components/base";
-@import "components/typography";
+@import 'components/navbar';
+@import 'components/header';
+@import 'components/components';
+@import 'components/footer';
 
-@import "components/navbar";
-@import "components/header";
-@import "components/components";
-
-
-@import "pages/home";
-@import "pages/about";
-@import "pages/courses";
-@import "pages/single-course";
-
-
-@import "components/footer";
+@import 'pages/home';
+@import 'pages/about';
+@import 'pages/courses';
+@import 'pages/single-course';
+@import 'pages/corporate-training';

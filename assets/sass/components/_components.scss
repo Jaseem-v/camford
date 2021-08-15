@@ -165,7 +165,7 @@
 ///////////////////////////////////////////
 //tabs
 
-#tile-1 {
+#tabs {
   .tab-pane {
     margin-top: 2rem;
     padding: 15px;
@@ -183,26 +183,27 @@
       padding: 0rem 0rem;
     }
     margin: auto;
-    li {
+
+    & .nav-item {
       margin-right: 2rem;
       background-color: #221638;
 
-      a {
+      & .nav-link {
         // position: relative;
         margin-right: 0px;
         padding: 1rem 1rem;
         font-size: 1.6rem;
         border: none;
         color: #fff;
+
+        &:hover {
+          background-color: #fff;
+          border: none;
+          color: #fe4a55;
+        }
       }
     }
-    a {
-      &:hover {
-        background-color: #fff;
-        border: none;
-        color: #fe4a55;
-      }
-    }
+
     .active {
       background-color: #fe4a55;
       border: none;
@@ -216,7 +217,7 @@
     border-radius: 3px;
     background-color: #39bcd3;
     position: absolute;
-    z-index: 1200;
+    z-index: 0;
     bottom: 0;
     transition: all 0.4s linear;
   }
@@ -273,7 +274,6 @@
   padding-bottom: 8rem;
   background-color: #f8f9f8;
 
-
   &__content {
     ul {
       padding-left: 0;
@@ -318,6 +318,73 @@
       margin: 8rem auto 0;
       font-size: 3.6rem;
       font-weight: 800;
+    }
+  }
+}
+
+///////////////////////////////////////
+//  CARD
+.card {
+  &__single-box {
+    margin-bottom: 3rem;
+    margin-left: 0.5rem;
+    position: relative;
+    border-radius: 0.5rem;
+    background-color: #fff;
+    box-shadow: 0 1rem 3rem rgba($color: #000000, $alpha: 0.2);
+    align-self: stretch;
+    height: 95%;
+  }
+
+  &__image {
+    border-radius: 5px 5px 0 0;
+    position: relative;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__content {
+    border-radius: 0 0 5px 5px;
+    padding: 30px;
+  }
+
+  &__download-brochure {
+    color: #fe4a55;
+    font-weight: 600;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+
+  &__title {
+    margin-bottom: 1.5rem 0;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  &__box-footer {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 0;
+    margin-top: 1rem;
+
+    &__item {
+      font-size: 1.6rem;
+      color: #606060;
+      padding-left: 2.4rem;
+      padding-top: 0.8rem;
+      position: relative;
+
+      i {
+        color: #fe4a55;
+        position: absolute;
+        left: 0;
+        top: 0.65rem;
+        font-size: 1.5rem;
+      }
     }
   }
 }
