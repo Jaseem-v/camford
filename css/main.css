@@ -127,8 +127,13 @@ p {
   margin-bottom: 1.5rem;
 }
 
-.heading--left {
-  text-align: start;
+.heading--side {
+  font-weight: 800;
+  color: #221638;
+  font-size: 2.8rem;
+  display: inline-block;
+  position: relative;
+  line-height: 1.3;
 }
 
 .paragraph--primary {
@@ -169,6 +174,10 @@ p {
   justify-content: center;
   width: 100%;
   margin: 1rem auto 1rem;
+}
+
+.text-capital {
+  text-transform: uppercase;
 }
 
 /*=================================================*/
@@ -634,6 +643,14 @@ p {
   background-color: #221638;
 }
 
+.btn--training:hover {
+  color: #fff;
+}
+
+.btn--training:hover span {
+  background-color: #221638;
+}
+
 .line-btn {
   display: inline-block;
   color: #fe4a55;
@@ -719,8 +736,8 @@ p {
 }
 
 #tabs .tab-pane {
-  margin-top: 2rem;
-  padding: 15px;
+  margin-top: 1rem;
+  padding: 1.5rem;
   height: auto;
 }
 
@@ -875,17 +892,20 @@ p {
 }
 
 .card__image {
-  border-radius: 5px 5px 0 0;
+  border-radius: 0.5rem 0.5rem 0 0;
   position: relative;
+  height: 35vh;
+  overflow: hidden;
 }
 
 .card__image img {
   width: 100%;
+  height: 100%;
 }
 
 .card__content {
-  border-radius: 0 0 5px 5px;
-  padding: 30px;
+  border-radius: 0 0 0.5rem 0.5rem;
+  padding: 3rem;
 }
 
 .card__download-brochure {
@@ -895,10 +915,19 @@ p {
   margin-bottom: 1rem;
 }
 
+.card__download-brochure:hover {
+  color: #675b5c;
+}
+
 .card__title {
   margin-bottom: 1.5rem 0;
   font-size: 2rem;
   font-weight: 700;
+  text-transform: uppercase;
+}
+
+.card__title:hover {
+  color: #fe4a55;
 }
 
 .card__box-footer {
@@ -1200,7 +1229,7 @@ p {
   z-index: 1;
   padding: 3.5rem;
   position: relative;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   transition: 0.5s;
   align-self: stretch;
   align-items: stretch;
@@ -1380,6 +1409,7 @@ p {
 .expert__single-box-content {
   padding: 1rem;
   display: flex;
+  flex-direction: column;
 }
 
 @media only screen and (max-width: 37.5em) {
@@ -1390,7 +1420,7 @@ p {
 
 .expert__image {
   width: 100%;
-  height: 30rem;
+  height: 100%;
   align-self: stretch;
   align-items: center;
   justify-content: center;
@@ -1439,6 +1469,8 @@ p {
   align-items: center;
   padding: 2rem 0;
   margin-bottom: 10rem;
+  padding: 0;
+  margin-bottom: 6rem;
 }
 
 @media only screen and (max-width: 37.5em) {
@@ -1446,6 +1478,36 @@ p {
     padding: 0;
     margin-bottom: 6rem;
   }
+}
+
+.expert .swiper-pagination-bullet {
+  margin: 0 3px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: transparent !important;
+  border: 1px solid #7d7d7d;
+  position: relative;
+  transition: 0.5s;
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.expert .swiper-pagination-bullet-active {
+  opacity: 1;
+  border: 1px solid #fe4a55;
+}
+
+.expert .swiper-pagination-bullet-active::before {
+  content: '';
+  position: absolute;
+  top: 51%;
+  left: 49%;
+  background: #fe4a55;
+  height: 0.8rem;
+  width: 0.8rem;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
 }
 
 .recruitment {
@@ -1468,19 +1530,73 @@ p {
 /*             courses-page  start                 */
 /*=================================================*/
 .courses {
-  padding: 8rem 1rem;
+  padding: 8rem 0 0;
   background-color: #fff;
+}
+
+.courses__section {
+  padding: 8rem 0 0;
+}
+
+.courses__section:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.courses__row {
+  padding: 6rem 0 10rem;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .courses .container {
+    padding: 1rem 2rem !important;
+  }
 }
 
 /*=================================================*/
 /*             courses-page  End                 */
 /*=================================================*/
+.dez-separator {
+  display: block;
+  height: 3px;
+  width: 5rem;
+  margin: 1rem 0 1.5rem;
+  position: relative;
+}
+
+.dez-separator.style-skew {
+  width: 1.5rem;
+  height: 1rem;
+  margin-left: 1px;
+  margin-right: 1px;
+  transform: skewX(-10deg);
+  background-color: #2d3239;
+}
+
+.dez-separator:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  background: #eee;
+  width: 20rem;
+  height: 4px;
+  left: 2rem;
+  transform: translateY(-50%) skewX(-10deg);
+  background-color: #fe4a55;
+}
+
+/*=================================================*/
+/*             Gallery-page  start                 */
+/*=================================================*/
+.gallery-page {
+  padding: 8rem 0;
+}
+
 .single-course__image {
   background-image: url(../../../assets/img/camford-programestop.jpg);
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 100vw;
+  width: 100%;
   height: 40vh;
 }
 
@@ -1500,15 +1616,14 @@ p {
   background-color: #f8f9f8;
   border: none;
   border-radius: 0.5rem;
-  padding-left: 3rem;
-  padding-right: 3rem;
+  padding-left: 0rem !important;
   justify-content: flex-start !important;
   margin-top: 5rem !important;
 }
 
 @media only screen and (max-width: 37.5em) {
   .single-course__nav-tabs {
-    padding: 1rem !important;
+    padding: 1rem 0 1.5rem !important;
   }
 }
 
@@ -1523,6 +1638,12 @@ p {
   padding: 1rem 0;
 }
 
+@media only screen and (max-width: 23.75em) {
+  .single-course__nav-item {
+    margin-right: 1.5rem;
+  }
+}
+
 .single-course__nav-item .active {
   background-color: #fe4a55;
   border: none;
@@ -1532,8 +1653,9 @@ p {
 .single-course__nav-link {
   color: #221638;
   font-size: 1.5rem;
-  padding: 1rem 1rem;
-  font-size: 1.6rem;
+  padding: 1.4rem 1.2rem;
+  font-size: 1.8rem;
+  font-weight: 800;
   border: none;
   margin-bottom: 1rem;
 }
@@ -1560,17 +1682,41 @@ p {
   font-size: 1.5rem;
   background-color: #f8f9f8;
   padding: 1.4rem 1rem;
+  padding-left: 4rem;
+  position: relative;
 }
 
 .single-course__curriculum-item:nth-child(even) {
   background: #fff;
 }
 
+.single-course__curriculum-item i {
+  color: #fe4a55;
+  transform: translateY(-50%);
+  position: absolute;
+  top: 2.1rem;
+  left: 1rem;
+}
+
+.single-course__instractor .expert__single-box {
+  margin-top: 2rem;
+}
+
+.single-course__instractor .expert__single-box-content {
+  flex-direction: row;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .single-course__instractor .expert__single-box-content {
+    flex-direction: column;
+  }
+}
+
 .single-course__instractor-image {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 4rem;
+  margin-top: 3rem;
   align-self: stretch;
 }
 
@@ -1686,7 +1832,7 @@ p {
   font-weight: 800;
   color: #221638;
   position: relative;
-  padding-left: 2.5rem;
+  padding-left: 2.8rem;
 }
 
 .single-course__info-item i {
@@ -1695,27 +1841,100 @@ p {
   margin-right: 1.2rem;
   position: absolute;
   left: 0;
-  top: -0.5rem;
+  top: 0rem;
+}
+
+.single-course__details-block {
+  margin-top: 4rem;
+}
+
+.single-course__details-block:first-child {
+  margin-top: 2rem;
+}
+
+.single-course__paragraph {
+  margin-top: 1.5rem;
+  font-size: 1.7rem;
+  padding-left: 4rem;
+  position: relative;
+}
+
+.single-course__paragraph i {
+  color: #fe4a55;
+  transform: translateY(-50%);
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
 }
 
 .reviews {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  border-bottom: 1px solid #e5e5e7;
+  margin: 2rem 0;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .reviews {
+    flex-direction: column;
+  }
 }
 
 .reviews__image {
-  width: 20%;
   margin-right: 2rem;
+  width: 9rem;
+  height: 9rem;
+  padding-top: 1rem;
 }
 
 .reviews__image img {
   width: 100%;
-  border-radius: 3rem;
+  border-radius: 0.5rem;
+}
+
+.reviews__rating {
+  display: flex;
+  margin-bottom: 0.8rem;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .reviews__rating {
+    margin-top: 1.5rem;
+    flex-direction: column;
+  }
 }
 
 .reviews__stars i {
-  font-size: 2rem;
-  color: #fe4a55;
+  font-size: 1.5rem;
+  color: #ffa500;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .reviews__stars i {
+    font-size: 2.2rem;
+  }
+}
+
+.reviews__name {
+  color: #221638;
+  font-weight: 700;
+  margin-left: 1rem;
+  font-size: 1.8rem;
+  padding-top: 0.1rem;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .reviews__name {
+    font-size: 2.2rem;
+    margin-left: 0rem;
+    margin-top: 1rem;
+  }
+}
+
+.reviews__comment {
+  font-weight: 700;
+  color: #221638;
+  font-size: 1.6rem;
 }
 
 .course-suggestion {
@@ -1727,33 +1946,48 @@ p {
   margin-bottom: 9rem;
 }
 
-.training {
-  padding: 8rem 0;
+.training__info-section {
+  padding: 8rem 0 4rem;
 }
 
-.training__row {
-  margin-top: 5rem;
+.training__img {
+  width: 100%;
+  height: 100%;
 }
 
-.training .card__single-box {
-  margin-top: 5rem;
-  height: 85%;
-  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+.training__description {
+  padding-left: 2rem;
+  padding-bottom: 2rem;
+}
+
+.training__section-2 {
+  padding: 4rem 0 8rem;
+}
+
+.training__section-2 .card__single-box {
+  margin-top: 2rem;
+  height: 90%;
   transition: all 0.2s;
-  border-radius: 3rem;
+  border-radius: 1rem;
   overflow: hidden;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 8px 0 rgba(0, 0, 0, 0.1);
 }
 
-.training .card__single-box:hover {
+.training__section-2 .card__single-box:hover {
   transform: translateY(-5px);
+  background-color: #fff;
 }
 
-.training .card__content {
+.training__section-2 .card__content {
   border-top: 1px solid rgba(0, 0, 0, 0.2);
 }
 
-.training .card__title {
+.training__section-2 .card__title {
   font-weight: 900;
+}
+
+.training__section-2 .card__title:hover {
+  color: #221638;
 }
 
 .training__gallery {
@@ -1771,4 +2005,196 @@ p {
 
 .training__video-gallery__row {
   margin-top: 5rem;
+}
+
+.contact {
+  padding-bottom: 5rem;
+}
+
+.contact__map {
+  width: 100%;
+  height: 50vh;
+}
+
+.contact__map iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.contact__left-part {
+  padding-top: 6rem;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .contact__left-part {
+    padding: 1rem 4rem;
+  }
+}
+
+.contact__info {
+  padding: 4rem 0 3rem;
+}
+
+@media only screen and (max-width: 52.25em) {
+  .contact__info {
+    padding: 1rem 0rem 3rem;
+  }
+  .contact__info:nth-child(2) {
+    padding-top: 4rem;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .contact__info {
+    padding: 5rem 0rem 2rem;
+  }
+  .contact__info:nth-child(2) {
+    padding-top: 2rem;
+  }
+}
+
+.contact__items {
+  position: relative;
+  padding-left: 3rem;
+}
+
+.contact__items i {
+  position: absolute;
+  color: #fe4a55;
+  font-size: 1.5rem;
+  top: 0;
+  left: 0;
+}
+
+.contact__sub-head {
+  font-weight: 800;
+  position: relative;
+}
+
+.contact__address {
+  max-width: 70.5rem;
+}
+
+.contact__right-part {
+  padding: 8rem 3rem;
+  position: relative;
+}
+
+@media only screen and (max-width: 52.25em) {
+  .contact__right-part {
+    padding: 6rem 0rem 4rem 3rem;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .contact__right-part {
+    padding: 4rem 2rem;
+  }
+}
+
+.contact__form-heading {
+  margin-bottom: 4rem;
+  font-size: 2.7rem;
+  font-weight: 900;
+}
+
+.contact__seperator {
+  position: absolute;
+  top: 25%;
+  left: 4.5%;
+  height: 50%;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .contact__seperator {
+    display: none;
+  }
+}
+
+.contact__btn {
+  margin-top: 3rem;
+  margin-left: 1rem;
+}
+
+.form {
+  padding: 1rem 5rem;
+}
+
+@media only screen and (max-width: 52.25em) {
+  .form {
+    padding: 1rem 2rem;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .form {
+    padding: 1rem 1rem;
+  }
+}
+
+.form__group {
+  margin-bottom: 1.5rem;
+  margin-left: 1rem;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .form__group {
+    margin-left: 0rem;
+  }
+}
+
+.form__input {
+  display: block;
+  outline: none;
+  width: 100%;
+  padding: 2.5rem 1rem;
+  outline: none;
+  font-size: 1.8rem;
+  height: 4rem;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(254, 74, 85, 0.51);
+}
+
+.form__input:focus {
+  border-bottom: 0.3rem solid #28b485;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+}
+
+.form__input:focus:invalid {
+  border-bottom: 0.3rem solid #ff7730;
+}
+
+.form__input::-webkit-input-placeholder {
+  font-weight: 700;
+}
+
+.form__label {
+  margin-top: 1rem;
+  margin-left: 1rem;
+  font-size: 1.8rem;
+  transform: translateY(0rem);
+  transition: all 0.2s;
+  font-weight: 700;
+}
+
+.form__input:placeholder-shown + .form__label {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-4rem);
+}
+
+.form__text-area {
+  display: block;
+  outline: none;
+  width: 100%;
+  padding: 0;
+  outline: none;
+  font-size: 1.8rem;
+  height: 9rem;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(254, 74, 85, 0.51);
+  text-align: left;
+  font-weight: 700;
+  color: #787878;
+  padding: 0.5rem;
 }

@@ -1,6 +1,6 @@
 /*=================================================*/
-/*             Home-page  start                    */ 
-/*=================================================*/ 
+/*             Home-page  start                    */
+/*=================================================*/
 
 ////////////////////////////////////////
 // COURSE-CATOGERY
@@ -94,7 +94,7 @@
     @media only screen and (max-width: $bp-xsmall) {
       grid-template-columns: repeat(1, 1fr);
       grid-template-rows: repeat(4, 1fr);
-      padding: 1rem 2rem ;
+      padding: 1rem 2rem;
     }
   }
   &__single-features {
@@ -105,7 +105,7 @@
     z-index: 1;
     padding: 3.5rem;
     position: relative;
-    border-radius: .5rem;
+    border-radius: 0.5rem;
     transition: 0.5s;
     align-self: stretch;
     align-items: stretch;
@@ -300,6 +300,7 @@
     &-content {
       padding: 1rem;
       display: flex;
+      flex-direction: column;
 
       @media only screen and (max-width: $bp-xsmall) {
         flex-direction: column;
@@ -308,7 +309,7 @@
   }
   &__image {
     width: 100%;
-    height: 30rem;
+    height: 100%;
     align-self: stretch;
     align-items: center;
     justify-content: center;
@@ -352,10 +353,42 @@
     align-items: center;
     padding: 2rem 0;
     margin-bottom: 10rem;
-
+    padding: 0;
+    margin-bottom: 6rem;
     @media only screen and (max-width: $bp-xsmall) {
       padding: 0;
       margin-bottom: 6rem;
+    }
+  }
+
+  .swiper-pagination-bullet {
+    margin: 0 3px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: transparent !important;
+    border: 1px solid #7d7d7d;
+    position: relative;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+    cursor: pointer;
+    opacity: 0.5;
+  }
+
+  .swiper-pagination-bullet-active {
+    opacity: 1;
+    border: 1px solid#fe4a55;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 51%;
+      left: 49%;
+      background: #fe4a55;
+      height: 0.8rem;
+      width: 0.8rem;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
     }
   }
 }
@@ -381,5 +414,5 @@
 }
 
 /*=================================================*/
-/*             Home-page  End                   */ 
-/*=================================================*/ 
+/*             Home-page  End                   */
+/*=================================================*/

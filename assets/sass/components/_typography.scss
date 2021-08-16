@@ -50,8 +50,13 @@ p {
     margin-bottom: 1.5rem;
   }
 
-  &--left {
-    text-align: start;
+  &--side {
+    font-weight: 800;
+    color: #221638;
+    font-size: 2.8rem;
+    display: inline-block;
+    position: relative;
+    line-height: 1.3;
   }
 }
 
@@ -92,6 +97,10 @@ p {
   justify-content: center;
   width: 100%;
   margin: 1rem auto 1rem;
+}
+
+.text-capital{
+  text-transform: uppercase;
 }
 /*=================================================*/
 /*             Typography End                      */

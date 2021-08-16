@@ -2,10 +2,63 @@
 /*             courses-page  start                 */
 /*=================================================*/
 .courses {
-  padding: 8rem 1rem;
+  padding: 8rem 0 0;
   background-color: #fff;
+
+  &__section {
+    padding: 8rem 0 0;
+
+    &:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+  }
+
+  &__row {
+    padding: 6rem 0 10rem;
+  }
+
+  & .container {
+    @media only screen and (max-width: $bp-xsmall) {
+      padding: 1rem 2rem !important;
+    }
+  }
 }
 
 /*=================================================*/
 /*             courses-page  End                 */
 /*=================================================*/
+.dez-separator {
+  display: block;
+  height: 3px;
+  width: 5rem;
+  margin: 1rem 0 1.5rem;
+  position: relative;
+
+  &.style-skew {
+    width: 1.5rem;
+    height: 1rem;
+    margin-left: 1px;
+    margin-right: 1px;
+    transform: skewX(-10deg);
+    background-color: #2d3239;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    background: #eee;
+    width: 20rem;
+    height: 4px;
+    left: 2rem;
+    transform: translateY(-50%) skewX(-10deg);
+    background-color: #fe4a55;
+  }
+}
+
+/*=================================================*/
+/*             Gallery-page  start                 */
+/*=================================================*/
+.gallery-page {
+  padding: 8rem 0;
+}

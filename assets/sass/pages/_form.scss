@@ -1,0 +1,76 @@
+$color-primary-dark: #28b485;
+$color-secondary-dark: #ff7730;
+
+.form {
+  padding: 1rem 5rem;
+  @media only screen and (max-width: $bp-small) {
+    padding: 1rem 2rem;
+  }
+  @media only screen and (max-width: $bp-xsmall) {
+    padding: 1rem 1rem;
+  }
+  &__group {
+    margin-bottom: 1.5rem;
+    margin-left: 1rem;
+
+    @media only screen and (max-width: $bp-xsmall) {
+        margin-left: 0rem;
+
+      }
+  }
+  &__input {
+    display: block;
+    outline: none;
+    width: 100%;
+    padding: 2.5rem 1rem;
+    outline: none;
+    font-size: 1.8rem;
+    height: 4rem;
+    box-shadow: 0 1.5rem 4rem rgba(#000, 0.1);
+    border: 1px solid rgba($color: #fe4a55, $alpha: 0.51);
+
+    &:focus {
+      border-bottom: 0.3rem solid $color-primary-dark;
+      box-shadow: 0 1.5rem 4rem rgba(#000, 0.15);
+    }
+
+    &:focus:invalid {
+      border-bottom: 0.3rem solid $color-secondary-dark;
+    }
+
+    &::-webkit-input-placeholder {
+      font-weight: 700;
+    }
+  }
+
+  &__label {
+    margin-top: 1rem;
+    margin-left: 1rem;
+    font-size: 1.8rem;
+    transform: translateY(0rem);
+    transition: all 0.2s;
+    font-weight: 700;
+  }
+
+  &__input:placeholder-shown + &__label {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-4rem);
+  }
+
+  &__text-area {
+    display: block;
+    outline: none;
+    width: 100%;
+    padding: 0;
+    outline: none;
+    font-size: 1.8rem;
+    height: 9rem;
+    box-shadow: 0 1.5rem 4rem rgba(#000, 0.1);
+    border: 1px solid rgba($color: #fe4a55, $alpha: 0.51);
+    text-align: left;
+    font-weight: 700;
+    color: rgb(120, 120, 120);
+    padding: 0.5rem;
+  }
+}

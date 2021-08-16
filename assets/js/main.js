@@ -42,15 +42,15 @@ var swiper = new Swiper(".expert-swiper", {
             spaceBetween: 40,
         },
         1024: {
-            slidesPerView: 2,
+            slidesPerView: 3,
             spaceBetween: 10,
         },
 
     },
-    autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-    },
+    // autoplay: {
+    //     delay: 2500,
+    //     disableOnInteraction: false,
+    // },
     loop: true,
 });
 
@@ -175,4 +175,6 @@ $(window).scroll(function () {
     }
 
 });
+
+//////////////////////////////////////////
 

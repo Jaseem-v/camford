@@ -68,6 +68,15 @@
       }
     }
   }
+
+  &--training {
+    &:hover {
+      color: #fff;
+      & span {
+        background-color: #221638;
+      }
+    }
+  }
 }
 
 .line-btn {
@@ -167,8 +176,8 @@
 
 #tabs {
   .tab-pane {
-    margin-top: 2rem;
-    padding: 15px;
+    margin-top: 1rem;
+    padding: 1.5rem;
     height: auto;
   }
   .nav-tabs {
@@ -337,17 +346,20 @@
   }
 
   &__image {
-    border-radius: 5px 5px 0 0;
+    border-radius: 0.5rem 0.5rem 0 0;
     position: relative;
+    height: 35vh;
+    overflow: hidden;
 
     img {
       width: 100%;
+      height: 100%;
     }
   }
 
   &__content {
-    border-radius: 0 0 5px 5px;
-    padding: 30px;
+    border-radius: 0 0 0.5rem 0.5rem;
+    padding: 3rem;
   }
 
   &__download-brochure {
@@ -355,12 +367,20 @@
     font-weight: 600;
     font-size: 1.8rem;
     margin-bottom: 1rem;
+
+    &:hover {
+      color: #675b5c;
+    }
   }
 
   &__title {
     margin-bottom: 1.5rem 0;
     font-size: 2rem;
     font-weight: 700;
+    text-transform: uppercase;
+    &:hover {
+      color: #fe4a55;
+    }
   }
 
   &__box-footer {
