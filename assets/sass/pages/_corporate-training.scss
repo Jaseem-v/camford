@@ -42,6 +42,11 @@
         }
       }
     }
+    & .container {
+      @media only screen and (max-width: $bp-xsmall) {
+        padding: 1rem 2rem !important;
+      }
+    }
   }
 
   &__gallery {
@@ -50,6 +55,11 @@
 
     &__row {
       margin-top: 5rem;
+    }
+    & .container {
+      @media only screen and (max-width: $bp-xsmall) {
+        padding: 1rem 2rem !important;
+      }
     }
   }
 

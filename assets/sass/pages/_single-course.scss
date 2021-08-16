@@ -233,9 +233,9 @@
       }
     }
   }
-  &__details-block{
+  &__details-block {
     margin-top: 4rem;
-    &:first-child{
+    &:first-child {
       margin-top: 2rem;
     }
   }
@@ -322,5 +322,11 @@
 
   .section-heading {
     margin-bottom: 9rem;
+  }
+
+  & .container {
+    @media only screen and (max-width: $bp-xsmall) {
+      padding: 1rem 2rem !important;
+    }
   }
 }

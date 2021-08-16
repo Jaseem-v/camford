@@ -1946,6 +1946,12 @@ p {
   margin-bottom: 9rem;
 }
 
+@media only screen and (max-width: 37.5em) {
+  .course-suggestion .container {
+    padding: 1rem 2rem !important;
+  }
+}
+
 .training__info-section {
   padding: 8rem 0 4rem;
 }
@@ -1990,6 +1996,12 @@ p {
   color: #221638;
 }
 
+@media only screen and (max-width: 37.5em) {
+  .training__section-2 .container {
+    padding: 1rem 2rem !important;
+  }
+}
+
 .training__gallery {
   padding: 8rem 0;
   background-color: #f5f7fa;
@@ -1997,6 +2009,12 @@ p {
 
 .training__gallery__row {
   margin-top: 5rem;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .training__gallery .container {
+    padding: 1rem 2rem !important;
+  }
 }
 
 .training__video-gallery {
