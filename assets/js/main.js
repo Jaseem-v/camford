@@ -25,7 +25,7 @@ $('.owl-carousel').owlCarousel({
     }
 });
 
-var swiper = new Swiper(".expert-swiper", {
+var swiper = new Swiper(".expert__swiper", {
     slidesPerView: 1,
     spaceBetween: 30,
     pagination: {
@@ -37,23 +37,25 @@ var swiper = new Swiper(".expert-swiper", {
             slidesPerView: 1,
             spaceBetween: 20,
         },
-        768: {
-            slidesPerView: 1,
+        990: {
+            slidesPerView: 2,
             spaceBetween: 40,
         },
         1024: {
-            slidesPerView: 3,
+            slidesPerView: 2,
             spaceBetween: 10,
         },
-
+        1400: {
+            slidesPerView: 2,
+            spaceBetween: 40,
+        },
     },
-    // autoplay: {
-    //     delay: 2500,
-    //     disableOnInteraction: false,
-    // },
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
     loop: true,
 });
-
 
 //////////////////////////////////////////
 // youtube

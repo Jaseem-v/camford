@@ -813,7 +813,7 @@ p {
   background-color: #e1e1e1;
   font-size: 1.8rem;
   color: #221638;
-  border-radius: 2px;
+  border-radius: .6rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -996,7 +996,7 @@ p {
 
 .footer__list {
   display: grid;
-  grid-template-columns: minmax(30%, min-content) repeat(2, minmax(15%, min-content)) 1fr;
+  grid-template-columns: repeat(2, 28%) repeat(2, 1fr);
   grid-template-rows: repeat(1, 1fr);
   column-gap: 30px;
 }
@@ -1012,7 +1012,7 @@ p {
 @media only screen and (max-width: 37.5em) {
   .footer__list {
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: max-content repeat(3, 1fr);
+    grid-template-rows: repeat(2, max-content) repeat(2, 1fr);
   }
 }
 
@@ -1049,7 +1049,7 @@ p {
   margin-bottom: 2rem;
   position: relative;
   color: #fff;
-  font-size: 2.4rem;
+  font-size: 2.1rem;
   font-weight: 800;
 }
 
@@ -1406,37 +1406,54 @@ p {
   padding: 8rem 1rem;
 }
 
+.expert__swiper {
+  margin-top: 5rem;
+}
+
 .expert__single-box-content {
   padding: 1rem;
   display: flex;
-  flex-direction: column;
+  margin-bottom: 10rem;
 }
 
 @media only screen and (max-width: 37.5em) {
   .expert__single-box-content {
     flex-direction: column;
+    margin-bottom: 10rem;
   }
 }
 
 .expert__image {
-  width: 100%;
-  height: 100%;
+  width: 80%;
   align-self: stretch;
-  align-items: center;
-  justify-content: center;
   display: flex;
+  align-items: flex-end;
+  justify-content: center;
 }
 
 @media only screen and (max-width: 37.5em) {
   .expert__image {
-    height: auto;
+    width: 100%;
   }
 }
 
 .expert__image img {
-  display: block;
   width: 100%;
   height: 100%;
+}
+
+.expert__content-box {
+  align-self: stretch;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0 0;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .expert__content-box {
+    padding: 0;
+  }
 }
 
 .expert__content {
@@ -1460,24 +1477,6 @@ p {
   margin-top: 7px;
   font-size: 15px;
   font-weight: 600;
-}
-
-.expert__content-box {
-  align-self: stretch;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 2rem 0;
-  margin-bottom: 10rem;
-  padding: 0;
-  margin-bottom: 6rem;
-}
-
-@media only screen and (max-width: 37.5em) {
-  .expert__content-box {
-    padding: 0;
-    margin-bottom: 6rem;
-  }
 }
 
 .expert .swiper-pagination-bullet {
@@ -1591,7 +1590,7 @@ p {
   padding: 8rem 0;
 }
 
-.single-course__image {
+.page-banner-image {
   background-image: url(../../../assets/img/camford-programestop.jpg);
   background-position: top center;
   background-repeat: no-repeat;
@@ -1601,7 +1600,7 @@ p {
 }
 
 @media only screen and (max-width: 37.5em) {
-  .single-course__image {
+  .page-banner-image {
     background-position: left;
   }
 }
@@ -1703,29 +1702,16 @@ p {
 }
 
 .single-course__instractor .expert__single-box-content {
-  flex-direction: row;
+  margin-bottom: 4rem;
 }
 
-@media only screen and (max-width: 37.5em) {
-  .single-course__instractor .expert__single-box-content {
-    flex-direction: column;
-  }
-}
-
-.single-course__instractor-image {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 3rem;
-  align-self: stretch;
-}
-
-.single-course__instractor-image img {
-  height: auto;
-}
-
-.single-course .expert__content-box {
+.single-course__instractor .expert__content-box {
   margin-bottom: 0;
+  padding-top: 0;
+}
+
+.single-course__instractor .expert__content {
+  padding: 1rem 2rem;
 }
 
 .single-course__details {
@@ -2029,16 +2015,6 @@ p {
   padding-bottom: 5rem;
 }
 
-.contact__map {
-  width: 100%;
-  height: 50vh;
-}
-
-.contact__map iframe {
-  width: 100%;
-  height: 100%;
-}
-
 .contact__left-part {
   padding-top: 6rem;
 }
@@ -2094,7 +2070,7 @@ p {
 }
 
 .contact__right-part {
-  padding: 8rem 3rem;
+  padding: 8rem 3rem 3rem;
   position: relative;
 }
 
@@ -2132,6 +2108,55 @@ p {
 .contact__btn {
   margin-top: 3rem;
   margin-left: 1rem;
+}
+
+.contact__map {
+  margin: 1rem auto 4rem;
+}
+
+.contact__map-item {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 5rem;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .contact__map-item--2 {
+    margin-top: 8rem;
+  }
+}
+
+.contact__map-heading {
+  margin-bottom: 5rem;
+  font-weight: 700;
+  position: relative;
+  padding-bottom: 1.5rem;
+  font-size: 2rem;
+}
+
+.contact__map-heading::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0%;
+  height: 4px;
+  background: #fe4a55;
+  width: 10rem;
+  border-radius: 5rem;
+  transform: translateX(-50%);
+}
+
+.contact__map-iframe {
+  width: 95%;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
+}
+
+.contact__map-iframe iframe {
+  width: 100%;
+  height: 40vh;
 }
 
 .form {
@@ -2213,6 +2238,5 @@ p {
   border: 1px solid rgba(254, 74, 85, 0.51);
   text-align: left;
   font-weight: 700;
-  color: #787878;
   padding: 0.5rem;
 }

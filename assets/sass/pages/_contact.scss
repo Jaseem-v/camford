@@ -1,14 +1,5 @@
 .contact {
   padding-bottom: 5rem;
-  &__map {
-    width: 100%;
-    height: 50vh;
-
-    iframe {
-      width: 100%;
-      height: 100%;
-    }
-  }
 
   &__left-part {
     padding-top: 6rem;
@@ -57,7 +48,7 @@
   }
 
   &__right-part {
-    padding: 8rem 3rem;
+    padding: 8rem 3rem 3rem;
     position: relative;
     @media only screen and (max-width: $bp-small) {
       padding: 6rem 0rem 4rem 3rem;
@@ -86,5 +77,55 @@
   &__btn {
     margin-top: 3rem;
     margin-left: 1rem;
+  }
+
+  &__map {
+    margin: 1rem auto 4rem;
+
+
+    &-item {
+      padding: 1rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-top: 5rem;
+
+      &--2{
+        @media only screen and (max-width: $bp-xsmall) {
+          margin-top: 8rem ;
+        }
+      }
+    }
+
+    &-heading {
+      margin-bottom: 5rem;
+      font-weight: 700;
+      position: relative;
+      padding-bottom: 1.5rem;
+      font-size: 2rem;
+
+      &::after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom: 0%;
+        height: 4px;
+        background: #fe4a55;
+        width: 10rem;
+        border-radius: 5rem;
+        transform: translateX(-50%);
+      }
+    }
+    &-iframe {
+      // border: 1px solid  #fe4a55;
+      width: 95%;
+      box-shadow: 0 1rem 3rem rgba($color: #000000, $alpha: 0.2);
+
+      iframe {
+        width: 100%;
+        height: 40vh;
+      }
+    }
   }
 }
