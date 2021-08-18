@@ -149,22 +149,20 @@ $(window).scroll(function () {
 
 //////////////////////////////////////////
 // Read More Btn
+function toggleReadMore(key) {
+    let dots = $('#paragraphDots' + key);
+    let moreText = $('#paragraphMore' + key);
+    let btnText = $('#paragraphBtn' + key);
 
-function ReadMoreBtn() {
-    var dots = document.querySelectorAll(".paragraphDots");
-    var moreText = document.querySelectorAll(".paragraphMore");
-    var btnText = document.querySelectorAll(".paragraphBtn");
-
-
-
-        if (dots[i].style.display === "none") {
-            dots[i].style.display = "inline";
-            btnText[i].innerHTML = "Read more";
-            moreText[i].style.display = "none";
-        } else {
-            dots.style[i].display = "none";
-            btnText[i].innerHTML = "Read less";
-            moreText[i].style.display = "inline";
-        }
+    if (dots.css('display') === 'none') {
+        dots.css('display', 'inline');
+        btnText.html('Read more');
+        moreText.css('display', 'none');
+    } else {
+        dots.css('display', 'none');
+        btnText.html('Read less');
+        moreText.css('display', 'inline');
     }
+}
+
 

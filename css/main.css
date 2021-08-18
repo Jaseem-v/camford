@@ -155,6 +155,11 @@ p {
   font-size: 1.7rem;
 }
 
+.paragraph--teritiary {
+  margin-top: 1.5rem;
+  font-size: 1.7rem;
+}
+
 .paragraph--footer {
   font-size: 1.7rem;
   color: #fff;
@@ -395,6 +400,7 @@ p {
 
 .hidden {
   display: none;
+  height: auto;
 }
 
 .overlay {
@@ -813,7 +819,7 @@ p {
   background-color: #e1e1e1;
   font-size: 1.8rem;
   color: #221638;
-  border-radius: .6rem;
+  border-radius: 0.6rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -886,7 +892,7 @@ p {
   position: relative;
   border-radius: 0.5rem;
   background-color: #fff;
-  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   align-self: stretch;
   height: 95%;
 }
@@ -1374,8 +1380,110 @@ p {
   width: 100%;
 }
 
-.gallery {
+.testimonial {
+  padding: 8rem 0;
   background-color: #fff8f8;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .testimonial__swiper {
+    padding: 2rem 4rem;
+  }
+}
+
+.testimonial .swiper-pagination-bullet {
+  margin: 0 3px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: transparent !important;
+  border: 1px solid #7d7d7d;
+  position: relative;
+  transition: 0.5s;
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.testimonial .swiper-pagination-bullet-active {
+  opacity: 1;
+  border: 1px solid #fe4a55;
+}
+
+.testimonial .swiper-pagination-bullet-active::before {
+  content: '';
+  position: absolute;
+  top: 51%;
+  left: 49%;
+  background: #fe4a55;
+  height: 0.8rem;
+  width: 0.8rem;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+
+.review {
+  margin-bottom: 3rem;
+  padding: 3rem;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 10rem;
+  box-shadow: 1rem 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  background-color: #fff;
+}
+
+.review::before {
+  content: '\201d';
+  top: 60%;
+  left: 80%;
+  position: absolute;
+  font-size: 20rem;
+  line-height: 1;
+  font-family: sans-serif;
+  opacity: 0.2;
+  color: #6666;
+}
+
+.review__text {
+  font-size: 1.7rem;
+  z-index: 1;
+  position: relative;
+  font-weight: 700;
+  color: #7d7d7d;
+}
+
+.review__user {
+  display: flex;
+  padding: 2rem;
+  align-items: center;
+}
+
+.review__photo {
+  border-radius: 50%;
+  width: 5rem;
+  height: 5rem;
+  margin-right: 2rem;
+}
+
+.review__user-box {
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.review__user-description {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-top: -1rem;
+}
+
+.review__user-name {
+  color: #fe4a55;
+  font-size: 1.7rem;
+  font-weight: 800;
+  margin: 1rem 0;
+}
+
+.gallery {
   padding: 8rem 1rem;
 }
 
@@ -1527,8 +1635,16 @@ p {
 /*=================================================*/
 /*             Home-page  End                   */
 /*=================================================*/
-.who-we-are .vision-mission__right-part {
-  justify-content: flex-start;
+.who-we-are .vision-mission__image {
+  height: 100%;
+}
+
+.who-we-are .vision-mission__image img {
+  height: 100%;
+}
+
+.who-we-are .vision-mission__left-part p {
+  margin-bottom: 0;
 }
 
 .ceo-message {
@@ -1607,7 +1723,7 @@ p {
   flex-direction: column;
   height: 95%;
   background: #fff;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.18), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
 
 @media only screen and (max-width: 52.25em) {
@@ -1641,16 +1757,23 @@ p {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 1rem 2rem;
+  padding: 2rem 2rem 1rem;
+}
+
+@media only screen and (max-width: 52.25em) {
+  .team .expert__content {
+    padding: 2rem 2rem 3rem;
+  }
+}
+
+.team .expert__content .sub-title {
+  font-weight: 700;
+  color: #606060;
 }
 
 .team .expert__content p {
   text-align: left;
   margin-top: 1rem;
-}
-
-.team .expert__content .paragraphMore {
-  display: none;
 }
 
 .team .expert__content .readMoreBtn {
@@ -1663,6 +1786,12 @@ p {
 
 .instant-courses {
   padding: 8rem 0;
+}
+
+@media only screen and (max-width: 52.25em) {
+  .instant-courses {
+    padding: 0rem 0;
+  }
 }
 
 .instant-courses-inner-area {
@@ -1687,8 +1816,11 @@ p {
 /*             courses-page  start                 */
 /*=================================================*/
 .courses {
-  padding: 8rem 0 0;
   background-color: #fff;
+}
+
+.courses .section-heading {
+  margin-bottom: 5rem;
 }
 
 .courses__section {
@@ -1746,6 +1878,26 @@ p {
 /*=================================================*/
 .gallery-page {
   padding: 8rem 0;
+}
+
+.training-programmes {
+  padding: 8rem 0;
+}
+
+.training-programmes .card__image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+}
+
+.training-programmes .card__image img {
+  width: 40%;
+}
+
+.training-programmes .card__content {
+  border-top: none !important;
+  text-align: center;
 }
 
 .page-banner-image {
@@ -2106,8 +2258,7 @@ p {
 }
 
 .training__description {
-  padding-left: 2rem;
-  padding-bottom: 2rem;
+  padding: 2rem;
 }
 
 .training__section-2 {
@@ -2120,7 +2271,7 @@ p {
   transition: all 0.2s;
   border-radius: 1rem;
   overflow: hidden;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 8px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
 
 .training__section-2 .card__single-box:hover {
@@ -2397,4 +2548,62 @@ p {
   text-align: left;
   font-weight: 700;
   padding: 0.5rem;
+}
+
+.placement {
+  padding: 8rem 0;
+}
+
+.placement__cards {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 2.5rem;
+}
+
+@media only screen and (max-width: 61.875em) {
+  .placement__cards {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .placement__cards {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+  }
+}
+
+.placement__single-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+  width: 100%;
+  height: 90%;
+  align-self: stretch;
+}
+
+.placement__single-card .card {
+  width: 100%;
+  height: 100%;
+}
+
+.placement__single-card .card-body {
+  text-align: center;
+}
+
+.placement__single-card .card-title {
+  font-size: 1.8rem;
+  font-weight: 800;
+}
+
+.placement__single-card .card-img-top {
+  width: 100%;
+  height: 25vh;
+}
+
+.placement .features__single-features {
+  padding: 0rem !important;
 }

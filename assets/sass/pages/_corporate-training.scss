@@ -8,8 +8,7 @@
   }
 
   &__description {
-    padding-left: 2rem;
-    padding-bottom: 2rem;
+    padding: 2rem;
   }
 
   &__section-2 {
@@ -22,8 +21,7 @@
         transition: all 0.2s;
         border-radius: 1rem;
         overflow: hidden;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1),
-          0 6px 8px 0 rgba(0, 0, 0, 0.1);
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
         &:hover {
           transform: translateY(-5px);
           background-color: #fff;

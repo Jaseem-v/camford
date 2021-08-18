@@ -2,8 +2,12 @@
 /*             courses-page  start                 */
 /*=================================================*/
 .courses {
-  padding: 8rem 0 0;
+  // padding: 8rem 0 0;
   background-color: #fff;
+  
+  & .section-heading {
+    margin-bottom: 5rem;
+  }
 
   &__section {
     padding: 8rem 0 0;
@@ -61,4 +65,28 @@
 /*=================================================*/
 .gallery-page {
   padding: 8rem 0;
+}
+
+/////////////////////////////////////////////////
+// Training-programmes
+
+.training-programmes {
+  padding: 8rem 0;
+  .card {
+    &__image {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 10vh;
+
+      img {
+        width: 40%;
+      }
+    }
+
+    &__content {
+      border-top: none !important;
+      text-align: center;
+    }
+  }
 }

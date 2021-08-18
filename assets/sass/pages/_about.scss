@@ -1,9 +1,20 @@
 .who-we-are {
-  & .vision-mission__right-part {
-    justify-content: flex-start;
-    
+  & .vision-mission {
+    &__right-part {
+      // justify-content: flex-start;
+    }
 
-    
+    &__image {
+      height: 100%;
+
+      img {
+        height: 100%;
+      }
+    }
+
+    &__left-part p {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -78,9 +89,7 @@
         flex-direction: column;
         height: 95%;
         background: #fff;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.18),
-          0 6px 20px 0 rgba(0, 0, 0, 0.1);
-
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
         @media only screen and (max-width: $bp-small) {
           flex-direction: column;
           margin-bottom: 3rem;
@@ -108,14 +117,17 @@
       justify-content: center;
       align-items: center;
       flex-direction: column;
-      padding: 1rem 2rem;
-
+      padding: 2rem 2rem 1rem;
+      @media only screen and (max-width: $bp-small) {
+        padding: 2rem 2rem 3rem;
+      }
+      .sub-title {
+        font-weight: 700;
+        color: #606060;
+      }
       p {
         text-align: left;
         margin-top: 1rem;
-      }
-      .paragraphMore {
-        display: none;
       }
 
       .readMoreBtn {
@@ -134,7 +146,11 @@
 
 .instant-courses {
   padding: 8rem 0;
-//   background-color: #fff8f8;
+  //   background-color: #fff8f8;
+
+  @media only screen and (max-width: $bp-small) {
+    padding: 0rem 0;
+  }
 
   &-inner-area {
     // background-color: #f9f9f9;
@@ -144,8 +160,8 @@
   &__content {
     padding: 8rem 4rem 8rem 7rem;
     @media only screen and (max-width: $bp-xsmall) {
-        padding:5rem 3rem;
-      }
+      padding: 5rem 3rem;
+    }
   }
 
   &__image {

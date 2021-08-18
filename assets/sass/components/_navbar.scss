@@ -191,7 +191,9 @@
 
 .hidden {
   display: none;
+  height: auto;
 }
+
 .overlay {
   content: '';
   position: fixed;

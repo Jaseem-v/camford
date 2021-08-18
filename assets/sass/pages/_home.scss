@@ -251,11 +251,117 @@
   }
 }
 
+//////////////////////////////////////
+// Testimonial
+.testimonial {
+  padding: 8rem 0;
+  background-color: #fff8f8;
+
+  &__swiper {
+    @media only screen and (max-width: $bp-xsmall) {
+      padding: 2rem 4rem;
+    }
+  }
+
+  .swiper-pagination-bullet {
+    margin: 0 3px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: transparent !important;
+    border: 1px solid #7d7d7d;
+    position: relative;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+    cursor: pointer;
+    opacity: 0.5;
+  }
+
+  .swiper-pagination-bullet-active {
+    opacity: 1;
+    border: 1px solid#fe4a55;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 51%;
+      left: 49%;
+      background: #fe4a55;
+      height: 0.8rem;
+      width: 0.8rem;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+    }
+  }
+}
+.review {
+  margin-bottom: 3rem;
+  padding: 3rem;
+  position: relative;
+  overflow: hidden;
+  // border: 1px solid #221638;
+  margin-bottom: 10rem;
+  box-shadow: 1rem 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  background-color: #fff;
+
+  &::before {
+    content: '\201d';
+    top: 60%;
+    left: 80%;
+    position: absolute;
+    font-size: 20rem;
+    line-height: 1;
+    font-family: sans-serif;
+    opacity: 0.2;
+    color: #6666;
+  }
+
+  &__text {
+    font-size: 1.7rem;
+    z-index: 1;
+    position: relative;
+    font-weight: 700;
+    color: #7d7d7d;
+  }
+
+  &__user {
+    display: flex;
+    padding: 2rem;
+    align-items: center;
+  }
+
+  &__photo {
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+    margin-right: 2rem;
+  }
+
+  &__user-box {
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__user {
+    &-description {
+      font-size: 1.5rem;
+      font-weight: 500;
+      margin-top: -1rem;
+    }
+
+    &-name {
+      color: #fe4a55;
+      font-size: 1.7rem;
+      font-weight: 800;
+      margin: 1rem 0;
+    }
+  }
+}
 ////////////////////////////////////////
 // GALLERY
 
 .gallery {
-  background-color: #fff8f8;
   padding: 8rem 1rem;
 }
 
@@ -298,7 +404,7 @@
 .expert {
   padding: 8rem 1rem;
 
-  &__swiper{
+  &__swiper {
     margin-top: 5rem;
   }
 
@@ -352,7 +458,7 @@
         color: #221638;
       }
     }
-    .sub-title{
+    .sub-title {
       display: block;
       color: #fe4a55;
       margin-top: 7px;
