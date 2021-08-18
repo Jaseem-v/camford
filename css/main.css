@@ -1223,6 +1223,8 @@ p {
 
 .features__single-features {
   background-color: #fff;
+  height: 90%;
+  padding: 3rem 1rem;
 }
 
 .features__content-box {
@@ -1471,7 +1473,7 @@ p {
   color: #221638;
 }
 
-.expert__content span {
+.expert__content .sub-title {
   display: block;
   color: #fe4a55;
   margin-top: 7px;
@@ -1525,6 +1527,162 @@ p {
 /*=================================================*/
 /*             Home-page  End                   */
 /*=================================================*/
+.who-we-are .vision-mission__right-part {
+  justify-content: flex-start;
+}
+
+.ceo-message {
+  padding: 8rem 0;
+}
+
+.ceo-message__left-part {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ceo-message__left-part img {
+  width: 80%;
+}
+
+@media only screen and (max-width: 52.25em) {
+  .ceo-message__left-part img {
+    width: 60%;
+  }
+}
+
+.ceo-message__paragraph {
+  font-weight: 700;
+  font-size: 1.8rem;
+  margin-bottom: 3rem;
+}
+
+.ceo-message__wish {
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: #606060;
+}
+
+.ceo-message__name {
+  font-weight: 800;
+  margin-top: 1rem;
+  font-size: 2.4rem;
+}
+
+.ceo-message__sub-title {
+  color: #fe4a55;
+  font-size: 2rem;
+  margin-top: 1rem;
+  font-weight: 700;
+}
+
+.ceo-message__right-part {
+  padding: 2rem;
+}
+
+@media only screen and (max-width: 52.25em) {
+  .ceo-message__right-part {
+    text-align: center;
+  }
+}
+
+.team {
+  background: #f6f6f6;
+  padding: 8rem 0;
+}
+
+.team__row {
+  margin-top: 5rem;
+  padding: 0 2rem;
+}
+
+.team .expert__single-box {
+  margin-bottom: 5rem;
+  height: 95%;
+}
+
+.team .expert__single-box-content {
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  height: 95%;
+  background: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.18), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+@media only screen and (max-width: 52.25em) {
+  .team .expert__single-box-content {
+    flex-direction: column;
+    margin-bottom: 3rem;
+  }
+}
+
+.team .expert__content-box {
+  padding: 0rem 0 0;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .team .expert__content-box {
+    padding: 0;
+  }
+}
+
+.team .expert__image {
+  width: 50%;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.team .expert__content {
+  background-color: #fff;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem 2rem;
+}
+
+.team .expert__content p {
+  text-align: left;
+  margin-top: 1rem;
+}
+
+.team .expert__content .paragraphMore {
+  display: none;
+}
+
+.team .expert__content .readMoreBtn {
+  border: none;
+  outline: none;
+  color: #fe4a55;
+  background: none;
+  display: inline;
+}
+
+.instant-courses {
+  padding: 8rem 0;
+}
+
+.instant-courses-inner-area {
+  background-color: #fff8f8;
+}
+
+.instant-courses__content {
+  padding: 8rem 4rem 8rem 7rem;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .instant-courses__content {
+    padding: 5rem 3rem;
+  }
+}
+
+.instant-courses__image img {
+  width: 100%;
+}
+
 /*=================================================*/
 /*             courses-page  start                 */
 /*=================================================*/

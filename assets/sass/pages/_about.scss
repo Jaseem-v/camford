@@ -1,0 +1,156 @@
+.who-we-are {
+  & .vision-mission__right-part {
+    justify-content: flex-start;
+    
+
+    
+  }
+}
+
+/////////////////////////////////////
+// CEO MESSAGE
+.ceo-message {
+  padding: 8rem 0;
+
+  &__left-part {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 80%;
+      @media only screen and (max-width: $bp-small) {
+        width: 60%;
+      }
+    }
+  }
+
+  &__paragraph {
+    font-weight: 700;
+    font-size: 1.8rem;
+    margin-bottom: 3rem;
+  }
+
+  &__wish {
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: #606060;
+  }
+
+  &__name {
+    font-weight: 800;
+    margin-top: 1rem;
+    font-size: 2.4rem;
+  }
+
+  &__sub-title {
+    color: #fe4a55;
+    font-size: 2rem;
+    margin-top: 1rem;
+    font-weight: 700;
+  }
+
+  &__right-part {
+    padding: 2rem;
+    @media only screen and (max-width: $bp-small) {
+      text-align: center;
+    }
+  }
+}
+///////////////////////////////////////////
+/// TEAM
+
+.team {
+  background: #f6f6f6;
+  padding: 8rem 0;
+
+  &__row {
+    margin-top: 5rem;
+    padding: 0 2rem;
+  }
+  & .expert {
+    &__single-box {
+      margin-bottom: 5rem;
+      height: 95%;
+      &-content {
+        padding: 2rem 0;
+        display: flex;
+        flex-direction: column;
+        height: 95%;
+        background: #fff;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.18),
+          0 6px 20px 0 rgba(0, 0, 0, 0.1);
+
+        @media only screen and (max-width: $bp-small) {
+          flex-direction: column;
+          margin-bottom: 3rem;
+        }
+      }
+    }
+    &__content-box {
+      padding: 0rem 0 0;
+      @media only screen and (max-width: $bp-xsmall) {
+        padding: 0;
+      }
+    }
+
+    &__image {
+      width: 50%;
+      align-self: center;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__content {
+      background-color: #fff;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 1rem 2rem;
+
+      p {
+        text-align: left;
+        margin-top: 1rem;
+      }
+      .paragraphMore {
+        display: none;
+      }
+
+      .readMoreBtn {
+        border: none;
+        outline: none;
+        color: #fe4a55;
+        background: none;
+        display: inline;
+      }
+    }
+  }
+}
+
+////////////////////////////////////
+// instant-courses
+
+.instant-courses {
+  padding: 8rem 0;
+//   background-color: #fff8f8;
+
+  &-inner-area {
+    // background-color: #f9f9f9;
+    background-color: #fff8f8;
+  }
+
+  &__content {
+    padding: 8rem 4rem 8rem 7rem;
+    @media only screen and (max-width: $bp-xsmall) {
+        padding:5rem 3rem;
+      }
+  }
+
+  &__image {
+    img {
+      width: 100%;
+    }
+  }
+}

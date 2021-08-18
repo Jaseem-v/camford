@@ -25,37 +25,6 @@ $('.owl-carousel').owlCarousel({
     }
 });
 
-var swiper = new Swiper(".expert__swiper", {
-    slidesPerView: 1,
-    spaceBetween: 30,
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-    },
-    breakpoints: {
-        640: {
-            slidesPerView: 1,
-            spaceBetween: 20,
-        },
-        990: {
-            slidesPerView: 2,
-            spaceBetween: 40,
-        },
-        1024: {
-            slidesPerView: 2,
-            spaceBetween: 10,
-        },
-        1400: {
-            slidesPerView: 2,
-            spaceBetween: 40,
-        },
-    },
-    autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-    },
-    loop: true,
-});
 
 //////////////////////////////////////////
 // youtube
@@ -179,4 +148,23 @@ $(window).scroll(function () {
 });
 
 //////////////////////////////////////////
+// Read More Btn
+
+function ReadMoreBtn() {
+    var dots = document.querySelectorAll(".paragraphDots");
+    var moreText = document.querySelectorAll(".paragraphMore");
+    var btnText = document.querySelectorAll(".paragraphBtn");
+
+
+
+        if (dots[i].style.display === "none") {
+            dots[i].style.display = "inline";
+            btnText[i].innerHTML = "Read more";
+            moreText[i].style.display = "none";
+        } else {
+            dots.style[i].display = "none";
+            btnText[i].innerHTML = "Read less";
+            moreText[i].style.display = "inline";
+        }
+    }
 
