@@ -1498,7 +1498,7 @@ p {
   content: '';
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 50.5%;
   background: #fe4a55;
   height: 0.9rem;
   width: 0.9rem;
@@ -1708,7 +1708,7 @@ p {
   content: '';
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 50.5%;
   background: #fe4a55;
   height: 0.9rem;
   width: .9rem;
