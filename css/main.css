@@ -1806,7 +1806,7 @@ p {
 .ceo-message__paragraph {
   font-weight: 500;
   font-size: 1.6rem;
-  margin-bottom: 3rem;
+  margin-bottom: .5rem;
 }
 
 .ceo-message__wish {
