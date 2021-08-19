@@ -31,7 +31,6 @@
     align-items: flex-start;
     // justify-content: center;
 
-
     @media only screen and (max-width: $bp-small) {
       align-items: flex-start;
       justify-content: flex-start;
@@ -60,7 +59,7 @@
 
   &__nav-list {
     list-style: none;
-    padding-left: .5rem;
+    padding-left: 0.5rem;
   }
 
   &__nav-li {
@@ -76,6 +75,10 @@
 
     &:hover {
       color: coral;
+    }
+
+    @media only screen and (max-width: $bp-xsmall) {
+      font-size: 1.6rem;
     }
   }
 

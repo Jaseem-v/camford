@@ -1084,7 +1084,7 @@ p {
 
 .footer__nav-list {
   list-style: none;
-  padding-left: .5rem;
+  padding-left: 0.5rem;
 }
 
 .footer__nav-li {
@@ -1101,6 +1101,12 @@ p {
 
 .footer__nav-items:hover {
   color: coral;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .footer__nav-items {
+    font-size: 1.6rem;
+  }
 }
 
 .footer__address {
