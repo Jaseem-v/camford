@@ -28,8 +28,8 @@ h6 {
   color: $color-teritiary;
 }
 
-i{
-  color: $color-secondary ;
+i {
+  color: $color-secondary;
 }
 
 p {
@@ -49,6 +49,10 @@ p {
     @media only screen and (max-width: $bp-992) {
       text-align: center;
     }
+
+    @media only screen and (max-width: $bp-xsmall) {
+      font-size: 4rem;
+    }
   }
   &--secondary {
     margin-bottom: 0;
@@ -56,6 +60,10 @@ p {
     font-weight: 800;
     color: $color-primary;
     // max-width: 61.5rem;
+
+    @media only screen and (max-width: $bp-xsmall) {
+      font-size: 3rem;
+    }
   }
   &--teritiary {
     font-size: 2.5rem;
@@ -117,7 +125,7 @@ p {
   margin: 1rem auto 1rem;
 }
 
-.text-capital{
+.text-capital {
   text-transform: uppercase;
 }
 /*=================================================*/
