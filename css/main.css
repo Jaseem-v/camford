@@ -97,7 +97,7 @@ p {
   color: #606060;
   margin-bottom: 1.5rem;
   line-height: 1.6;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 }
 
 .heading--primary {
@@ -140,7 +140,7 @@ p {
   max-width: 45rem;
   color: #d2d2d2;
   font-weight: 600;
-  font-size: 1.7rem;
+  font-size: 1.6rem;
 }
 
 @media only screen and (max-width: 61.875em) {
@@ -152,16 +152,16 @@ p {
 .paragraph--secondary {
   max-width: 70.5rem;
   margin-top: 1.5rem;
-  font-size: 1.7rem;
+  font-size: 1.6rem;
 }
 
 .paragraph--teritiary {
   margin-top: 1.5rem;
-  font-size: 1.7rem;
+  font-size: 1.6rem;
 }
 
 .paragraph--footer {
-  font-size: 1.7rem;
+  font-size: 1.6rem;
   color: #fff;
   margin-bottom: 2rem;
 }
@@ -192,7 +192,7 @@ p {
 /*             Navigation start                     */
 /*=================================================*/
 .navigation {
-  padding: 2rem 1rem;
+  padding: 1.5rem 1rem;
   width: 100%;
   background-color: #fff !important;
 }
@@ -210,8 +210,8 @@ p {
 
 .navigation__content {
   display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
+  align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
@@ -220,11 +220,13 @@ p {
     overflow: hidden;
     flex-direction: column;
     position: relative;
+    align-items: flex-start;
+    justify-content: flex-start;
   }
 }
 
 .navigation__logo {
-  width: 8rem;
+  width: 12rem;
   cursor: pointer;
   z-index: 1;
 }
@@ -240,14 +242,15 @@ p {
   list-style: none;
   color: #000;
   align-items: center;
-  padding-top: 1rem;
+  justify-content: center;
+  padding: 1rem 0;
   margin-left: auto;
+  margin-top: 1rem;
 }
 
 @media only screen and (max-width: 61.875em) {
   .navigation__list {
     display: none;
-    margin-top: 3rem;
     order: 2;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
   }
@@ -292,7 +295,6 @@ p {
   color: #221638;
   font-size: 1.5rem;
   font-weight: 700;
-  padding: 2.5rem 0;
   margin-left: 1.3rem;
   margin-right: 1.3rem;
 }
@@ -314,7 +316,7 @@ p {
   display: none;
   z-index: 20;
   position: absolute;
-  top: 0;
+  top: 2rem;
   right: 2rem;
   margin-top: 1rem;
 }
@@ -467,6 +469,7 @@ p {
   .header__left-part, .header__right-part {
     height: auto;
     align-items: center;
+    padding: 3rem;
   }
 }
 
@@ -591,7 +594,7 @@ p {
   transition: 0.5s;
   border-radius: 0.5rem;
   font-weight: 700;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   padding: 1.1rem 3rem 1.1rem 3rem;
   margin-top: 3rem;
 }
@@ -630,7 +633,9 @@ p {
 }
 
 .btn--contact {
+  text-transform: uppercase;
   margin-top: 0;
+  padding: 1rem 2rem 1rem 2rem;
 }
 
 @media only screen and (max-width: 61.875em) {
@@ -1002,7 +1007,7 @@ p {
 
 .footer__list {
   display: grid;
-  grid-template-columns: repeat(2, 28%) repeat(2, 1fr);
+  grid-template-columns: repeat(2, 25%) repeat(2, 1fr);
   grid-template-rows: repeat(1, 1fr);
   column-gap: 30px;
 }
@@ -1030,7 +1035,7 @@ p {
 .footer__items {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
 }
 
 @media only screen and (max-width: 52.25em) {
@@ -1055,7 +1060,7 @@ p {
   margin-bottom: 2rem;
   position: relative;
   color: #fff;
-  font-size: 2.1rem;
+  font-size: 1.8rem;
   font-weight: 800;
 }
 
@@ -1067,7 +1072,7 @@ p {
 .footer__nav-items {
   cursor: pointer;
   color: #fff;
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   text-decoration: none;
 }
 
@@ -1077,15 +1082,28 @@ p {
 
 .footer__address {
   color: #fff;
-  font-size: 1.6rem;
-  padding-left: 2.5rem;
+  font-size: 1.4rem;
+  padding-left: 4.5rem;
   position: relative;
+}
+
+@media only screen and (max-width: 61.875em) {
+  .footer__address {
+    padding-left: 2.5rem;
+  }
 }
 
 .footer__address i {
   position: absolute;
-  left: 0;
+  left: 2rem;
   top: 0;
+}
+
+@media only screen and (max-width: 61.875em) {
+  .footer__address i {
+    left: 0rem;
+    top: 0;
+  }
 }
 
 .footer__hr {
@@ -1095,9 +1113,9 @@ p {
 
 .footer__copyright {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
 }
 
 @media only screen and (max-width: 37.5em) {
@@ -1109,12 +1127,13 @@ p {
 
 .footer__copyright h2 {
   color: #fff;
+  font-size: 1.4rem;
+  margin: 0;
 }
 
 .footer__copyright a {
-  margin-left: auto;
   color: #fe4a55;
-  margin-right: 2rem;
+  font-size: 1.4rem;
 }
 
 @media only screen and (max-width: 37.5em) {
@@ -1137,6 +1156,13 @@ p {
 /*=================================================*/
 .course-catogery {
   padding: 8rem 1rem;
+  background-color: #fff8f8;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .course-catogery {
+    padding: 8rem 5rem;
+  }
 }
 
 .course-catogery__single-box {
@@ -1179,13 +1205,19 @@ p {
   z-index: 2;
   top: 50%;
   transform: translateY(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .course-catogery__content h3 {
   margin-bottom: 0.8rem;
   color: #fff;
-  font-size: 2.4rem;
+  font-size: 2rem;
   font-weight: 800;
+  max-width: 30rem;
+  line-height: 1.5;
+  text-transform: uppercase;
 }
 
 .course-catogery__content span {
@@ -1209,7 +1241,6 @@ p {
 
 .features {
   padding: 8rem 1rem;
-  background-color: #fff8f8;
 }
 
 .features__box {
@@ -1228,9 +1259,9 @@ p {
 }
 
 .features__single-features {
-  background-color: #fff;
   height: 90%;
   padding: 3rem 1rem;
+  background-color: #fff8f8;
 }
 
 .features__content-box {
@@ -1337,6 +1368,12 @@ p {
   text-align: center;
 }
 
+@media only screen and (max-width: 37.5em) {
+  .funfacts__item {
+    width: 50%;
+  }
+}
+
 .funfacts__item h3 {
   margin-bottom: 0;
   color: #fe4a55;
@@ -1374,10 +1411,19 @@ p {
 
 .recognition__img {
   padding: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .recognition img {
-  width: 100%;
+  width: 70%;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .recognition img {
+    width: 80%;
+  }
 }
 
 .testimonial {
@@ -1427,8 +1473,9 @@ p {
   position: relative;
   overflow: hidden;
   margin-bottom: 10rem;
-  box-shadow: 1rem 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0.1rem 0rem 1rem rgba(0, 0, 0, 0.15);
   background-color: #fff;
+  max-height: 36vh;
 }
 
 .review::before {
@@ -1447,7 +1494,7 @@ p {
   font-size: 1.7rem;
   z-index: 1;
   position: relative;
-  font-weight: 700;
+  font-weight: 500;
   color: #7d7d7d;
 }
 
@@ -1623,6 +1670,12 @@ p {
   background-color: #fff;
 }
 
+.workshops__content {
+  margin-top: 2rem;
+  background: #f1f1f2;
+  height: 100%;
+}
+
 .workshops__content span {
   margin-bottom: 0.5rem;
 }
@@ -1630,6 +1683,10 @@ p {
 .workshops__content span i {
   margin-right: 1rem;
   transform: translateY(-0.1rem);
+}
+
+.workshops__content .expert__content {
+  background: transparent;
 }
 
 /*=================================================*/
@@ -1645,6 +1702,10 @@ p {
 
 .who-we-are .vision-mission__left-part p {
   margin-bottom: 0;
+}
+
+.features__icon i {
+  font-size: 3rem;
 }
 
 .ceo-message {
@@ -1668,26 +1729,26 @@ p {
 }
 
 .ceo-message__paragraph {
-  font-weight: 700;
-  font-size: 1.8rem;
+  font-weight: 500;
+  font-size: 1.6rem;
   margin-bottom: 3rem;
 }
 
 .ceo-message__wish {
-  font-weight: 700;
-  font-size: 1.8rem;
+  font-weight: 500;
+  font-size: 1.6rem;
   color: #606060;
 }
 
 .ceo-message__name {
   font-weight: 800;
   margin-top: 1rem;
-  font-size: 2.4rem;
+  font-size: 2.1rem;
 }
 
 .ceo-message__sub-title {
   color: #fe4a55;
-  font-size: 2rem;
+  font-size: 1.8rem;
   margin-top: 1rem;
   font-weight: 700;
 }
@@ -1707,29 +1768,50 @@ p {
   padding: 8rem 0;
 }
 
-.team__row {
+.team .expert__cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
   margin-top: 5rem;
-  padding: 0 2rem;
+  padding: 1rem 0rem;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .team .expert__cards {
+    padding: 1rem 3rem;
+  }
 }
 
 .team .expert__single-box {
   margin-bottom: 5rem;
-  height: 95%;
+  align-self: stretch;
+}
+
+.team .expert__single-box:not(:nth-child(3n)) {
+  padding-right: 1.5rem;
+}
+
+@media only screen and (max-width: 52.25em) {
+  .team .expert__single-box:not(:nth-child(2n)) {
+    padding-right: 1.5rem;
+  }
 }
 
 .team .expert__single-box-content {
-  padding: 2rem 0;
+  padding: 4rem 2rem;
   display: flex;
   flex-direction: column;
-  height: 95%;
+  margin: 0;
   background: #fff;
+  height: 100%;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
 
 @media only screen and (max-width: 52.25em) {
   .team .expert__single-box-content {
     flex-direction: column;
-    margin-bottom: 3rem;
+    padding: 5rem 0;
   }
 }
 
@@ -1741,6 +1823,10 @@ p {
   .team .expert__content-box {
     padding: 0;
   }
+}
+
+.team .expert__content-box .social-link {
+  margin-right: auto;
 }
 
 .team .expert__image {
@@ -1757,12 +1843,12 @@ p {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 2rem 2rem 1rem;
+  padding: 2rem 2rem 0rem;
 }
 
 @media only screen and (max-width: 52.25em) {
   .team .expert__content {
-    padding: 2rem 2rem 3rem;
+    padding: 2rem 2rem 0rem;
   }
 }
 
@@ -1774,6 +1860,17 @@ p {
 .team .expert__content p {
   text-align: left;
   margin-top: 1rem;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .team .expert__content p {
+    padding: 0rem 3rem;
+    text-align: center;
+  }
+}
+
+.team .expert__content h3 {
+  font-size: 2rem;
 }
 
 .team .expert__content .readMoreBtn {
@@ -2517,16 +2614,16 @@ p {
 }
 
 .form__input::-webkit-input-placeholder {
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .form__label {
   margin-top: 1rem;
   margin-left: 1rem;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   transform: translateY(0rem);
   transition: all 0.2s;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .form__input:placeholder-shown + .form__label {
@@ -2541,17 +2638,18 @@ p {
   width: 100%;
   padding: 0;
   outline: none;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   height: 9rem;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(254, 74, 85, 0.51);
   text-align: left;
-  font-weight: 700;
+  font-weight: 500;
   padding: 0.5rem;
 }
 
 .placement {
   padding: 8rem 0;
+  background-color: #f1f1f2;
 }
 
 .placement__cards {
@@ -2601,9 +2699,14 @@ p {
 
 .placement__single-card .card-img-top {
   width: 100%;
-  height: 25vh;
 }
 
 .placement .features__single-features {
   padding: 0rem !important;
+  background-color: #fff8f8;
+}
+
+.placement-page__jobs .features__single-features {
+  padding: 0rem !important;
+  background-color: #fff8f8;
 }

@@ -22,7 +22,7 @@ p {
   color: #606060;
   margin-bottom: 1.5rem;
   line-height: 1.6;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 }
 
 .heading {
@@ -65,7 +65,7 @@ p {
     max-width: 45rem;
     color: #d2d2d2;
     font-weight: 600;
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     @media only screen and (max-width: $bp-992) {
       text-align: center;
     }
@@ -74,15 +74,15 @@ p {
   &--secondary {
     max-width: 70.5rem;
     margin-top: 1.5rem;
-    font-size: 1.7rem;
+    font-size: 1.6rem;
   }
   &--teritiary {
     margin-top: 1.5rem;
-    font-size: 1.7rem;
+    font-size: 1.6rem;
   }
 
   &--footer {
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     color: #fff;
     margin-bottom: 2rem;
   }

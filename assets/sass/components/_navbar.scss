@@ -3,7 +3,7 @@
 /*=================================================*/  
 
 .navigation {
-  padding: 2rem 1rem;
+  padding: 1.5rem 1rem;
   width: 100%;
   background-color: #fff !important;
 
@@ -22,18 +22,20 @@
 
   &__content {
     display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
+    align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
 
     @media only screen and (max-width: $bp-992) {
       overflow: hidden;
       flex-direction: column;
       position: relative;
+      align-items: flex-start;
+    justify-content: flex-start;
     }
   }
   &__logo {
-    width: 8rem;
+    width: 12rem;
     cursor: pointer;
     z-index: 1;
     @media only screen and (max-width: $bp-992) {
@@ -46,12 +48,14 @@
     list-style: none;
     color: #000;
     align-items: center;
-    padding-top: 1rem;
+    justify-content: center;
+    padding: 1rem 0;
     margin-left: auto;
+    margin-top: 1rem;
 
     @media only screen and (max-width: $bp-992) {
       display: none;
-      margin-top: 3rem;
+      // margin-top: 3rem;
       order: 2;
       box-shadow: 0 5px 5px rgba($color: #000000, $alpha: 0.1);
     }
@@ -94,7 +98,7 @@
     color: #221638;
     font-size: 1.5rem;
     font-weight: 700;
-    padding: 2.5rem 0;
+    // padding: 2.5rem 0;
     margin-left: 1.3rem;
     margin-right: 1.3rem;
     @media only screen and (max-width: $bp-992) {
@@ -113,7 +117,7 @@
     display: none;
     z-index: 20;
     position: absolute;
-    top: 0;
+    top: 2rem;
     right: 2rem;
     margin-top: 1rem;
 

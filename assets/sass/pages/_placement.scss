@@ -1,5 +1,7 @@
 .placement {
   padding: 8rem 0;
+  background-color: #f1f1f2 ;
+
 
   &__cards {
     display: grid;
@@ -40,12 +42,22 @@
 
       &-img-top {
         width: 100%;
-        height: 25vh;
+        // height: 25vh;
       }
     }
   }
 
   & .features__single-features {
     padding: 0rem !important;
+    background-color: #fff8f8;
+  }
+}
+
+.placement-page {
+  &__jobs {
+    & .features__single-features {
+      padding: 0rem !important;
+      background-color: #fff8f8 ;
+    }
   }
 }
