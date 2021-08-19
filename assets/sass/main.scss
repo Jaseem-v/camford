@@ -1,3 +1,7 @@
+/*=================================================*/
+/*                  Main  start                    */
+/*=================================================*/
+
 @import 'components/base';
 @import 'components/typography';
 
@@ -12,6 +16,10 @@
 @import 'pages/single-course';
 @import 'pages/corporate-training';
 @import 'pages/contact';
-@import 'pages/form';
+@import 'components/form';
+
 @import 'pages/placement';
 
+/*=================================================*/
+/*                      Main End                   */
+/*=================================================*/

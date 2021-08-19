@@ -1,3 +1,7 @@
+/*=================================================*/
+/*             Single-Course  start                 */
+/*=================================================*/
+
 //////////////////////////////////////
 // PAGE BANNER IMAGE
 
@@ -53,7 +57,7 @@
   }
 
   &__nav-link {
-    color:$color-primary;
+    color: $color-primary;
     font-size: 1.5rem;
     padding: 1.4rem 1.2rem;
     font-size: 1.8rem;
@@ -104,24 +108,21 @@
       &__single-box {
         margin-top: 2rem;
 
-        &-content{
+        &-content {
           margin-bottom: 4rem;
         }
       }
 
-      &__content-box{
+      &__content-box {
         margin-bottom: 0;
-        padding-top:0 ;
-
+        padding-top: 0;
       }
 
-      &__content{
+      &__content {
         padding: 1rem 2rem;
       }
     }
   }
-
- 
 
   &__details {
     margin-left: 2rem;
@@ -146,7 +147,7 @@
       right: 0;
       bottom: 0;
       z-index: 1;
-      background-color:$color-primary;
+      background-color: $color-primary;
       opacity: 0.25;
     }
 
@@ -170,7 +171,7 @@
         color: #fff;
         border-radius: 0.5rem;
         padding: 0.4rem 2rem;
-        background-color:$color-primary;
+        background-color: $color-primary;
         font-size: 1.7rem;
         font-weight: 700;
         position: relative;
@@ -212,7 +213,7 @@
 
       span {
         font-weight: 800;
-        color:$color-primary;
+        color: $color-primary;
         // transform: translateY(0.5rem);
         position: relative;
         padding-left: 2.8rem;
@@ -289,7 +290,7 @@
   }
 
   &__name {
-    color:$color-primary;
+    color: $color-primary;
     font-weight: 700;
     margin-left: 1rem;
     font-size: 1.8rem;
@@ -303,7 +304,7 @@
 
   &__comment {
     font-weight: 700;
-    color:$color-primary;
+    color: $color-primary;
     font-size: 1.6rem;
   }
 }
@@ -325,3 +326,7 @@
     }
   }
 }
+
+/*=================================================*/
+/*             Single-Course  End                 */
+/*=================================================*/
