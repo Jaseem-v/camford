@@ -1469,7 +1469,7 @@ p {
 
 @media only screen and (max-width: 37.5em) {
   .testimonial__swiper {
-    padding: 2rem 4rem;
+    padding: 2rem;
   }
 }
 

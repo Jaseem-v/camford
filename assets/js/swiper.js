@@ -35,7 +35,7 @@ var swiper = new Swiper(".expert__swiper", {
 
 var swiper2 = new Swiper(".testimonial__swiper", {
     slidesPerView: 1,
-    spaceBetween: 60,
+    spaceBetween: 50,
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
