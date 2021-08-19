@@ -2682,7 +2682,6 @@ p {
   display: block;
   outline: none;
   width: 100%;
-  padding: 0;
   outline: none;
   font-size: 1.6rem;
   height: 9rem;
@@ -2690,7 +2689,7 @@ p {
   border: 1px solid rgba(254, 74, 85, 0.51);
   text-align: left;
   font-weight: 500;
-  padding: 0.5rem;
+  padding: 1rem 1rem;
 }
 
 .placement {

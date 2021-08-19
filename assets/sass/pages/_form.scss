@@ -62,7 +62,6 @@ $color-secondary-dark: #ff7730;
     display: block;
     outline: none;
     width: 100%;
-    padding: 0;
     outline: none;
     font-size: 1.6rem;
     height: 9rem;
@@ -70,6 +69,6 @@ $color-secondary-dark: #ff7730;
     border: 1px solid rgba($color: #fe4a55, $alpha: 0.51);
     text-align: left;
     font-weight: 500;
-    padding: 0.5rem;
+    padding: 1rem 1rem;
   }
 }
