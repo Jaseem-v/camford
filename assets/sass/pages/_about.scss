@@ -204,5 +204,9 @@
     img {
       width: 100%;
     }
+
+    @media only screen and (max-width: $bp-small) {
+      padding: 0rem 0rem 5rem;
+    }
   }
 }
