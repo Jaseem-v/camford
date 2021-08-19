@@ -1987,6 +1987,38 @@ p {
   padding: 8rem 0;
 }
 
+.training-programmes__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .training-programmes__row {
+    padding: 2rem 3rem;
+  }
+}
+
+.training-programmes__single-cards {
+  margin-bottom: 5rem;
+  align-self: stretch;
+  margin-left: 0;
+}
+
+.training-programmes__single-cards:not(:nth-child(3n)) {
+  padding-right: 1.5rem;
+}
+
+@media only screen and (max-width: 52.25em) {
+  .training-programmes__single-cards:not(:nth-child(2n)) {
+    padding-right: 1.5rem;
+  }
+}
+
+.training-programmes .card {
+  height: auto;
+}
+
 .training-programmes .card__image {
   display: flex;
   justify-content: center;
@@ -2001,6 +2033,14 @@ p {
 .training-programmes .card__content {
   border-top: none !important;
   text-align: center;
+}
+
+.training-programmes .card__single-box {
+  padding-top: 3rem !important;
+  margin-top: 0rem !important;
+  height: 90% !important;
+  margin-left: 0 !important;
+  box-shadow: 0.1rem -0.1rem 1rem rgba(0, 0, 0, 0.15);
 }
 
 .page-banner-image {
