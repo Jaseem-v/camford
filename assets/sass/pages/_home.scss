@@ -303,11 +303,11 @@
     &::before {
       content: '';
       position: absolute;
-      top: 51%;
-      left: 49%;
+      top: 50%;
+      left: 50%;
       background: $color-secondary;
-      height: 0.8rem;
-      width: 0.8rem;
+      height: 0.9rem;
+      width: 0.9rem;
       transform: translate(-50%, -50%);
       border-radius: 50%;
     }
@@ -519,11 +519,11 @@
     &::before {
       content: '';
       position: absolute;
-      top: 51%;
-      left: 49%;
+      top: 50%;
+      left: 50%;
       background: $color-secondary;
-      height: 0.8rem;
-      width: 0.8rem;
+      height: 0.9rem;
+      width:.9rem;
       transform: translate(-50%, -50%);
       border-radius: 50%;
     }
