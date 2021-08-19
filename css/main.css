@@ -2040,7 +2040,7 @@ p {
   margin-top: 0rem !important;
   height: 90% !important;
   margin-left: 0 !important;
-  box-shadow: 0.1rem -0.1rem 1rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0.1rem -0.1rem 1rem rgba(0, 0, 0, 0.15), 0.1rem 0.1rem 1rem rgba(0, 0, 0, 0.15) !important;
 }
 
 .page-banner-image {
