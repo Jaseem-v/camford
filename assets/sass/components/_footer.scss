@@ -31,13 +31,6 @@
     align-items: flex-start;
     // justify-content: center;
 
-    &:nth-child(3),
-    &:nth-child(4) {
-      align-items: center;
-      @media only screen and (max-width: $bp-small) {
-        align-items: flex-start;
-      }
-    }
 
     @media only screen and (max-width: $bp-small) {
       align-items: flex-start;
@@ -67,7 +60,7 @@
 
   &__nav-list {
     list-style: none;
-    padding-left: 0;
+    padding-left: .5rem;
   }
 
   &__nav-li {

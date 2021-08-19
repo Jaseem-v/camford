@@ -1060,16 +1060,6 @@ p {
   align-items: flex-start;
 }
 
-.footer__items:nth-child(3), .footer__items:nth-child(4) {
-  align-items: center;
-}
-
-@media only screen and (max-width: 52.25em) {
-  .footer__items:nth-child(3), .footer__items:nth-child(4) {
-    align-items: flex-start;
-  }
-}
-
 @media only screen and (max-width: 52.25em) {
   .footer__items {
     align-items: flex-start;
@@ -1099,7 +1089,7 @@ p {
 
 .footer__nav-list {
   list-style: none;
-  padding-left: 0;
+  padding-left: .5rem;
 }
 
 .footer__nav-li {
