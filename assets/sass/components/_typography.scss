@@ -14,8 +14,22 @@ h3,
 h4,
 h5,
 h6 {
-  color: #221638;
+  color: $color-primary;
   font-family: Nunito, sans-serif;
+}
+.h3,
+.h4,
+.h5,
+.h6,
+h3,
+h4,
+h5,
+h6 {
+  color: $color-teritiary;
+}
+
+i{
+  color: $color-secondary ;
 }
 
 p {
@@ -40,19 +54,19 @@ p {
     margin-bottom: 0;
     font-size: 3.6rem;
     font-weight: 800;
-    color: #221638;
+    color: $color-primary;
     // max-width: 61.5rem;
   }
   &--teritiary {
     font-size: 2.5rem;
     font-weight: 700;
-    color: #221638;
+    color: $color-primary;
     margin-bottom: 1.5rem;
   }
 
   &--side {
     font-weight: 800;
-    color: #221638;
+    color: $color-primary;
     font-size: 2.8rem;
     display: inline-block;
     position: relative;

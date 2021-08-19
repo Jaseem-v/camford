@@ -12,7 +12,7 @@
   overflow: hidden;
   z-index: 1;
   color: #fff;
-  background-color: #fe4a55;
+  background-color: $color-secondary;
   transition: 0.5s;
   border-radius: 0.5rem;
   font-weight: 700;
@@ -37,7 +37,7 @@
   }
 
   &:hover {
-    color: #221638;
+    color: $color-primary;
     & span {
       width: 225%;
       height: 562.5px;
@@ -46,7 +46,7 @@
 
   &--cta {
     &:hover {
-      color: #221638;
+      color: $color-primary;
       & span {
         background-color: #fff;
       }
@@ -56,7 +56,7 @@
   &--contact {
     text-transform: uppercase;
     margin-top: 0;
-    padding: 1rem 2rem 1rem 2rem;
+    padding: 1.3rem 2rem 1rem 2rem;
 
     @media only screen and (max-width: $bp-992) {
       display: none;
@@ -67,7 +67,7 @@
     &:hover {
       color: #fff;
       & span {
-        background-color: #221638;
+        background-color: $color-primary;
       }
     }
   }
@@ -76,7 +76,7 @@
     &:hover {
       color: #fff;
       & span {
-        background-color: #221638;
+        background-color: $color-primary;
       }
     }
   }
@@ -84,13 +84,13 @@
 
 .line-btn {
   display: inline-block;
-  color: #fe4a55;
-  font-size: 1.5rem;
+  color: $color-secondary;
+  font-size: 1.7rem;
   font-weight: 700;
   margin-top: 1rem;
 
   &:hover {
-    color: #221638;
+    color: $color-primary;
   }
 }
 
@@ -111,7 +111,7 @@
   -webkit-transform: translateY(-50%) translateX(-50%);
   -moz-transform: translateY(-50%) translateX(-50%);
   transform: translateY(-50%) translateX(-50%);
-  background-color: #fe4a55;
+  background-color: $color-secondary;
   border-radius: 50%;
   color: #fff;
   @media only screen and (max-width: $bp-xsmall) {
@@ -130,7 +130,7 @@
     -moz-transition: 0.5s;
     transition: 0.5s;
     border-radius: 50%;
-    border: 1px solid #fe4a55;
+    border: 1px solid $color-secondary;
   }
 
   &::before {
@@ -143,14 +143,15 @@
 
   &:hover {
     color: #fff;
-    background-color: #221638;
+    background-color: $color-primary;
 
     &::after,
     &::before {
-      border: 1px solid #221638;
+      border: 1px solid $color-primary;
     }
   }
   i {
+    color: #fff;
     transform: translate(0.5rem);
   }
 }
@@ -198,7 +199,7 @@
 
     & .nav-item {
       margin-right: 2rem;
-      background-color: #221638;
+      background-color: $color-primary;
 
       & .nav-link {
         // position: relative;
@@ -211,13 +212,21 @@
         &:hover {
           background-color: #fff;
           border: none;
-          color: #fe4a55;
+          color: $color-secondary;
+
+          i {
+            color: $color-secondary;
+          }
+        }
+
+        i {
+          color: #fff;
         }
       }
     }
 
     .active {
-      background-color: #fe4a55;
+      background-color: $color-secondary;
       border: none;
       color: #fff;
     }
@@ -245,32 +254,35 @@
   margin-bottom: 0;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  // justify-content: ;
   width: 50%;
+
 
   li {
     a {
       width: 3rem;
       height: 3rem;
       text-align: center;
-      background-color: #e1e1e1;
       font-size: 1.8rem;
-      color: #221638;
       border-radius: 0.6rem;
       display: flex;
       justify-content: center;
       align-items: center;
       padding: 0.5rem;
       transition: 0.2s;
+      color: #fff;
+      background-color: $color-teritiary;
+      margin-right: .8rem;
 
       i {
         transform: translateY(-0.4rem);
+        color: #fff;
       }
     }
     &:hover {
       a {
-        background-color: #fe4a55;
         color: #fff;
+        background-color: $color-secondary
       }
     }
   }
@@ -295,12 +307,12 @@
         display: inline-block;
         margin-right: 2rem;
         position: relative;
-        color: #221638;
+        color: $color-primary;
         font-size: 1.6rem;
         font-weight: 600;
 
         a {
-          color: #fe4a55;
+          color: $color-secondary;
         }
 
         &::before {
@@ -366,7 +378,7 @@
   }
 
   &__download-brochure {
-    color: #fe4a55;
+    color: $color-secondary;
     font-weight: 600;
     font-size: 1.8rem;
     margin-bottom: 1rem;
@@ -382,7 +394,7 @@
     font-weight: 700;
     text-transform: uppercase;
     &:hover {
-      color: #fe4a55;
+      color: $color-primary;
     }
   }
 
@@ -402,7 +414,7 @@
       position: relative;
 
       i {
-        color: #fe4a55;
+        color: $color-secondary;
         position: absolute;
         left: 0;
         top: 0.65rem;
@@ -436,7 +448,7 @@
     &.current,
     &:hover {
       color: #fff;
-      background-color: #fe4a55;
+      background-color: $color-secondary;
     }
   }
 }

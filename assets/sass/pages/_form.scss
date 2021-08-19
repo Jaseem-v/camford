@@ -27,7 +27,7 @@ $color-secondary-dark: #ff7730;
     font-size: 1.8rem;
     height: 4rem;
     box-shadow: 0 1.5rem 4rem rgba(#000, 0.1);
-    border: 1px solid rgba($color: #fe4a55, $alpha: 0.51);
+    border: 1px solid rgba($color: $color-secondary, $alpha: 0.51);
 
     &:focus {
       border-bottom: 0.3rem solid $color-primary-dark;
@@ -66,7 +66,7 @@ $color-secondary-dark: #ff7730;
     font-size: 1.6rem;
     height: 9rem;
     box-shadow: 0 1.5rem 4rem rgba(#000, 0.1);
-    border: 1px solid rgba($color: #fe4a55, $alpha: 0.51);
+    border: 1px solid rgba($color: $color-secondary, $alpha: 0.51);
     text-align: left;
     font-weight: 500;
     padding: 1rem 1rem;

@@ -31,7 +31,7 @@
 
     i {
       position: absolute;
-      color: #fe4a55;
+      color: $color-secondary;
       font-size: 1.5rem;
       top: 0;
       left: 0;
@@ -111,14 +111,14 @@
         left: 50%;
         bottom: 0%;
         height: 4px;
-        background: #fe4a55;
+        background: $color-secondary;
         width: 10rem;
         border-radius: 5rem;
         transform: translateX(-50%);
       }
     }
     &-iframe {
-      // border: 1px solid  #fe4a55;
+      // border: 1px solid  $color-secondary;
       width: 95%;
       box-shadow: 0 1rem 3rem rgba($color: #000000, $alpha: 0.2);
 

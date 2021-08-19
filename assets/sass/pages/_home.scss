@@ -29,7 +29,7 @@
       top: 0;
       bottom: 0;
       border-radius: 0.5rem;
-      background-color: #221638;
+      background-color:$color-primary;
       opacity: 0.65;
       z-index: 1;
     }
@@ -187,7 +187,7 @@
       top: 0;
       bottom: 0;
       border-radius: 5px;
-      background-color: #221638;
+      background-color:$color-primary;
       opacity: 0.3;
       z-index: 1;
     }
@@ -223,14 +223,14 @@
 
     h3 {
       margin-bottom: 0;
-      color: #fe4a55;
+      color: $color-secondary;
       font-size: 4.4rem;
       font-weight: 800;
     }
 
     p {
       text-transform: uppercase;
-      color: #221638;
+      color:$color-primary;
       line-height: 1;
       margin-top: 1rem;
       font-weight: 700;
@@ -276,7 +276,6 @@
 .testimonial {
   padding: 8rem 0;
   background-color: #fff8f8;
-
   &__swiper {
     @media only screen and (max-width: $bp-xsmall) {
       padding: 2rem 4rem;
@@ -299,14 +298,14 @@
 
   .swiper-pagination-bullet-active {
     opacity: 1;
-    border: 1px solid#fe4a55;
+    border: 1px solid$color-secondary;
 
     &::before {
       content: '';
       position: absolute;
       top: 51%;
       left: 49%;
-      background: #fe4a55;
+      background: $color-secondary;
       height: 0.8rem;
       width: 0.8rem;
       transform: translate(-50%, -50%);
@@ -315,15 +314,22 @@
   }
 }
 .review {
-  margin-bottom: 3rem;
+  margin-top: 3rem;
   padding: 3rem;
   position: relative;
   overflow: hidden;
-  // border: 1px solid #221638;
+  // border: 1px solid$color-primary;
   margin-bottom: 10rem;
   box-shadow: 0.1rem 0rem 1rem rgba(0, 0, 0, 0.15);
   background-color: #fff;
-  max-height: 36vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  align-self: stretch;
+  flex-direction: column;
+  flex: initial;
+  width: 100%;
+  height: 100%;
 
   &::before {
     content: '\201d';
@@ -347,7 +353,7 @@
 
   &__user {
     display: flex;
-    padding: 2rem;
+    padding: 2rem 1rem 0;
     align-items: center;
   }
 
@@ -372,7 +378,7 @@
     }
 
     &-name {
-      color: #fe4a55;
+      color: $color-secondary;
       font-size: 1.7rem;
       font-weight: 800;
       margin: 1rem 0;
@@ -460,15 +466,19 @@
     align-self: stretch;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     padding: 2rem 0 0;
     @media only screen and (max-width: $bp-xsmall) {
       padding: 0;
     }
   }
   &__content {
-    padding: 2.5rem 3rem;
+    display: flex;
+    justify-content: space-evenly;
+    height: 90%;
+    flex-direction: column;
     background-color: #fff;
+    padding: 2.5rem 3rem;
 
     h3 {
       margin-bottom: 0;
@@ -476,12 +486,12 @@
       font-weight: 800;
 
       a {
-        color: #221638;
+        color:$color-primary;
       }
     }
     .sub-title {
       display: block;
-      color: #fe4a55;
+      color: $color-secondary;
       margin-top: 7px;
       font-size: 15px;
       font-weight: 600;
@@ -504,14 +514,14 @@
 
   .swiper-pagination-bullet-active {
     opacity: 1;
-    border: 1px solid#fe4a55;
+    border: 1px solid$color-secondary;
 
     &::before {
       content: '';
       position: absolute;
       top: 51%;
       left: 49%;
-      background: #fe4a55;
+      background: $color-secondary;
       height: 0.8rem;
       width: 0.8rem;
       transform: translate(-50%, -50%);
@@ -530,20 +540,52 @@
 /////////////////////////////////////
 // WORKSHOP
 
-.workshops__content {
-  margin-top: 2rem;
-  background: #f1f1f2;
-  height: 100%;
-  span {
-    margin-bottom: 0.5rem;
-    i {
-      margin-right: 1rem;
-      transform: translateY(-0.1rem);
-    }
+.workshops {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+
+  @media only screen and (max-width: $bp-992) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  @media only screen and (max-width: $bp-xsmall) {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 0.5rem;
   }
 
-  & .expert__content{
-    background: transparent;
+  &__content {
+    margin-top: 2rem;
+    background: #f1f1f2;
+    padding: 3rem;
+  }
+
+  &__title {
+    font-weight: 700;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+    font-size: 1.6rem;
+  }
+
+  &__description {
+    margin-top: 1rem;
+  }
+
+  &__date {
+    color: $color-secondary;
+    font-size: 1.5rem;
+    padding: 0rem 0;
+    padding-left: 3rem;
+    position: relative;
+
+    i {
+      transform: translateY(-0.5rem);
+      position: absolute;
+      top: 0.2rem;
+      left: 0.5rem;
+      font-size: 1.5rem;
+    }
   }
 }
 

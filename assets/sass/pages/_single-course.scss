@@ -32,7 +32,7 @@
     }
     .slider {
       height: 2px !important;
-      background-color: #fe4a55 !important;
+      background-color: $color-secondary !important;
     }
   }
 
@@ -46,14 +46,14 @@
     }
 
     .active {
-      background-color: #fe4a55;
+      background-color: $color-secondary;
       border: none;
       color: #fff;
     }
   }
 
   &__nav-link {
-    color: #221638;
+    color:$color-primary;
     font-size: 1.5rem;
     padding: 1.4rem 1.2rem;
     font-size: 1.8rem;
@@ -61,7 +61,7 @@
     border: none;
     margin-bottom: 1rem;
     &:hover {
-      background-color: #fe4a55;
+      background-color: $color-secondary;
       color: #fff;
     }
   }
@@ -90,7 +90,7 @@
       }
 
       i {
-        color: #fe4a55;
+        color: $color-secondary;
         transform: translateY(-50%);
         position: absolute;
         top: 2.1rem;
@@ -146,7 +146,7 @@
       right: 0;
       bottom: 0;
       z-index: 1;
-      background-color: #221638;
+      background-color:$color-primary;
       opacity: 0.25;
     }
 
@@ -170,7 +170,7 @@
         color: #fff;
         border-radius: 0.5rem;
         padding: 0.4rem 2rem;
-        background-color: #221638;
+        background-color:$color-primary;
         font-size: 1.7rem;
         font-weight: 700;
         position: relative;
@@ -212,14 +212,14 @@
 
       span {
         font-weight: 800;
-        color: #221638;
+        color:$color-primary;
         // transform: translateY(0.5rem);
         position: relative;
         padding-left: 2.8rem;
       }
 
       i {
-        color: #fe4a55;
+        color: $color-secondary;
         font-size: 2rem;
         margin-right: 1.2rem;
         position: absolute;
@@ -240,7 +240,7 @@
     padding-left: 4rem;
     position: relative;
     i {
-      color: #fe4a55;
+      color: $color-secondary;
       transform: translateY(-50%);
       position: absolute;
       top: 1.2rem;
@@ -289,7 +289,7 @@
   }
 
   &__name {
-    color: #221638;
+    color:$color-primary;
     font-weight: 700;
     margin-left: 1rem;
     font-size: 1.8rem;
@@ -303,7 +303,7 @@
 
   &__comment {
     font-weight: 700;
-    color: #221638;
+    color:$color-primary;
     font-size: 1.6rem;
   }
 }

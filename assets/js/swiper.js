@@ -59,7 +59,7 @@ var swiper2 = new Swiper(".testimonial__swiper", {
         },
     },
     autoplay: {
-        delay: 2500,
+        delay: 3500,
         disableOnInteraction: false,
     },
     loop: true,
