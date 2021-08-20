@@ -130,6 +130,8 @@
       margin: 0;
       @media only screen and (max-width: $bp-xsmall) {
         font-size: 1.6rem;
+        max-width: 27rem;
+        line-height: 2;
       }
     }
   }
