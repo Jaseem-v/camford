@@ -28,6 +28,7 @@ var swiper = new Swiper(".expert__swiper", {
         disableOnInteraction: false,
     },
     loop: true,
+    grabCursor: true,
 });
 
 /////////////////////////////////////
