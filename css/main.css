@@ -1590,6 +1590,12 @@ p {
   color: #7d7d7d;
 }
 
+@media only screen and (max-width: 37.5em) {
+  .review__text {
+    font-size: 1.8rem;
+  }
+}
+
 .review__user {
   display: flex;
   padding: 2rem 1rem 0;

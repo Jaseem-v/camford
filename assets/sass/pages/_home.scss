@@ -352,6 +352,10 @@
     position: relative;
     font-weight: 500;
     color: #7d7d7d;
+
+    @media only screen and (max-width: $bp-xsmall) {
+      font-size: 1.8rem;
+    }
   }
 
   &__user {
