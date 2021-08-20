@@ -2004,9 +2004,21 @@ p {
   padding-right: 1.5rem;
 }
 
+@media only screen and (max-width: 37.5em) {
+  .team .expert__single-box:not(:nth-child(3n)) {
+    padding-right: 0;
+  }
+}
+
 @media only screen and (max-width: 52.25em) {
   .team .expert__single-box:not(:nth-child(2n)) {
     padding-right: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .team .expert__single-box:not(:nth-child(2n)) {
+    padding-right: 0;
   }
 }
 

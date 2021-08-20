@@ -92,10 +92,18 @@
 
       &:not(:nth-child(3n)) {
         padding-right: 1.5rem;
+
+        @media only screen and (max-width: $bp-xsmall) {
+          padding-right: 0;
+        }
+
       }
       &:not(:nth-child(2n)) {
         @media only screen and (max-width: $bp-small) {
           padding-right: 1.5rem;
+        }
+        @media only screen and (max-width: $bp-xsmall) {
+          padding-right: 0;
         }
       }
 
