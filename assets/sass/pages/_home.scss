@@ -179,11 +179,13 @@
   }
   &__image {
     position: relative;
+    height: 100%;
     @media only screen and (max-width: $bp-xsmall) {
       display: none;
     }
     img {
       width: 100%;
+      height: 100%;
     }
     &::before {
       content: '';

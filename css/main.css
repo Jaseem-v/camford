@@ -118,13 +118,13 @@ i {
 p {
   color: #606060;
   margin-bottom: 1.5rem;
-  line-height: 1.6;
+  line-height: 1.8;
   font-size: 1.6rem;
 }
 
 @media only screen and (max-width: 37.5em) {
   p {
-    font-size: 1.8rem;
+    font-size: 1.9rem;
   }
 }
 
@@ -192,7 +192,7 @@ p {
 
 @media only screen and (max-width: 37.5em) {
   .paragraph--primary {
-    font-size: 1.8rem;
+    font-size: 1.9rem;
   }
 }
 
@@ -204,7 +204,7 @@ p {
 
 @media only screen and (max-width: 37.5em) {
   .paragraph--secondary {
-    font-size: 1.8rem;
+    font-size: 1.9rem;
   }
 }
 
@@ -215,7 +215,7 @@ p {
 
 @media only screen and (max-width: 37.5em) {
   .paragraph--teritiary {
-    font-size: 1.8rem;
+    font-size: 1.9rem;
   }
 }
 
@@ -1156,7 +1156,7 @@ p {
 
 @media only screen and (max-width: 37.5em) {
   .footer__nav-items {
-    font-size: 1.6rem;
+    font-size: 1.7rem;
   }
 }
 
@@ -1175,7 +1175,7 @@ p {
 
 @media only screen and (max-width: 37.5em) {
   .footer__address {
-    font-size: 1.6rem;
+    font-size: 1.7rem;
   }
 }
 
@@ -1218,21 +1218,10 @@ p {
   margin: 0;
 }
 
-.footer__copyright a {
-  color: #fe4a55;
-  font-size: 1.4rem;
-}
-
 @media only screen and (max-width: 37.5em) {
-  .footer__copyright a {
-    margin-left: 0;
-    text-align: center;
-    margin-top: 1rem;
+  .footer__copyright h2 {
+    font-size: 1.6rem;
   }
-}
-
-.footer__copyright a span {
-  color: #fff;
 }
 
 /*=================================================*/
@@ -1412,6 +1401,7 @@ p {
 
 .vision-mission__image {
   position: relative;
+  height: 100%;
 }
 
 @media only screen and (max-width: 37.5em) {
@@ -1422,6 +1412,7 @@ p {
 
 .vision-mission__image img {
   width: 100%;
+  height: 100%;
 }
 
 .vision-mission__image::before {
@@ -1891,14 +1882,6 @@ p {
 /*=================================================*/
 /*             About start                         */
 /*=================================================*/
-.who-we-are .vision-mission__image {
-  height: 100%;
-}
-
-.who-we-are .vision-mission__image img {
-  height: 100%;
-}
-
 .who-we-are .vision-mission__left-part p {
   margin-bottom: 0;
 }
