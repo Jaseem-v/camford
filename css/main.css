@@ -1259,6 +1259,7 @@ p {
   z-index: 0;
   overflow: hidden;
   text-align: center;
+  height: 26.56vh;
 }
 
 .course-catogery__single-box::before {
@@ -1270,7 +1271,7 @@ p {
   bottom: 0;
   border-radius: 0.5rem;
   background-color: #221638;
-  opacity: 0.65;
+  opacity: 0.75;
   z-index: 1;
 }
 
@@ -1282,6 +1283,7 @@ p {
   width: 100%;
   border-radius: 0.5rem;
   transition: 0.5s;
+  height: 100%;
 }
 
 .course-catogery__content {
@@ -1305,6 +1307,12 @@ p {
   max-width: 30rem;
   line-height: 1.5;
   text-transform: uppercase;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .course-catogery__content h3 {
+    font-size: 2.8rem;
+  }
 }
 
 .course-catogery__content span {
