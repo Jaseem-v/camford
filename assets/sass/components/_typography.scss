@@ -95,7 +95,6 @@ p {
 
     @media only screen and (max-width: $bp-xsmall) {
       font-size: 1.8rem;
-
     }
   }
 
@@ -103,10 +102,18 @@ p {
     max-width: 70.5rem;
     margin-top: 1.5rem;
     font-size: 1.6rem;
+
+    @media only screen and (max-width: $bp-xsmall) {
+      font-size: 1.8rem;
+    }
   }
   &--teritiary {
     margin-top: 1.5rem;
     font-size: 1.6rem;
+
+    @media only screen and (max-width: $bp-xsmall) {
+      font-size: 1.8rem;
+    }
   }
 
   &--footer {

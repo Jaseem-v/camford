@@ -194,9 +194,21 @@ p {
   font-size: 1.6rem;
 }
 
+@media only screen and (max-width: 37.5em) {
+  .paragraph--secondary {
+    font-size: 1.8rem;
+  }
+}
+
 .paragraph--teritiary {
   margin-top: 1.5rem;
   font-size: 1.6rem;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .paragraph--teritiary {
+    font-size: 1.8rem;
+  }
 }
 
 .paragraph--footer {
