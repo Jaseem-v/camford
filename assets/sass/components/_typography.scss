@@ -17,6 +17,7 @@ h6 {
   color: $color-primary;
   font-family: Nunito, sans-serif;
 }
+
 .h3,
 .h4,
 .h5,
@@ -26,6 +27,7 @@ h4,
 h5,
 h6 {
   color: $color-teritiary;
+  letter-spacing: 1px;
 }
 
 i {
@@ -37,7 +39,7 @@ p {
   margin-bottom: 1.5rem;
   line-height: 1.8;
   font-size: 1.6rem;
-  word-spacing: 2px;
+  word-spacing: 1px;
 
   @media only screen and (max-width: $bp-small) {
     font-size: $responsive-font;

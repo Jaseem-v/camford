@@ -109,6 +109,7 @@ h4,
 h5,
 h6 {
   color: #024773;
+  letter-spacing: 1px;
 }
 
 i {
@@ -120,7 +121,7 @@ p {
   margin-bottom: 1.5rem;
   line-height: 1.8;
   font-size: 1.6rem;
-  word-spacing: 2px;
+  word-spacing: 1px;
 }
 
 @media only screen and (max-width: 52.25em) {
@@ -1172,6 +1173,7 @@ p {
   font-size: 1.4rem;
   padding-left: 2.5rem;
   position: relative;
+  margin-bottom: 0;
 }
 
 @media only screen and (max-width: 61.875em) {
@@ -1572,13 +1574,13 @@ p {
 
 @media only screen and (max-width: 37.5em) {
   .review {
-    height: 34vh;
+    height: 36vh;
   }
 }
 
 @media only screen and (max-width: 23.75em) {
   .review {
-    height: 30vh;
+    height: 33.5vh;
   }
 }
 
@@ -2947,7 +2949,7 @@ p {
 /*=================================================*/
 .placement {
   padding: 8rem 0;
-  background-color: #f1f1f2;
+  background: #fffff4;
 }
 
 .placement__cards {
@@ -2991,7 +2993,6 @@ p {
 .placement__single-card .card-body {
   text-align: center;
   padding: 1.5rem 0 1rem;
-  background: #f1f1f2;
 }
 
 .placement__single-card .card-title {
@@ -3002,6 +3003,7 @@ p {
 .placement__single-card .card h4 {
   font-size: 1.2rem;
   color: #202020;
+  font-weight: 600;
 }
 
 .placement__single-card .card-img-top {
@@ -3016,6 +3018,10 @@ p {
 .placement-page__jobs .features__single-features {
   padding: 0rem !important;
   background-color: #fff8f8;
+}
+
+.placement__instant-courses {
+  background: #faf4f4;
 }
 
 /*=================================================*/
