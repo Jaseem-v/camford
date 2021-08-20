@@ -1755,7 +1755,7 @@ p {
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
-  background-color: #fff8f8;
+  background-color: #fff;
   padding: 2.5rem 3rem;
   height: 100%;
 }
