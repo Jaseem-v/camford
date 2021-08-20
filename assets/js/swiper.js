@@ -23,10 +23,10 @@ var swiper = new Swiper(".expert__swiper", {
             spaceBetween: 40,
         },
     },
-    // autoplay: {
-    //     delay: 2500,
-    //     disableOnInteraction: false,
-    // },
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
     loop: true,
 });
 
