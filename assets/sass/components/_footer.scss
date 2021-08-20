@@ -55,6 +55,9 @@
     font-size: 1.8rem;
     font-weight: 800;
     text-align: left;
+    @media only screen and (max-width: $bp-xsmall) {
+      font-size: 2.2rem;
+    }
   }
 
   &__nav-list {
@@ -78,7 +81,7 @@
     }
 
     @media only screen and (max-width: $bp-xsmall) {
-      font-size: 1.7rem;
+      font-size: $responsive-font;
     }
   }
 
@@ -92,7 +95,7 @@
     }
 
     @media only screen and (max-width: $bp-xsmall) {
-      font-size: 1.7rem;
+      font-size: $responsive-font;
     }
 
     i {
@@ -100,11 +103,6 @@
       left: 0rem;
       top: 0;
       color: #fff;
-
-      @media only screen and (max-width: $bp-992) {
-        left: 0rem;
-        top: 0;
-      }
     }
   }
 

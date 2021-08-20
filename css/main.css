@@ -1133,6 +1133,12 @@ p {
   text-align: left;
 }
 
+@media only screen and (max-width: 37.5em) {
+  .footer__sub-heading {
+    font-size: 2.2rem;
+  }
+}
+
 .footer__nav-list {
   list-style: none;
   padding-left: 0.5rem;
@@ -1156,7 +1162,7 @@ p {
 
 @media only screen and (max-width: 37.5em) {
   .footer__nav-items {
-    font-size: 1.7rem;
+    font-size: 1.83rem;
   }
 }
 
@@ -1175,7 +1181,7 @@ p {
 
 @media only screen and (max-width: 37.5em) {
   .footer__address {
-    font-size: 1.7rem;
+    font-size: 1.83rem;
   }
 }
 
@@ -1184,13 +1190,6 @@ p {
   left: 0rem;
   top: 0;
   color: #fff;
-}
-
-@media only screen and (max-width: 61.875em) {
-  .footer__address i {
-    left: 0rem;
-    top: 0;
-  }
 }
 
 .footer__hr {
