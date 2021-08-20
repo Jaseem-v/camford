@@ -37,6 +37,10 @@ p {
   margin-bottom: 1.5rem;
   line-height: 1.6;
   font-size: 1.6rem;
+
+  @media only screen and (max-width: $bp-xsmall) {
+    font-size: $responsive-font;
+  }
 }
 
 .heading {
@@ -94,7 +98,7 @@ p {
     }
 
     @media only screen and (max-width: $bp-xsmall) {
-      font-size: 1.8rem;
+      font-size: $responsive-font;
     }
   }
 
@@ -104,7 +108,7 @@ p {
     font-size: 1.6rem;
 
     @media only screen and (max-width: $bp-xsmall) {
-      font-size: 1.8rem;
+      font-size: $responsive-font;
     }
   }
   &--teritiary {
@@ -112,7 +116,7 @@ p {
     font-size: 1.6rem;
 
     @media only screen and (max-width: $bp-xsmall) {
-      font-size: 1.8rem;
+      font-size: $responsive-font;
     }
   }
 

@@ -12,6 +12,8 @@
 
 /*-------color----------*/
 /*-------color----------*/
+/*-------font-size----------*/
+/*-------font-size----------*/
 a {
   text-decoration: none;
 }
@@ -118,6 +120,12 @@ p {
   margin-bottom: 1.5rem;
   line-height: 1.6;
   font-size: 1.6rem;
+}
+
+@media only screen and (max-width: 37.5em) {
+  p {
+    font-size: 1.8rem;
+  }
 }
 
 .heading--primary {
@@ -1917,6 +1925,12 @@ p {
   margin-bottom: 0.5rem;
 }
 
+@media only screen and (max-width: 37.5em) {
+  .ceo-message__paragraph {
+    font-size: 1.8rem;
+  }
+}
+
 .ceo-message__wish {
   font-weight: 500;
   font-size: 1.6rem;
@@ -2027,6 +2041,7 @@ p {
   align-items: center;
   flex-direction: column;
   padding: 2rem 2rem 0rem;
+  width: 100%;
 }
 
 @media only screen and (max-width: 52.25em) {
