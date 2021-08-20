@@ -1966,7 +1966,7 @@ p {
 
 @media only screen and (max-width: 52.25em) {
   .ceo-message__right-part {
-    text-align: center;
+    padding: 2rem 3rem;
   }
 }
 
@@ -2090,7 +2090,8 @@ p {
 @media only screen and (max-width: 37.5em) {
   .team .expert__content p {
     padding: 0rem 3rem;
-    text-align: center;
+    text-align: left;
+    word-spacing: 2px;
   }
 }
 

@@ -62,7 +62,7 @@
   &__right-part {
     padding: 2rem;
     @media only screen and (max-width: $bp-small) {
-      text-align: center;
+      padding: 2rem 3rem;
     }
   }
 }
@@ -96,7 +96,6 @@
         @media only screen and (max-width: $bp-xsmall) {
           padding-right: 0;
         }
-
       }
       &:not(:nth-child(2n)) {
         @media only screen and (max-width: $bp-small) {
@@ -138,7 +137,7 @@
       align-items: center;
       justify-content: center;
 
-      img{
+      img {
         width: 100%;
         height: 100%;
       }
@@ -165,7 +164,8 @@
         margin-top: 1rem;
         @media only screen and (max-width: $bp-xsmall) {
           padding: 0rem 3rem;
-          text-align: center;
+          text-align: left;
+          word-spacing: 2px;
         }
       }
 
