@@ -2639,7 +2639,6 @@ p {
 }
 
 .training__section-2 .card__single-box:hover {
-  transform: translateY(-5px);
   background-color: #fff;
 }
 
@@ -2933,7 +2932,7 @@ p {
 .placement__cards {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   column-gap: 2.5rem;
   row-gap: 1rem;
 }
@@ -2970,7 +2969,7 @@ p {
 
 .placement__single-card .card-body {
   text-align: center;
-  padding: 1rem 0 0;
+  padding: 1.5rem 0 1rem;
   background: #f1f1f2;
 }
 
@@ -2981,6 +2980,7 @@ p {
 
 .placement__single-card .card h4 {
   font-size: 1.2rem;
+  color: #202020;
 }
 
 .placement__single-card .card-img-top {
