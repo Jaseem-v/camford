@@ -21,7 +21,7 @@
     }
     @media only screen and (max-width: $bp-xsmall) {
       grid-template-columns: repeat(1, 1fr);
-      grid-template-rows: repeat(2, max-content) repeat(2, 1fr);
+      grid-template-rows: repeat(2, max-content)  1fr max-content;
     }
   }
 
