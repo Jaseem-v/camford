@@ -63,6 +63,12 @@ html {
   }
 }
 
+@media only screen and (max-width: 21.25em) {
+  html {
+    font-size: 40%;
+  }
+}
+
 @media only screen and (min-width: 112.5em) {
   html {
     font-size: 75%;
@@ -173,6 +179,12 @@ p {
 @media only screen and (max-width: 61.875em) {
   .paragraph--primary {
     text-align: center;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .paragraph--primary {
+    font-size: 1.8rem;
   }
 }
 
@@ -1639,32 +1651,58 @@ p {
   padding: 1rem;
   display: flex;
   margin-bottom: 10rem;
+  justify-content: center;
+  height: 31.5vh;
 }
 
 @media only screen and (max-width: 37.5em) {
   .expert__single-box-content {
     flex-direction: column;
+    justify-content: initial;
+    height: auto;
     margin-bottom: 10rem;
   }
 }
 
 .expert__image {
-  width: 80%;
+  width: 40%;
   align-self: stretch;
   display: flex;
   align-items: flex-end;
   justify-content: center;
 }
 
+@media only screen and (max-width: 52.25em) {
+  .expert__image {
+    width: 30%;
+  }
+}
+
 @media only screen and (max-width: 37.5em) {
   .expert__image {
     width: 100%;
+    justify-content: center;
+    align-items: center;
   }
 }
 
 .expert__image img {
   width: 100%;
   height: 100%;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .expert__image img {
+    width: 70%;
+    height: 70%;
+  }
+}
+
+@media only screen and (max-width: 21.25em) {
+  .expert__image img {
+    width: 80%;
+    height: 60%;
+  }
 }
 
 .expert__content-box {
@@ -1684,15 +1722,28 @@ p {
 .expert__content {
   display: flex;
   justify-content: space-evenly;
-  height: 90%;
   flex-direction: column;
-  background-color: #fff;
+  background-color: #fff8f8;
   padding: 2.5rem 3rem;
+  height: 100%;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .expert__content {
+    width: 70%;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 21.25em) {
+  .expert__content {
+    width: 80%;
+  }
 }
 
 .expert__content h3 {
   margin-bottom: 0;
-  font-size: 2.2rem;
+  font-size: 1.7rem;
   font-weight: 800;
 }
 
@@ -1703,9 +1754,13 @@ p {
 .expert__content .sub-title {
   display: block;
   color: #fe4a55;
-  margin-top: 7px;
-  font-size: 15px;
+  margin-top: 0.7rem;
+  font-size: 1.6rem;
   font-weight: 600;
+}
+
+.expert__content .social-link {
+  width: auto;
 }
 
 .expert .swiper-pagination-bullet {
