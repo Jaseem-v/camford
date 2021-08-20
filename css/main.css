@@ -2048,6 +2048,11 @@ p {
   justify-content: center;
 }
 
+.team .expert__image img {
+  width: 100%;
+  height: 100%;
+}
+
 .team .expert__content {
   background-color: #fff;
   text-align: center;
