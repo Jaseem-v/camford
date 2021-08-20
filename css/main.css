@@ -1577,6 +1577,12 @@ p {
   }
 }
 
+@media only screen and (max-width: 23.75em) {
+  .review {
+    height: 30vh;
+  }
+}
+
 .review::before {
   content: '\201d';
   top: 60%;
@@ -1856,6 +1862,12 @@ p {
   font-size: 1.6rem;
 }
 
+@media only screen and (max-width: 37.5em) {
+  .workshops__title {
+    font-size: 2.1rem;
+  }
+}
+
 .workshops__description {
   margin-top: 1rem;
 }
@@ -1868,12 +1880,17 @@ p {
   position: relative;
 }
 
+@media only screen and (max-width: 37.5em) {
+  .workshops__date {
+    font-size: 1.7rem;
+  }
+}
+
 .workshops__date i {
   transform: translateY(-0.5rem);
   position: absolute;
   top: 0.2rem;
   left: 0.5rem;
-  font-size: 1.5rem;
 }
 
 /*=================================================*/
