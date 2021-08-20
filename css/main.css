@@ -122,9 +122,9 @@ p {
   font-size: 1.6rem;
 }
 
-@media only screen and (max-width: 37.5em) {
+@media only screen and (max-width: 52.25em) {
   p {
-    font-size: 1.9rem;
+    font-size: 1.83rem;
   }
 }
 
@@ -190,9 +190,9 @@ p {
   }
 }
 
-@media only screen and (max-width: 37.5em) {
+@media only screen and (max-width: 52.25em) {
   .paragraph--primary {
-    font-size: 1.9rem;
+    font-size: 1.83rem;
   }
 }
 
@@ -202,9 +202,9 @@ p {
   font-size: 1.6rem;
 }
 
-@media only screen and (max-width: 37.5em) {
+@media only screen and (max-width: 52.25em) {
   .paragraph--secondary {
-    font-size: 1.9rem;
+    font-size: 1.83rem;
   }
 }
 
@@ -213,9 +213,9 @@ p {
   font-size: 1.6rem;
 }
 
-@media only screen and (max-width: 37.5em) {
+@media only screen and (max-width: 52.25em) {
   .paragraph--teritiary {
-    font-size: 1.9rem;
+    font-size: 1.83rem;
   }
 }
 
@@ -1912,14 +1912,7 @@ p {
 
 .ceo-message__paragraph {
   font-weight: 500;
-  font-size: 1.6rem;
   margin-bottom: 0.5rem;
-}
-
-@media only screen and (max-width: 37.5em) {
-  .ceo-message__paragraph {
-    font-size: 1.8rem;
-  }
 }
 
 .ceo-message__wish {

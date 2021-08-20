@@ -38,7 +38,7 @@ p {
   line-height: 1.8;
   font-size: 1.6rem;
 
-  @media only screen and (max-width: $bp-xsmall) {
+  @media only screen and (max-width: $bp-small) {
     font-size: $responsive-font;
   }
 }
@@ -97,7 +97,7 @@ p {
       text-align: center;
     }
 
-    @media only screen and (max-width: $bp-xsmall) {
+    @media only screen and (max-width: $bp-small) {
       font-size: $responsive-font;
     }
   }
@@ -107,7 +107,7 @@ p {
     margin-top: 1.5rem;
     font-size: 1.6rem;
 
-    @media only screen and (max-width: $bp-xsmall) {
+    @media only screen and (max-width: $bp-small) {
       font-size: $responsive-font;
     }
   }
@@ -115,7 +115,7 @@ p {
     margin-top: 1.5rem;
     font-size: 1.6rem;
 
-    @media only screen and (max-width: $bp-xsmall) {
+    @media only screen and (max-width: $bp-small) {
       font-size: $responsive-font;
     }
   }
