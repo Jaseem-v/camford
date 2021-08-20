@@ -1778,6 +1778,12 @@ p {
   font-weight: 800;
 }
 
+@media only screen and (max-width: 37.5em) {
+  .expert__content h3 {
+    font-size: 1.9rem;
+  }
+}
+
 .expert__content h3 a {
   color: #221638;
 }
@@ -1788,6 +1794,12 @@ p {
   margin-top: 0.7rem;
   font-size: 1.6rem;
   font-weight: 600;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .expert__content .sub-title {
+    font-size: 1.89rem;
+  }
 }
 
 .expert__content .social-link {
