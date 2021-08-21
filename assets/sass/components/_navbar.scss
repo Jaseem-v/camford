@@ -1,11 +1,13 @@
 /*=================================================*/
-/*             Navigation start                     */ 
-/*=================================================*/  
+/*             Navigation start                     */
+/*=================================================*/
 
 .navigation {
   padding: 1.5rem 1rem;
   width: 100%;
   background-color: #fff !important;
+  position: relative;
+  z-index: 3;
 
   &.sticky {
     position: fixed;
@@ -25,13 +27,14 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    position: relative;
 
     @media only screen and (max-width: $bp-992) {
       overflow: hidden;
       flex-direction: column;
       position: relative;
       align-items: flex-start;
-    justify-content: flex-start;
+      justify-content: flex-start;
     }
   }
   &__logo {
@@ -191,8 +194,77 @@
       transition: 0.2s;
     }
   }
-}
+  //DROP DOWN MENU
+  &__dropdown {
+    &-menu {
+      width: 100%;
+      color: $color-primary;
+      background: #fff;
+      position: fixed;
+      top: -50rem;
+      left: 0;
+      z-index: 3;
+      padding: 2rem 0;
+      border-top: 4px solid $color-secondary;
+      box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
+      // display: none;
+      opacity: 0;
+      visibility: hidden;
 
+      &:hover {
+        display: block;
+      }
+
+      @media only screen and (max-width: $bp-992) {
+        display: none;
+      }
+    }
+    &-item {
+      padding: 2rem 0;
+      cursor: pointer;
+      &:hover {
+        .navigation__dropdown {
+          &-icon {
+            background: $color-secondary;
+            i {
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+
+    &-icon {
+      font-size: 3.4rem;
+      background-color: #f4f4f4;
+      padding: 2rem;
+      width: 7rem;
+      height: 7rem;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 2rem;
+      i {
+        color: $color-primary;
+      }
+    }
+
+    &-title {
+      font-weight: 800;
+      font-size: 1.9rem;
+      text-transform: capitalize;
+      max-width: 17.5rem;
+    }
+
+    &-link {
+      // position: absolute;
+      // width: 100%;
+      // height: 100%;
+      // background: #000;
+    }
+  }
+}
 .hidden {
   display: none;
   height: auto;
@@ -210,6 +282,18 @@
   display: none;
 }
 
+.courses-dropdown {
+  &:hover + .navigation__dropdown {
+    &-menu,
+    &-menu:hover {
+      top: 10rem;
+      // display: block;
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+}
+
 /*=================================================*/
-/*             Navigation End                     */ 
-/*=================================================*/ 
+/*             Navigation End                     */
+/*=================================================*/

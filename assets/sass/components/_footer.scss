@@ -91,6 +91,7 @@
     padding-left: 2.5rem;
     position: relative;
     margin-bottom: 0;
+    line-height: 1.6;
     @media only screen and (max-width: $bp-992) {
       padding-left: 2.5rem;
     }
@@ -117,6 +118,7 @@
     justify-content: center;
     align-items: center;
     font-size: 1.4rem;
+    padding-top: .9rem;
 
     @media only screen and (max-width: $bp-xsmall) {
       flex-direction: column;
@@ -124,7 +126,7 @@
     }
 
     h2 {
-      color: #fff;
+      color: #c3c3c3;
       font-size: 1.4rem;
       margin: 0;
       @media only screen and (max-width: $bp-xsmall) {

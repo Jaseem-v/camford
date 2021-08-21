@@ -80,9 +80,14 @@
       }
     }
 
-    i{
+    i {
       color: #fff;
     }
+  }
+
+  &--single-page {
+    width: 100%;
+    font-size: 1.9rem;
   }
 }
 
@@ -261,7 +266,6 @@
   // justify-content: ;
   width: 50%;
 
-
   li {
     a {
       width: 3rem;
@@ -276,7 +280,7 @@
       transition: 0.2s;
       color: #fff;
       background-color: $color-teritiary;
-      margin-right: .8rem;
+      margin-right: 0.8rem;
 
       i {
         transform: translateY(-0.4rem);
@@ -286,7 +290,7 @@
     &:hover {
       a {
         color: #fff;
-        background-color: $color-secondary
+        background-color: $color-secondary;
       }
     }
   }

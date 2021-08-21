@@ -66,120 +66,125 @@
     }
   }
 }
+
 ///////////////////////////////////////////
 /// TEAM
 
 .team {
   background: #f6f6f6;
   padding: 8rem 0;
+  &__cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 5rem;
+    padding: 1rem 0rem;
 
-  & .expert {
-    &__cards {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      margin-top: 5rem;
-      padding: 1rem 0rem;
+    @media only screen and (max-width: $bp-xsmall) {
+      padding: 1rem 3rem;
+    }
+  }
+  &__single-box {
+    margin-bottom: 5rem;
+    align-self: stretch;
+
+    &:not(:nth-child(3n)) {
+      padding-right: 1.5rem;
 
       @media only screen and (max-width: $bp-xsmall) {
-        padding: 1rem 3rem;
+        padding-right: 0;
       }
     }
-    &__single-box {
-      margin-bottom: 5rem;
-      align-self: stretch;
-
-      &:not(:nth-child(3n)) {
-        padding-right: 1.5rem;
-
-        @media only screen and (max-width: $bp-xsmall) {
-          padding-right: 0;
-        }
-      }
-      &:not(:nth-child(2n)) {
-        @media only screen and (max-width: $bp-small) {
-          padding-right: 1.5rem;
-        }
-        @media only screen and (max-width: $bp-xsmall) {
-          padding-right: 0;
-        }
-      }
-
-      &-content {
-        padding: 4rem 2rem;
-        display: flex;
-        flex-direction: column;
-        margin: 0;
-        background: #fff;
-        height: 100%;
-        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-        @media only screen and (max-width: $bp-small) {
-          flex-direction: column;
-          padding: 5rem 0;
-        }
-      }
-    }
-    &__content-box {
-      padding: 0rem 0 0;
-      @media only screen and (max-width: $bp-xsmall) {
-        padding: 0;
-      }
-
-      .social-link {
-        margin-right: auto;
-      }
-    }
-
-    &__image {
-      width: 50%;
-      align-self: center;
-      align-items: center;
-      justify-content: center;
-
-      img {
-        width: 100%;
-        height: 100%;
-      }
-    }
-
-    &__content {
-      background-color: #fff;
-      text-align: center;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      padding: 2rem 2rem 0rem;
-      width: 100%;
+    &:not(:nth-child(2n)) {
       @media only screen and (max-width: $bp-small) {
-        padding: 2rem 2rem 0rem;
+        padding-right: 1.5rem;
       }
-      .sub-title {
-        font-weight: 700;
-        color: #606060;
+      @media only screen and (max-width: $bp-xsmall) {
+        padding-right: 0;
       }
-      p {
+    }
+
+    &-content {
+      padding: 4rem 2rem;
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+      background: #fff;
+      height: 100%;
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+      @media only screen and (max-width: $bp-small) {
+        flex-direction: column;
+        padding: 5rem 0;
+      }
+    }
+  }
+  &__content-box {
+    padding: 0rem 0 0;
+    @media only screen and (max-width: $bp-xsmall) {
+      padding: 0;
+    }
+
+    .social-link {
+      margin-right: auto;
+    }
+  }
+
+  &__image {
+    width: 50%;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__content {
+    background-color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem 2rem 0rem;
+    width: 100%;
+    @media only screen and (max-width: $bp-small) {
+      padding: 2rem 2rem 0rem;
+    }
+    .sub-title {
+      font-weight: 700;
+      color: #606060;
+      display: block;
+      margin-top: 0.7rem;
+      font-size: 1.6rem;
+      @media only screen and (max-width: $bp-xsmall) {
+        font-size: 1.89rem;
+      }
+    }
+    p {
+      text-align: left;
+      margin-top: 1rem;
+      @media only screen and (max-width: $bp-xsmall) {
+        padding: 0rem 3rem;
         text-align: left;
-        margin-top: 1rem;
-        @media only screen and (max-width: $bp-xsmall) {
-          padding: 0rem 3rem;
-          text-align: left;
-        
-        }
       }
+    }
 
-      h3 {
-        font-size: 2rem;
-      }
+    h3 {
+      font-size: 2rem;
+      margin-bottom: 0;
+      font-weight: 800;
+    }
 
-      .readMoreBtn {
-        border: none;
-        outline: none;
-        color: $color-secondary;
-        background: none;
-        display: inline;
-      }
+    .readMoreBtn {
+      border: none;
+      outline: none;
+      color: $color-secondary;
+      background: none;
+      display: inline;
     }
   }
 }

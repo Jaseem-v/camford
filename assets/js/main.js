@@ -164,5 +164,3 @@ function toggleReadMore(key) {
         moreText.css('display', 'inline');
     }
 }
-
-

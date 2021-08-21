@@ -327,6 +327,47 @@
   }
 }
 
+//////////////////////////////////////////////////////////////
+// Share this Course
+
+.share-course {
+  // &:hover {
+  //   .social-link {
+  //     opacity: 1;
+  //     visibility: visible;
+  //     transform: translateY(0rem);
+  //   }
+  // }
+  &__link {
+    font-size: 1.8rem;
+    text-align: center;
+    width: 100%;
+    display: block;
+    margin-top: 2rem;
+    color: $color-secondary;
+
+    &:hover + .social-link {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0rem);
+      }
+    }
+
+    i {
+      color: #3f3f3f;
+      transform: translateY(1px);
+    }
+  }
+  .social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-5rem);
+  }
+}
 /*=================================================*/
 /*             Single-Course  End                 */
 /*=================================================*/
