@@ -331,13 +331,15 @@
 // Share this Course
 
 .share-course {
-  // &:hover {
-  //   .social-link {
-  //     opacity: 1;
-  //     visibility: visible;
-  //     transform: translateY(0rem);
-  //   }
-  // }
+  pointer-events: none;
+
+  &:hover {
+    .social-link {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0rem);
+    }
+  }
   &__link {
     font-size: 1.8rem;
     text-align: center;
@@ -345,28 +347,29 @@
     display: block;
     margin-top: 2rem;
     color: $color-secondary;
+    pointer-events: auto;
 
     &:hover + .social-link {
-        opacity: 1;
-        visibility: visible;
-        transform: translateY(0rem);
-      }
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0rem);
     }
+  }
 
-    i {
-      color: #3f3f3f;
-      transform: translateY(1px);
-    }
+  i {
+    color: #3f3f3f;
+    transform: translateY(1px);
   }
-  .social-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(-5rem);
-  }
+}
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-5rem);
+  pointer-events: auto;
 }
 /*=================================================*/
 /*             Single-Course  End                 */

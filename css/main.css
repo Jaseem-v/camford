@@ -2648,6 +2648,10 @@ p {
   }
 }
 
+.share-course {
+  pointer-events: none;
+}
+
 .share-course:hover .social-link {
   opacity: 1;
   visibility: visible;
@@ -2661,20 +2665,21 @@ p {
   display: block;
   margin-top: 2rem;
   color: #fe4a55;
+  pointer-events: auto;
 }
 
-.share-course__link:hover .social-link {
+.share-course__link:hover + .social-link {
   opacity: 1;
   visibility: visible;
   transform: translateY(0rem);
 }
 
-.share-course__link i {
+.share-course i {
   color: #3f3f3f;
   transform: translateY(1px);
 }
 
-.share-course .social-link {
+.social-link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2682,6 +2687,7 @@ p {
   opacity: 0;
   visibility: hidden;
   transform: translateY(-5rem);
+  pointer-events: auto;
 }
 
 /*=================================================*/
