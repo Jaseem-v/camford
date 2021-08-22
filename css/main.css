@@ -1862,21 +1862,19 @@ p {
 .faculty__cards {
   display: grid;
   grid-template-columns: repeat(4, minmax(24%, 1fr));
-  gap: 2rem;
+  gap: 20px;
   margin-top: 2rem;
 }
 
 @media only screen and (max-width: 61.875em) {
   .faculty__cards {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
   }
 }
 
 @media only screen and (max-width: 37.5em) {
   .faculty__cards {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
     padding: 0 .8rem;
   }
 }
