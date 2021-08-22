@@ -1875,7 +1875,8 @@ p {
 
 @media only screen and (max-width: 37.5em) {
   .faculty__cards {
-    padding: 0 .8rem;
+    padding: 0 0.8rem;
+    gap: 20px;
   }
 }
 
@@ -1910,7 +1911,7 @@ p {
   background-color: #fff;
   text-align: center;
   width: 80%;
-  height: 80%;
+  height: 70%;
 }
 
 @media only screen and (max-width: 37.5em) {
