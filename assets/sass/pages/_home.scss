@@ -527,9 +527,18 @@
 
   &__single-card {
     display: flex;
-    justify-content: flex-start;
     align-items: center;
     flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    @media only screen and (max-width: $bp-xsmall) {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: 25rem min-content;
+    }
+    @media only screen and (max-width: $bp-xsmall) {
+      justify-content: flex-start;
+    }
   }
 
   &__image {
@@ -537,10 +546,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    align-self: stretch;
+    @media only screen and (max-width: $bp-xsmall) {
+      grid-row: 1/2;
+      align-items: flex-end;
+    }
 
     img {
       width: 100%;
+      height: 100%;
     }
 
     @media only screen and (max-width: $bp-xsmall) {
@@ -552,9 +566,12 @@
     background-color: #fff;
     text-align: center;
     width: 80%;
+    align-self: stretch;
 
     @media only screen and (max-width: $bp-xsmall) {
       width: 100%;
+      grid-row: 2/-1;
+      height: 15rem;
     }
   }
 
