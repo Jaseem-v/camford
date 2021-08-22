@@ -1862,7 +1862,7 @@ p {
 .faculty__cards {
   display: grid;
   grid-template-columns: repeat(4, minmax(24%, 1fr));
-  gap: 20px;
+  gap: 30px;
   margin-top: 2rem;
 }
 
@@ -1910,7 +1910,6 @@ p {
   background-color: #fff;
   text-align: center;
   width: 80%;
-  height: 100%;
 }
 
 @media only screen and (max-width: 37.5em) {
