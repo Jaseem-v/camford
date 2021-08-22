@@ -526,7 +526,6 @@
   }
 
   &__single-card {
-    // box-shadow: 0.1rem 0rem 1rem rgba(0, 0, 0, 0.15);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -564,17 +563,26 @@
   &__name {
     font-weight: 800;
     font-size: 1.7rem;
+    @media only screen and (max-width: $bp-380) {
+      width: 1.4rem;
+    }
   }
 
   &__sub-title {
     font-weight: 600;
     color: $color-secondary;
     font-size: 1.6rem;
+    @media only screen and (max-width: $bp-380) {
+      width: 1.35rem;
+    }
   }
   &__place {
     font-weight: 600;
     font-size: 1.4rem;
     color: #6a6a6a;
+    @media only screen and (max-width: $bp-380) {
+      width: 1.35rem;
+    }
   }
 }
 
