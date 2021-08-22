@@ -527,10 +527,9 @@
 
   &__single-card {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-    height: 100%;
   }
 
   &__image {
@@ -553,7 +552,6 @@
     background-color: #fff;
     text-align: center;
     width: 80%;
-    height: 70%;
 
     @media only screen and (max-width: $bp-xsmall) {
       width: 100%;

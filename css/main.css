@@ -1882,10 +1882,9 @@ p {
 
 .faculty__single-card {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-direction: column;
-  height: 100%;
 }
 
 .faculty__image {
@@ -1911,7 +1910,6 @@ p {
   background-color: #fff;
   text-align: center;
   width: 80%;
-  height: 70%;
 }
 
 @media only screen and (max-width: 37.5em) {
