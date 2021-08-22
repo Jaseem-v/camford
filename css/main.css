@@ -23,8 +23,9 @@ a:hover {
 }
 
 ul, ol {
-  padding-left: 0;
+  padding: 0;
   list-style: none;
+  margin: 0;
 }
 
 body {
@@ -258,11 +259,15 @@ p {
 /*             Navigation start                     */
 /*=================================================*/
 .navigation {
-  padding: 1.5rem 1rem;
   width: 100%;
   background-color: #fff !important;
   position: relative;
-  z-index: 3;
+}
+
+@media only screen and (max-width: 61.875em) {
+  .navigation {
+    padding: 0rem 1.5rem;
+  }
 }
 
 .navigation.sticky {
@@ -295,9 +300,13 @@ p {
 }
 
 .navigation__logo {
-  width: 12rem;
   cursor: pointer;
-  z-index: 1;
+  position: relative;
+  padding: 1.5rem 0;
+}
+
+.navigation__logo img {
+  width: 12rem;
 }
 
 @media only screen and (max-width: 61.875em) {
@@ -312,9 +321,7 @@ p {
   color: #000;
   align-items: center;
   justify-content: center;
-  padding: 1rem 0;
   margin-left: auto;
-  margin-top: 1rem;
 }
 
 @media only screen and (max-width: 61.875em) {
@@ -322,6 +329,7 @@ p {
     display: none;
     order: 2;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2.5rem;
   }
 }
 
@@ -347,11 +355,13 @@ p {
   cursor: pointer;
   transition: all 0.2s;
   color: #000;
+  padding: 4rem 0;
 }
 
 @media only screen and (max-width: 61.875em) {
   .navigation__items {
     margin-top: 1.5rem;
+    padding: 1rem 0;
   }
 }
 
@@ -366,6 +376,19 @@ p {
   font-weight: 700;
   margin-left: 1.3rem;
   margin-right: 1.3rem;
+}
+
+.navigation__link i {
+  font-size: 2rem;
+  margin-left: 0.5rem;
+  color: #221638;
+  transform: translateY(0.15rem);
+}
+
+@media only screen and (max-width: 61.875em) {
+  .navigation__link i {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 61.875em) {
@@ -385,8 +408,8 @@ p {
   display: none;
   z-index: 20;
   position: absolute;
-  top: 2rem;
-  right: 2rem;
+  top: 3rem;
+  right: 2.5rem;
   margin-top: 1rem;
 }
 
@@ -470,18 +493,17 @@ p {
 }
 
 .navigation__dropdown-menu {
-  width: 100%;
   color: #221638;
   background: #fff;
-  position: fixed;
-  top: -50rem;
-  left: 0;
-  z-index: 3;
   padding: 2rem 0;
   border-top: 4px solid #fe4a55;
+  position: fixed;
+  top: 10.3rem;
+  left: 0;
+  width: 100%;
   box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
-  opacity: 0;
-  visibility: hidden;
+  z-index: 4;
+  display: none;
 }
 
 .navigation__dropdown-menu:hover {
@@ -496,7 +518,7 @@ p {
 
 .navigation__dropdown-item {
   padding: 2rem 0;
-  cursor: pointer;
+  position: relative;
 }
 
 .navigation__dropdown-item:hover .navigation__dropdown-icon {
@@ -531,6 +553,15 @@ p {
   max-width: 17.5rem;
 }
 
+.navigation__dropdown-link {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  top: 0;
+  left: 0;
+}
+
 .hidden {
   display: none;
   height: auto;
@@ -548,10 +579,9 @@ p {
   display: none;
 }
 
-.courses-dropdown:hover + .navigation__dropdown-menu, .courses-dropdown:hover + .navigation__dropdown-menu:hover {
-  top: 10rem;
-  visibility: visible;
-  opacity: 1;
+.courses-dropdown:hover + .navigation__dropdown-menu,
+.courses-dropdown:hover + .navigation__dropdown-menu:hover {
+  display: block;
 }
 
 /*=================================================*/
@@ -771,7 +801,7 @@ p {
 
 .btn--contact {
   text-transform: uppercase;
-  margin-top: 0;
+  margin-top: -3px;
   padding: 1.3rem 2rem 1rem 2rem;
 }
 
@@ -2649,13 +2679,29 @@ p {
 }
 
 .share-course {
-  pointer-events: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.share-course:hover .social-link {
+.share-course__content {
+  display: inline-block;
+  height: 6vh;
+  overflow: hidden;
+  z-index: 5;
+  position: relative;
+}
+
+.share-course__content:hover {
+  height: auto;
+  overflow: visible;
+}
+
+.share-course__content:hover .social-link {
   opacity: 1;
   visibility: visible;
   transform: translateY(0rem);
+  z-index: 3;
 }
 
 .share-course__link {
@@ -2665,7 +2711,8 @@ p {
   display: block;
   margin-top: 2rem;
   color: #fe4a55;
-  pointer-events: auto;
+  z-index: 5;
+  position: relative;
 }
 
 .share-course__link:hover + .social-link {
@@ -2686,8 +2733,10 @@ p {
   width: 100%;
   opacity: 0;
   visibility: hidden;
-  transform: translateY(-5rem);
-  pointer-events: auto;
+  transform: translateY(-1rem);
+  transition: all 0.2s;
+  z-index: 0;
+  position: relative;
 }
 
 /*=================================================*/

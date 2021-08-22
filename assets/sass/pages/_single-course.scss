@@ -331,13 +331,25 @@
 // Share this Course
 
 .share-course {
-  pointer-events: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-  &:hover {
-    .social-link {
-      opacity: 1;
-      visibility: visible;
-      transform: translateY(0rem);
+  &__content {
+    display: inline-block;
+    height: 6vh;
+    overflow: hidden;
+    z-index: 5;
+    position: relative;
+    &:hover {
+      height: auto;
+      overflow: visible;
+      .social-link {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0rem);
+        z-index: 3;
+      }
     }
   }
   &__link {
@@ -347,7 +359,8 @@
     display: block;
     margin-top: 2rem;
     color: $color-secondary;
-    pointer-events: auto;
+    z-index: 5;
+    position: relative;
 
     &:hover + .social-link {
       opacity: 1;
@@ -368,8 +381,10 @@
   width: 100%;
   opacity: 0;
   visibility: hidden;
-  transform: translateY(-5rem);
-  pointer-events: auto;
+  transform: translateY(-1rem);
+  transition: all 0.2s;
+  z-index: 0;
+  position: relative;
 }
 /*=================================================*/
 /*             Single-Course  End                 */
