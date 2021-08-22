@@ -1864,6 +1864,7 @@ p {
   grid-template-columns: repeat(4, minmax(24%, 1fr));
   gap: 30px;
   margin-top: 2rem;
+  align-items: center;
 }
 
 @media only screen and (max-width: 61.875em) {
@@ -1886,6 +1887,7 @@ p {
   flex-direction: column;
   justify-content: center;
   height: 100%;
+  width: 100%;
 }
 
 @media only screen and (max-width: 37.5em) {
@@ -1893,11 +1895,6 @@ p {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: 25rem min-content;
-  }
-}
-
-@media only screen and (max-width: 37.5em) {
-  .faculty__single-card {
     justify-content: flex-start;
   }
 }
@@ -1907,13 +1904,15 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  align-self: stretch;
+  justify-self: stretch;
 }
 
 @media only screen and (max-width: 37.5em) {
   .faculty__image {
     grid-row: 1/2;
     align-items: flex-end;
+    height: 100%;
+    width: 100%;
   }
 }
 
@@ -1922,18 +1921,13 @@ p {
   height: 100%;
 }
 
-@media only screen and (max-width: 37.5em) {
-  .faculty__image {
-    width: 100%;
-  }
-}
-
 .faculty__content {
   padding: 2rem;
   background-color: #fff;
   text-align: center;
   width: 80%;
-  align-self: stretch;
+  justify-self: stretch;
+  height: 15rem;
 }
 
 @media only screen and (max-width: 37.5em) {
@@ -1949,6 +1943,12 @@ p {
   font-size: 1.7rem;
 }
 
+@media only screen and (max-width: 37.5em) {
+  .faculty__name {
+    font-size: 1.55rem;
+  }
+}
+
 @media only screen and (max-width: 23.75em) {
   .faculty__name {
     font-size: 1.4rem;
@@ -1961,9 +1961,9 @@ p {
   font-size: 1.6rem;
 }
 
-@media only screen and (max-width: 23.75em) {
+@media only screen and (max-width: 37.5em) {
   .faculty__sub-title {
-    font-size: 1.35rem;
+    font-size: 1.45rem;
   }
 }
 
@@ -1973,7 +1973,7 @@ p {
   color: #6a6a6a;
 }
 
-@media only screen and (max-width: 23.75em) {
+@media only screen and (max-width: 37.5em) {
   .faculty__place {
     font-size: 1.35rem;
   }
