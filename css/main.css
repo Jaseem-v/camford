@@ -1890,6 +1890,7 @@ p {
   flex-direction: column;
   height: 100%;
   padding-bottom: 2rem;
+  background: transparent !important;
 }
 
 .faculty__image {
