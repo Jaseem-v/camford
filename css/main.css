@@ -1910,6 +1910,7 @@ p {
   background-color: #fff;
   text-align: center;
   width: 80%;
+  height: 80%;
 }
 
 @media only screen and (max-width: 37.5em) {
