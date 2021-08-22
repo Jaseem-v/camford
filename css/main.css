@@ -1864,7 +1864,7 @@ p {
   grid-template-columns: repeat(4, minmax(24%, 1fr));
   gap: 2rem;
   margin-top: 2rem;
-  row-gap: 5rem;
+  row-gap: 30px;
 }
 
 @media only screen and (max-width: 61.875em) {
@@ -1878,8 +1878,8 @@ p {
   .faculty__cards {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    padding: 1rem 1.5rem;
-    row-gap: 2.5rem;
+    padding: 0 .8rem;
+    row-gap: 30px;
   }
 }
 

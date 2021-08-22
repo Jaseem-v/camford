@@ -514,7 +514,7 @@
     grid-template-columns: repeat(4, minmax(24%, 1fr));
     gap: 2rem;
     margin-top: 2rem;
-    row-gap: 5rem;
+    row-gap: 30px;
 
     @media only screen and (max-width: $bp-992) {
       grid-template-columns: repeat(2, 1fr);
@@ -523,8 +523,8 @@
     @media only screen and (max-width: $bp-xsmall) {
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(3, 1fr);
-      padding: 1rem 1.5rem;
-      row-gap: 2.5rem;
+      padding: 0 .8rem;
+      row-gap: 30px;
     }
   }
 
