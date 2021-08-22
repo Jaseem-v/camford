@@ -1336,7 +1336,7 @@ p {
 @media only screen and (max-width: 37.5em) {
   .footer__copyright h2 {
     font-size: 1.6rem;
-    max-width: 27rem;
+    max-width: 30rem;
     line-height: 2;
   }
 }
