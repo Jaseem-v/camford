@@ -1927,7 +1927,7 @@ p {
 
 @media only screen and (max-width: 23.75em) {
   .faculty__name {
-    width: 1.4rem;
+    font-size: 1.4rem;
   }
 }
 
@@ -1939,7 +1939,7 @@ p {
 
 @media only screen and (max-width: 23.75em) {
   .faculty__sub-title {
-    width: 1.35rem;
+    font-size: 1.35rem;
   }
 }
 
@@ -1951,7 +1951,7 @@ p {
 
 @media only screen and (max-width: 23.75em) {
   .faculty__place {
-    width: 1.35rem;
+    font-size: 1.35rem;
   }
 }
 
