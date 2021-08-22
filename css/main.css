@@ -1869,7 +1869,7 @@ p {
 @media only screen and (max-width: 61.875em) {
   .faculty__cards {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(4, max-content);
   }
 }
 
