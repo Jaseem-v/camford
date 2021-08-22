@@ -1864,7 +1864,6 @@ p {
   grid-template-columns: repeat(4, minmax(24%, 1fr));
   gap: 2rem;
   margin-top: 2rem;
-  row-gap: 30px;
 }
 
 @media only screen and (max-width: 61.875em) {
@@ -1879,7 +1878,6 @@ p {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
     padding: 0 .8rem;
-    row-gap: 30px;
   }
 }
 
@@ -1889,8 +1887,6 @@ p {
   align-items: center;
   flex-direction: column;
   height: 100%;
-  padding-bottom: 2rem;
-  background: transparent !important;
 }
 
 .faculty__image {
