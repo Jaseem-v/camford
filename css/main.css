@@ -551,6 +551,7 @@ p {
   font-size: 1.9rem;
   text-transform: capitalize;
   max-width: 17.5rem;
+  color: #221638;
 }
 
 .navigation__dropdown-link {
