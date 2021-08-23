@@ -496,7 +496,7 @@ p {
   color: #221638;
   background: #fff;
   padding: 2rem 0;
-  border-top: 2px solid #fe4a55;
+  border-top: 1.5px solid #fe4a55;
   position: fixed;
   top: 10.3rem;
   left: 0;
@@ -522,7 +522,7 @@ p {
 }
 
 .navigation__dropdown-item:hover .navigation__dropdown-icon {
-  background: #024773;
+  background: #fe4a55;
 }
 
 .navigation__dropdown-item:hover .navigation__dropdown-icon i {
@@ -543,7 +543,7 @@ p {
 }
 
 .navigation__dropdown-icon i {
-  color: #fe4a55;
+  color: #024773;
 }
 
 .navigation__dropdown-title {
