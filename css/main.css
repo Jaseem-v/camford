@@ -522,7 +522,7 @@ p {
 }
 
 .navigation__dropdown-item:hover .navigation__dropdown-icon {
-  background: #fe4a55;
+  background: #024773;
 }
 
 .navigation__dropdown-item:hover .navigation__dropdown-icon i {
@@ -543,7 +543,7 @@ p {
 }
 
 .navigation__dropdown-icon i {
-  color: #221638;
+  color: #fe4a55;
 }
 
 .navigation__dropdown-title {

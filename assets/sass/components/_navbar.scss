@@ -239,7 +239,7 @@
       &:hover {
         .navigation__dropdown {
           &-icon {
-            background: $color-secondary;
+            background: $color-teritiary;
             i {
               color: #fff;
             }
@@ -260,7 +260,7 @@
       align-items: center;
       margin-bottom: 2rem;
       i {
-        color: $color-primary;
+        color: $color-secondary;
       }
     }
 
