@@ -804,6 +804,7 @@ p {
   text-transform: uppercase;
   margin-top: -3px;
   padding: 1.3rem 2rem 1rem 2rem;
+  background-color: #024773;
 }
 
 @media only screen and (max-width: 61.875em) {
@@ -819,7 +820,7 @@ p {
 }
 
 .btn--contact:hover span {
-  background-color: #221638;
+  background-color: #fe4a55;
 }
 
 .btn--training:hover {
