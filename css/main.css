@@ -2618,6 +2618,10 @@ p {
   margin-top: 2rem;
 }
 
+.single-course__details-block .paragraph--secondary {
+  max-width: 100%;
+}
+
 .single-course__paragraph {
   margin-top: 1.5rem;
   font-size: 1.7rem;
@@ -2777,6 +2781,19 @@ p {
   transition: all 0.2s;
   z-index: 0;
   position: relative;
+}
+
+.workshops-small-heading {
+  font-size: 1.8rem;
+}
+
+.workshops-small-heading-date {
+  color: #fe4a55;
+  margin-top: 1.5rem;
+}
+
+.workshops-small-heading-date i {
+  margin-left: 1rem;
 }
 
 /*=================================================*/

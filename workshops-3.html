@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Workshop 3</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800&display=swap"
+        rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css ">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/all.css">
+
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+    <!-- ---------nav-bar---------- -->
+    <nav class="navigation " id="navbar">
+        <div class="container navigation__content">
+            <div class="overlay hidden"></div>
+            <a href="index.html" class="navigation__logo">
+                <img src="assets/img/camford-logo.jpg" alt="logo">
+            </a>
+            <ul class="navigation__list">
+                <li class="navigation__items"> <a href="index.html" class="navigation__link">HOME</a></li>
+                <li class="navigation__items"> <a href="about.html" class="navigation__link"> ABOUT US</a></li>
+                <li class="navigation__items courses-dropdown">
+                    <a href="courses.html" class="navigation__link ">COURSES <i class="fas fa-angle-down"></i></a>
+                </li>
+                <div class="navigation__dropdown-menu">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-2">
+                                <div class="navigation__dropdown-item">
+                                    <div class="navigation__dropdown-icon">
+                                        <i class="fas fa-dolly-flatbed"></i>
+                                    </div>
+                                    <h3 class="navigation__dropdown-title"> Logistics Managment</h3>
+                                    <a class="navigation__dropdown-link" href="courses.html"></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 ">
+                                <div class="navigation__dropdown-item">
+                                    <div class="navigation__dropdown-icon">
+                                        <i class="	fas fa-hospital-symbol">
+                                        </i>
+                                    </div>
+                                    <h3 class="navigation__dropdown-title">Healthcare Managment</h3>
+                                    <a class="navigation__dropdown-link" href="courses.html"></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-2  ">
+                                <div class="navigation__dropdown-item">
+                                    <div class="navigation__dropdown-icon">
+                                        <i class="	fas fa-share-alt-square">
+                                        </i>
+                                    </div>
+                                    <h3 class="navigation__dropdown-title">Digital Marketing</h3>
+                                    <a class="navigation__dropdown-link" href="courses.html"></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 ">
+                                <div class="navigation__dropdown-item">
+                                    <div class="navigation__dropdown-icon">
+                                        <i class="	fas fa-plane">
+                                        </i>
+                                    </div>
+                                    <h3 class="navigation__dropdown-title"> Airport Managment</h3>
+                                    <a class="navigation__dropdown-link" href="courses.html"></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 ">
+                                <div class="navigation__dropdown-item">
+                                    <div class="navigation__dropdown-icon">
+                                        <i class="	fas fa-project-diagram">
+                                        </i>
+                                    </div>
+                                    <h3 class="navigation__dropdown-title">Supply Chain Managment</h3>
+                                    <a class="navigation__dropdown-link" href="courses.html#diploma"></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 ">
+                                <div class="navigation__dropdown-item">
+                                    <div class="navigation__dropdown-icon">
+                                        <i class="	fas fa-chart-line">
+                                        </i>
+                                    </div>
+                                    <h3 class="navigation__dropdown-title">Business Managment</h3>
+                                    <a class="navigation__dropdown-link" href="courses.html#diploma"></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 ">
+                                <div class="navigation__dropdown-item">
+                                    <div class="navigation__dropdown-icon">
+                                        <i class="	fas fa-comment-dollar"></i>
+                                    </div>
+                                    <h3 class="navigation__dropdown-title"> Financial Management</h3>
+                                    <a class="navigation__dropdown-link" href="courses.html#diploma"></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 ">
+                                <div class="navigation__dropdown-item">
+                                    <div class="navigation__dropdown-icon">
+                                        <i class="fas fa-mail-bulk">
+                                        </i>
+                                    </div>
+                                    <h3 class="navigation__dropdown-title">Office Administration</h3>
+                                    <a class="navigation__dropdown-link" href="courses.html#advance-diploma"></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-2  ">
+                                <div class="navigation__dropdown-item">
+                                    <div class="navigation__dropdown-icon">
+                                        <i class="fas fa-clipboard-check">
+                                        </i>
+                                    </div>
+                                    <h3 class="navigation__dropdown-title">Human Resource Management</h3>
+                                    <a class="navigation__dropdown-link" href="courses.html#advance-diploma"></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 ">
+                                <div class="navigation__dropdown-item">
+                                    <div class="navigation__dropdown-icon">
+                                        <i class="fas fa-user">
+                                        </i>
+                                    </div>
+                                    <h3 class="navigation__dropdown-title"> Communicative English</h3>
+                                    <a class="navigation__dropdown-link" href="courses.html#soft-skills"></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 ">
+                                <div class="navigation__dropdown-item">
+                                    <div class="navigation__dropdown-icon">
+                                        <i class="fas fa-briefcase">
+                                        </i>
+                                    </div>
+                                    <h3 class="navigation__dropdown-title">Career Guidance Workshop</h3>
+                                    <a class="navigation__dropdown-link" href="courses.html#soft-skills"></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 ">
+                                <div class="navigation__dropdown-item">
+                                    <div class="navigation__dropdown-icon">
+                                        <i class="fas fa-user-tie">
+                                        </i>
+                                    </div>
+                                    <h3 class="navigation__dropdown-title">Interview Preparation</h3>
+                                    <a class="navigation__dropdown-link" href="courses.html#soft-skills"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <li class="navigation__items"> <a href="corporate-training.html" class="navigation__link"> CORPORATE
+                        TRAINING</a></li>
+                <li class="navigation__items"> <a href="placement.html" class="navigation__link">PLACEMENT</a></li>
+                <li class="navigation__items"> <a href="gallery.html" class="navigation__link">GALLERY </a></li>
+                <li class="navigation__items nav-contact hidden"> <a href="contact.html"
+                        class="navigation__link">CONTACT US </a>
+                </li>
+            </ul>
+            <a href="contact.html" class=" btn btn--contact">
+                Contact us
+                <span></span>
+            </a>
+
+            <div class="navigation__menu ">
+                <ul class="open-btn">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- ---------nav-bar---------- -->
+    <!-- ----------Single-course----------- -->
+    <section class="single-course">
+        <div class="page-banner-image"></div>
+        <div class="container">
+            <div class="single-course__content">
+                <div class="row">
+                    <div class="col-lg-8 col-md-12">
+                        <h2 class="heading--secondary text-capital">EXPO 2020: CAREER OPPORTUNITIES IN UAE
+                        </h2>
+                        <h3 class="workshops-small-heading-date">14th Monday, June 2021
+                            <i class="	fas fa-clock"></i> IST 2.30 p.m. - 4.30 p.m.
+                            <i class="	fas fa-map-marker-alt"></i> Calicut
+                        </h3>
+                        <div class="tile" id="tabs">
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-tabs single-course__nav-tabs" role="tablist">
+                                <div class="slider"></div>
+                                <li class="single-course__nav-item">
+                                    <a class="single-course__nav-link active" id="overview-tab" data-toggle="tab"
+                                        href="#overview" role="tab" aria-controls="overview" aria-selected="true">
+                                        Overview
+                                    </a>
+                                </li>
+                                <li class="single-course__nav-item">
+                                    <a class="single-course__nav-link" id="objective-tab" data-toggle="tab"
+                                        href="#objective" role="tab" aria-controls="objective" aria-selected="false">
+                                        Objectives
+                                    </a>
+                                </li>
+                                <li class="single-course__nav-item">
+                                    <a class="single-course__nav-link" id="outline-tab" data-toggle="tab"
+                                        href="#outline" role="tab" aria-controls="outline" aria-selected="false">
+                                        Outline
+                                    </a>
+                                </li>
+                                <!-- <li class="single-course__nav-item">
+                                    <a class="single-course__nav-link" id="reviews-tab" data-toggle="tab"
+                                        href="#reviews" role="tab" aria-controls="reviews" aria-selected="false">
+                                        Reviews
+                                    </a>
+                                </li> -->
+
+                            </ul>
+
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <!-- -----overview----- -->
+                                <div class="tab-pane fade show active" id="overview" role="tabpanel"
+                                    aria-labelledby="overview-tab">
+                                    <div class="single-course__overview">
+                                        <div class="single-course__details-block">
+
+                                            <h3 class="heading--teritiary">Introduction</h3>
+                                            <p class="paragraph--secondary">This CAMFORD INSTITUTE OF MANAGEMENT's
+                                                training workshop on Logistics and Supply Chain Management focuses on
+                                                the sustainability of an organization which has been gaining momentum
+                                                over the last decade. It is a topic that has reached the Executive Board
+                                                in companies across the Globe.
+                                                A simplified explanation of Logistics and Supply Chain sustainability
+                                                revolves around an organization’s Supply Chain’s efforts in the area of
+                                                environment, waste and risk assessment and improvement.
+                                                This CAMFORD INSTITUTE OF MANAGEMENT Logistics & Supply Chain Management
+                                                training workshop is aimed at both suppliers and buyers who need an
+                                                overview of the key drivers involved when viewing supply chains from a
+                                                logistics / demand point of view and appreciate what logistics and
+                                                supply chain management are fundamentally about, and that delegates are
+                                                able to:
+                                            </p>
+                                            <p class="single-course__paragraph">
+                                                <i class="	fas fa-caret-square-right"></i>
+                                                Apply key techniques to control lead time in the movement of goods and
+                                                materials to customers and users
+
+                                            </p>
+                                            <p class="single-course__paragraph">
+                                                <i class="	fas fa-caret-square-right"></i>
+                                                Find the right cost and service balance
+
+                                            </p>
+                                            <p class="single-course__paragraph">
+                                                <i class="	fas fa-caret-square-right"></i>
+                                                Use practical skills to take back to the workplace to change current
+                                                methods
+
+                                            </p>
+                                            <p class="single-course__paragraph">
+                                                <i class="	fas fa-caret-square-right"></i>
+                                                Work better with all supply chain players
+
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- --xx---overview--xx--- -->
+
+                                <!-- -----objective----- -->
+
+                                <div class="tab-pane fade" id="objective" role="tabpanel"
+                                    aria-labelledby="objective-tab">
+                                    <div class="single-course__details-block">
+                                        <h3 class="heading--teritiary workshops-small-heading">Participants attending
+                                            the Camford Institute of Management's training workshop will</h3>
+                                        <p class="single-course__paragraph">
+                                            <i class="	fas fa-caret-square-right"></i>
+                                            Gather new insights into developing logistics and supply chain to achieve
+                                            competitive advantage
+
+                                        </p>
+                                        <p class="single-course__paragraph">
+                                            <i class="	fas fa-caret-square-right"></i>
+                                            An increased understanding of the impact of logistics and supply chain
+                                            management on costs and financial performance
+
+                                        </p>
+                                        <p class="single-course__paragraph">
+                                            <i class="	fas fa-caret-square-right"></i>
+                                            Appreciation of approaches and frameworks that can be applied to different
+                                            market segments
+
+                                        </p>
+                                        <p class="single-course__paragraph">
+                                            <i class="	fas fa-caret-square-right"></i>
+                                            Reviews of the latest thinking on supply chain strategy, planning and
+                                            execution
+
+                                        </p>
+                                    </div>
+                                    <div class="single-course__details-block">
+                                        <h3 class="heading--teritiary workshops-small-heading">Training Methodology</h3>
+                                        <p class="paragraph--secondary">This Camford Institute of Management's Logistics
+                                            & Supply Chain Management training workshop will be presented in a highly
+                                            professional trainer in an interactive manner, with a very impactive
+                                            computer presentation style.
+                                        </p>
+                                        <p class="paragraph--secondary">Participants will learn by active participation
+                                            during the training seminar through the use of exercises, questionnaires,
+                                            syndicate and group discussion, training videos and discussions on "real
+                                            life" issues in their organizations.
+                                        </p>
+
+                                    </div>
+                                    <div class="single-course__details-block">
+                                        <h3 class="heading--teritiary workshops-small-heading">Personal Impact</h3>
+                                        <p class="single-course__paragraph">
+                                            <i class="	fas fa-caret-square-right"></i>
+                                            Appreciate changes to business processes that are taking place
+
+                                        </p>
+                                        <p class="single-course__paragraph">
+                                            <i class="	fas fa-caret-square-right"></i>
+                                            Gain the financial benefits that effective supply chain management can bring
+
+                                        </p>
+                                        <p class="single-course__paragraph">
+                                            <i class="	fas fa-caret-square-right"></i>
+                                            Determine how time builds up in supply chains and that time is cash
+
+                                        </p>
+                                        <p class="single-course__paragraph">
+                                            <i class="	fas fa-caret-square-right"></i>
+                                            Be able to understand, recall and apply improvements after the seminar for
+                                            work based application
+
+                                        </p>
+                                        <p class="single-course__paragraph">
+                                            <i class="	fas fa-caret-square-right"></i>
+                                            Apply best in class practices
+
+                                        </p>
+                                        <p class="single-course__paragraph">
+                                            <i class="	fas fa-caret-square-right"></i>
+                                            Learn from other delegates’ experiences and practices
+
+                                        </p>
+                                    </div>
+                                    <div class="single-course__details-block">
+                                        <h3 class="heading--teritiary workshops-small-heading">Who Should Attend?</h3>
+                                        <p class="single-course__paragraph">
+                                            <i class="	fas fa-caret-square-right"></i>
+                                            Senior Supply Chain Managers and Executives looking at thought leadership of
+                                            their own supply chain as well as other delegates experienced and methods
+
+                                        </p>
+                                        <p class="single-course__paragraph">
+                                            <i class="	fas fa-caret-square-right"></i>
+                                            Junior Supply Chain Executives, helping to bring them up to speed with the
+                                            latest thinking, frameworks, tools and implementation
+
+                                        </p>
+                                        <p class="single-course__paragraph">
+                                            <i class="	fas fa-caret-square-right"></i>
+                                            Marketing, customer service and manufacturing managers and directors who are
+                                            seeking supply chain integration or who need to understand the impact of
+                                            supply chain decisions upon their company's performance
+
+                                        </p>
+                                        <p class="single-course__paragraph">
+                                            <i class="	fas fa-caret-square-right"></i>
+                                            Those wanting to create Action within the supply chain to increase value and
+                                            reduce cost
+
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- --xx----objective--xx--- -->
+
+                                <!-- ------outline----- -->
+                                <div class="tab-pane fade" id="outline" role="tabpanel"
+                                    aria-labelledby="outline-tab">
+                                    <div class="single-course__details-block">
+                                        <h3 class="heading--teritiary ">DAY 1</h3>
+                                        <h3 class="heading--teritiary workshops-small-heading">Understanding Logistics
+                                            and the Supply Chain</h3>
+                                        <p class="single-course__paragraph">
+                                            <i class="	fas fa-caret-square-right"></i>
+                                            Definitions of Logistics and Supply Chain Management
+                                        </p>
+                                        <p class="single-course__paragraph">
+                                            <i class="	fas fa-caret-square-right"></i>
+                                            History and the Development
+                                        </p>
+                                        <p class="single-course__paragraph">
+                                            <i class="	fas fa-caret-square-right"></i>
+                                            Understanding the Supply Chain dynamics
+                                        </p>
+                                        <p class="single-course__paragraph">
+                                            <i class="	fas fa-caret-square-right"></i>
+                                            International and Global Logistics
+                                        </p>
+                                        <p class="single-course__paragraph">
+                                            <i class="	fas fa-caret-square-right"></i>
+                                            Supply Chain Operations Reference Models (SCOR)
+                                        </p>
+                                        <p class="single-course__paragraph">
+                                            <i class="	fas fa-caret-square-right"></i>
+                                            The Theory of Constraints (TOC)
+                                        </p>
+                                    </div>
+                                    <div class="single-course__details-block">
+                                        <h3 class="heading--teritiary ">DAY 2</h3>
+                                        <h3 class="heading--teritiary workshops-small-heading">Transportation Economics
+                                        </h3>
+                                        <p class="single-course__paragraph">
+                                            <i class="	fas fa-caret-square-right"></i>
+                                            The Role of Transportation in Logistics
+                                        </p>
+                                        <p class="single-course__paragraph">
+                                            <i class="	fas fa-caret-square-right"></i>
+                                            Management Key Decisions
+                                        </p>
+                                        <p class="single-course__paragraph">
+                                            <i class="	fas fa-caret-square-right"></i>
+                                            Types of Mode or Intermodal System
+                                        </p>
+                                        <p class="single-course__paragraph">
+                                            <i class="	fas fa-caret-square-right"></i>
+                                            International Commercial Terms in Transportation and the Liabilities
+                                        </p>
+                                        <p class="single-course__paragraph">
+                                            <i class="	fas fa-caret-square-right"></i>
+                                            Documentation in Transportation
+                                        </p>
+                                        <p class="single-course__paragraph">
+                                            <i class="	fas fa-caret-square-right"></i>
+                                            Hazardous Materials Transportation
+                                        </p>
+                                    </div>
+                                    <div class="single-course__details-block">
+                                        <h3 class="heading--teritiary ">DAY 3</h3>
+                                        <h3 class="heading--teritiary workshops-small-heading">Performance, Risk and
+                                            Warehouse Management
+                                        </h3>
+                                        <p class="single-course__paragraph">
+                                            <i class="	fas fa-caret-square-right"></i>
+                                            Key Performance Indicators (KPI)
+                                        </p>
+                                        <p class="single-course__paragraph">
+                                            <i class="	fas fa-caret-square-right"></i>
+                                            Warehouse Management:
+
+                                        <ul style="padding-left: 5rem;">
+                                            <li>
+                                                <p class="single-course__paragraph">
+                                                    <i class="	fas fa-square"></i>
+                                                    Role in the Supply Chain
+                                                </p>
+
+                                            </li>
+                                            <li>
+                                                <p class="single-course__paragraph">
+                                                    <i class="	fas fa-square"></i>
+                                                    Flows
+                                                </p>
+
+                                            </li>
+                                            <li>
+                                                <p class="single-course__paragraph">
+                                                    <i class="	fas fa-square"></i>
+                                                    Equipment Selection
+                                                </p>
+
+                                            </li>
+                                        </ul>
+                                        </p>
+                                        <p class="single-course__paragraph">
+                                            <i class="	fas fa-caret-square-right"></i>
+                                            Supply Chain Risks:
+
+                                        <ul style="padding-left: 5rem;">
+                                            <li>
+                                                <p class="single-course__paragraph">
+                                                    <i class="	fas fa-square"></i>
+                                                    Operational
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p class="single-course__paragraph">
+                                                    <i class="	fas fa-square"></i>
+                                                    Inventory
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p class="single-course__paragraph">
+                                                    <i class="	fas fa-square"></i>
+                                                    Exchange Rates
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p class="single-course__paragraph">
+                                                    <i class="	fas fa-square"></i>
+                                                    Financial
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p class="single-course__paragraph">
+                                                    <i class="	fas fa-square"></i>
+                                                    Disruption
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p class="single-course__paragraph">
+                                                    <i class="	fas fa-square"></i>
+                                                    Security
+                                                </p>
+                                            </li>
+                                        </ul>
+                                        </p>
+
+                                    </div>
+                                    <div class="single-course__details-block">
+                                        <h3 class="heading--teritiary ">DAY 4</h3>
+                                        <h3 class="heading--teritiary workshops-small-heading">Procurement in Supply
+                                            Chain
+                                        </h3>
+                                        <p class="single-course__paragraph">
+                                            <i class="	fas fa-caret-square-right"></i>
+                                            The Difference between Procurement and Purchasing
+                                        </p>
+                                        <p class="single-course__paragraph">
+                                            <i class="	fas fa-caret-square-right"></i>
+                                            What is the role of Procurement and Purchasing?
+                                        </p>
+                                        <p class="single-course__paragraph">
+                                            <i class="	fas fa-caret-square-right"></i>
+                                            Support Operational Requirements
+                                        </p>
+                                        <p class="single-course__paragraph">
+                                            <i class="	fas fa-caret-square-right"></i>
+                                            Manage the Procurement Process and the Supply Base
+                                        </p>
+                                        <p class="single-course__paragraph">
+                                            <i class="	fas fa-caret-square-right"></i>
+                                            Develop Strong Relationships with Other Functional Groups
+                                        </p>
+                                        <p class="single-course__paragraph">
+                                            <i class="	fas fa-caret-square-right"></i>
+                                            Team Roles and Responsibilities
+                                        </p>
+                                    </div>
+                                    <div class="single-course__details-block">
+                                        <h3 class="heading--teritiary ">DAY 5</h3>
+                                        <h3 class="heading--teritiary workshops-small-heading">Inventory Management
+                                            Chain
+                                        </h3>
+                                        <p class="single-course__paragraph">
+                                            <i class="	fas fa-caret-square-right"></i>
+                                            Statistics in Inventory Management
+                                        </p>
+                                        <p class="single-course__paragraph">
+                                            <i class="	fas fa-caret-square-right"></i>
+                                            Financial in Inventory Management
+
+                                        </p>
+                                        <p class="single-course__paragraph">
+                                            <i class="	fas fa-caret-square-right"></i>
+                                            Selective Inventory Control Management
+
+                                        </p>
+                                        <p class="single-course__paragraph">
+                                            <i class="	fas fa-caret-square-right"></i>
+                                            Understanding Inventory Status
+
+                                        </p>
+                                        <p class="single-course__paragraph">
+                                            <i class="	fas fa-caret-square-right"></i>
+                                            Reducing Excess and Obsolete Inventory
+
+                                        </p>
+                                        <p class="single-course__paragraph">
+                                            <i class="	fas fa-caret-square-right"></i>
+                                            Improving the Organisation’s Logistics and Supply Chain
+
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <!-- ---xx---outline-xx---- -->
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                        <div class="single-course__details">
+                            <div class="single-course__download-image">
+                                <img alt="image" src="assets/img/courses/courses1.jpg">
+
+                                <div class="single-course__download-image-content">
+                                    <a class="video-btn " href="https://www.youtube.com/watch?v=7eo8XpT4CmM">
+                                        <div class="bounce">
+                                            <i class="bi bi-download"></i>
+                                        </div>
+                                    </a>
+                                    <span>Download Brochure </span>
+                                </div>
+
+
+                            </div>
+                            <ul class="single-course__info">
+                                <li class="single-course__info-item">
+                                    <span><i class="fa fa-user"></i> Instructor</span>Sarah Taylor
+                                </li>
+                                <li class="single-course__info-item">
+                                    <span>
+                                        <i class="fa fa-clock"></i> Duration
+                                    </span> 3 Years
+                                </li>
+                                <li class="single-course__info-item">
+                                    <span>
+                                        <i class="fa fa-book"></i> Semesters
+                                    </span>6
+                                </li>
+                                <li class="single-course__info-item">
+                                    <span>
+                                        <i class="fa fa-chair"> </i> Seats
+                                    </span>
+                                    36
+                                </li>
+                                <li class="single-course__info-item">
+                                    <span>
+                                        <i class="fa fa-graduation-cap"></i> Eligibility
+                                    </span>Plus Two
+                                </li>
+                                <a href="contact.html" class=" btn btn--training  btn--single-page">
+                                    <i class="fas fa-phone-square-alt"></i> Contact us
+                                    <span></span>
+                                </a>
+                                <div class="share-course">
+                                    <div class="share-course__content">
+                                        <a href="#" class="share-course__link">Share this Workshop
+                                            <i class="fas fa-share-alt">
+                                            </i>
+                                        </a>
+                                        <ul class="social-link">
+                                            <li><a href="#" target="_blank"><i class="bi bi-facebook"></i> </a>
+                                            </li>
+                                            <li><a href="#" target="_blank"><i class="bi bi-twitter"></i></a>
+                                            </li>
+                                            <li><a href="#" target="_blank"><i class="bi bi-instagram"></i></a>
+                                            </li>
+                                            <li><a href="#" target="_blank"><i class="bi bi-linkedin"></i></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- --xx--------Single-course---xx-------- -->
+
+
+    <!-- -----footer------- -->
+    <footer class="footer">
+        <div class="container">
+
+            <ul class="footer__list">
+
+                <li class="footer__items">
+                    <h3 class="footer__sub-heading"> MANAGEMENT INSTITUTE </h3>
+                    <ul class="footer__nav-list">
+                        <li class="footer__nav-li">
+                            <div class="footer__address">
+                                <i class="bi bi-geo-alt "></i>
+                                18/194 - A26, III Floor, Parco Complex
+                                MCC Bank, Near Railway Station Link Road
+                                Calicut - 673 002, Kerala - India
+                            </div>
+                        </li>
+                        <li class="footer__nav-li">
+                            <div class="footer__address">
+                                <i class="bi bi-telephone-fill "></i>
+                                + 91 9895 70 70 90
+                            </div>
+                        </li>
+                        <li class="footer__nav-li">
+                            <div class="footer__address">
+                                <i class="bi bi-envelope-fill "></i>
+                                info@camfordinstitute.com
+                            </div>
+                        </li>
+                        <!-- <li class="footer__nav-li">
+                        <div class="footer__address">
+                            <i class="bi bi-geo-alt "></i>
+                            +55 785 4578964
+                        </div>
+                    </li> -->
+                    </ul>
+                </li>
+                <li class="footer__items">
+                    <h3 class="footer__sub-heading"> CORPORATE TRAINING HUB </h3>
+                    <ul class="footer__nav-list">
+                        <li class="footer__nav-li">
+                            <div class="footer__address">
+                                <i class="bi bi-geo-alt "></i>
+                                II Floor, Absonz Arcade
+                                Opp: St. George Orthodox Church
+                                Bilathikulam Road, Vandipetta, Nadakkav
+                                Calicut - 673 011, Kerala - India
+                            </div>
+                        </li>
+                        <li class="footer__nav-li">
+                            <div class="footer__address">
+                                <i class="bi bi-telephone-fill "></i>
+                                + 91 9895 12 22 11
+                            </div>
+                        </li>
+                        <li class="footer__nav-li">
+                            <div class="footer__address">
+                                <i class="bi bi-envelope-fill "></i>
+                                info@camfordinstitute.com
+                            </div>
+                        </li>
+                        <!-- <li class="footer__nav-li">
+                        <div class="footer__address">
+                            <i class="bi bi-geo-alt "></i>
+                            +55 785 4578964
+                        </div>
+                    </li> -->
+                    </ul>
+                </li>
+
+                <li class="footer__items">
+                    <h3 class="footer__sub-heading">QUICK LINKS</h3>
+                    <ul class="footer__nav-list">
+                        <li class="footer__nav-li"> <a href="index.html" class="footer__nav-items">Home </a></li>
+                        <li class="footer__nav-li"> <a href="about.html" class="footer__nav-items">About us
+                            </a></li>
+                        <li class="footer__nav-li"> <a href="courses.html" class="footer__nav-items">Courses </a></li>
+                        <li class="footer__nav-li"> <a href="corporate-training.html"
+                                class="footer__nav-items">Corparate Training
+                            </a></li>
+                        <li class="footer__nav-li"> <a href="placement.html" class="footer__nav-items">Placement </a>
+                        </li>
+                        <li class="footer__nav-li"> <a href="contact.html" class="footer__nav-items">Contact </a></li>
+                    </ul>
+                </li>
+
+
+                <li class="footer__items">
+                    <h3 class="footer__sub-heading">FOLLOW US </h3>
+                    <ul class="footer__nav-list">
+                        <li class="footer__nav-li"> <a href="#" class="footer__nav-items">Facebook </a></li>
+                        <li class="footer__nav-li"> <a href="#" class="footer__nav-items">Instagram </a></li>
+                        <li class="footer__nav-li"> <a href="#" class="footer__nav-items">Twitter</a></li>
+                        <li class="footer__nav-li"> <a href="#" class="footer__nav-items">Youtube </a></li>
+                        <li class="footer__nav-li"> <a href="#" class="footer__nav-items">LinkedIn </a></li>
+                    </ul>
+                </li>
+
+            </ul>
+
+            <hr class="footer__hr">
+            <div class="footer__copyright">
+                <h2> Copyright
+                    <script>document.write(new Date().getFullYear())</script> camfordinstitute.com
+                    &nbsp; | &nbsp; Powered by
+                    Netzmax.com
+                </h2>
+            </div>
+        </div>
+
+    </footer>
+
+
+    <!-- -xx----footer--xx----- -->
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+
+    <script src="assets/js/tab-menu.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

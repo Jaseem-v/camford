@@ -9,4 +9,3 @@ $("#tabs .nav-tabs a").click(function () {
 var actWidth = $("#tabs .nav-tabs").find(".active").parent("li").width();
 var actPosition = $("#tabs .nav-tabs .active").position();
 $("#tabs .slider").css({ "left": + actPosition.left, "width": actWidth });
-

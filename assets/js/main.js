@@ -111,9 +111,6 @@ $(window).on('scroll', function () {
 /////////////////////////////////////////////
 /////// COUNTER
 
-
-
-
 var counted = 0;
 $(window).scroll(function () {
 
@@ -164,10 +161,3 @@ function toggleReadMore(key) {
         moreText.css('display', 'inline');
     }
 }
-
-////////////////////////////////////////
-
-
-$(".drop-down").hover(function() {
-    $('.mega-menu').addClass('display-on');
-});
