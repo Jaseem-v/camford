@@ -17,10 +17,10 @@
     z-index: 0;
 
     &--1 {
-      background-image: url(../../../assets/img/banner1.jpg);
+      background-image: url(../../../assets/img/banner-slide-1.jpg);
     }
     &--2 {
-      background-image: url(../../../assets/img/banner2.jpg);
+      background-image: url(../../../assets/img/banner-slide-2.jpg);
     }
 
     @media only screen and (max-width: $bp-992) {
