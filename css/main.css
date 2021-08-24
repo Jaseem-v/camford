@@ -1430,6 +1430,7 @@ p {
   .course-catogery__content h3 {
     font-size: 2rem;
     padding: 1rem 1rem;
+    max-width: 100%;
   }
 }
 
