@@ -609,6 +609,7 @@ p {
   width: 100vw;
   height: 90vh;
   z-index: 0;
+  margin-left: -.1rem;
 }
 
 .header__bg--1 {
@@ -1416,6 +1417,13 @@ p {
   line-height: 1.5;
   text-transform: uppercase;
   padding: 1rem;
+}
+
+@media only screen and (max-width: 52.25em) {
+  .course-catogery__content h3 {
+    font-size: 1.8rem;
+    max-width: 32vw;
+  }
 }
 
 @media only screen and (max-width: 37.5em) {

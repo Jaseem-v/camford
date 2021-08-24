@@ -70,6 +70,10 @@
       text-transform: uppercase;
       padding: 1rem;
 
+      @media only screen and (max-width: $bp-small) {
+        font-size: 1.8rem;
+        max-width: 32vw;
+      }
       @media only screen and (max-width: $bp-xsmall) {
         font-size: 2rem;
         padding: 1rem 1rem;
