@@ -41,6 +41,7 @@
     & span {
       width: 225%;
       height: 562.5px;
+      background-color: $color-primary;
     }
   }
 
@@ -70,7 +71,6 @@
       color: #fff;
       & span {
         background-color: $color-secondary;
-        // 
       }
     }
   }

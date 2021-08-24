@@ -790,6 +790,7 @@ p {
 .btn:hover span {
   width: 225%;
   height: 562.5px;
+  background-color: #221638;
 }
 
 .btn--cta:hover {
@@ -1272,7 +1273,7 @@ p {
 }
 
 .footer__nav-items:hover {
-  color: coral;
+  color: #fe4a55;
 }
 
 @media only screen and (max-width: 37.5em) {
