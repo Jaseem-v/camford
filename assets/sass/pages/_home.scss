@@ -20,7 +20,7 @@
     z-index: 0;
     overflow: hidden;
     text-align: center;
-    height: 26.56vh;
+    height: 25rem;
 
     &::before {
       content: '';
@@ -73,7 +73,6 @@
       @media only screen and (max-width: $bp-small) {
         font-size: 1.8rem;
         max-width: 32vw;
-
       }
       @media only screen and (max-width: $bp-xsmall) {
         font-size: 2rem;
@@ -291,7 +290,10 @@
 .testimonial {
   padding: 8rem 0;
   background-color: #fff8f8;
+  position: relative;
   &__swiper {
+    overflow: hidden;
+    padding: 0.5rem;
     @media only screen and (max-width: $bp-xsmall) {
       padding: 2rem;
     }
@@ -309,6 +311,7 @@
     transition: 0.5s;
     cursor: pointer;
     opacity: 0.5;
+    transform: translateY(-2rem);
   }
 
   .swiper-pagination-bullet-active {
@@ -334,7 +337,7 @@
   position: relative;
   overflow: hidden;
   // border: 1px solid$color-primary;
-  margin-bottom: 10rem;
+  margin-bottom: 3rem;
   box-shadow: 0.1rem 0rem 1rem rgba(0, 0, 0, 0.15);
   background-color: #fff;
   display: flex;
@@ -344,12 +347,16 @@
   flex-direction: column;
   flex: initial;
   width: 100%;
-  height: 36vh;
-  @media only screen and (max-width: $bp-xsmall) {
-    height: 36vh;
+  height: 33rem;
+  
+  @media only screen and (max-width: $bp-small) {
+    height: 37rem;
   }
-  @media only screen and (max-width: $bp-380) {
-    height: 33.5vh;
+  // @media only screen and (max-width: $bp-xsmall) {
+  //   height: 36rem;
+  // }
+  @media only screen and (max-width: $bp-340) {
+    height: 40rem;
   }
 
   &::before {
