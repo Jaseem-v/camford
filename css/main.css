@@ -131,6 +131,12 @@ p {
   word-spacing: 1px;
 }
 
+@media only screen and (max-width: 37.5em) {
+  p {
+    line-height: 1.6;
+  }
+}
+
 @media only screen and (max-width: 52.25em) {
   p {
     font-size: 1.83rem;
@@ -604,7 +610,7 @@ p {
 }
 
 .header__bg {
-  background-position: center;
+  background-position: left;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100vw;
@@ -1302,6 +1308,7 @@ p {
 @media only screen and (max-width: 37.5em) {
   .footer__address {
     font-size: 1.83rem;
+    line-height: 1.5;
   }
 }
 
@@ -1322,7 +1329,7 @@ p {
   justify-content: center;
   align-items: center;
   font-size: 1.4rem;
-  padding-top: .9rem;
+  padding-top: 0.9rem;
 }
 
 @media only screen and (max-width: 37.5em) {
@@ -1894,14 +1901,25 @@ p {
   flex-direction: column;
   justify-content: center;
   height: 100%;
-  width: 30rem;
+  width: 25rem;
   margin-bottom: 2rem;
   align-self: stretch;
+}
+
+.faculty__single-card:not(:nth-child(4n)) {
+  margin-right: 2rem;
+}
+
+@media only screen and (max-width: 75em) {
+  .faculty__single-card:not(:nth-child(4n)) {
+    margin-right: 0rem;
+  }
 }
 
 @media only screen and (max-width: 37.5em) {
   .faculty__single-card {
     width: 45%;
+    margin-right: 0rem;
   }
 }
 
@@ -2029,7 +2047,7 @@ p {
 
 @media only screen and (max-width: 37.5em) {
   .page-banner-image--courses {
-    background-position: 80%;
+    background-position: 50%;
   }
 }
 

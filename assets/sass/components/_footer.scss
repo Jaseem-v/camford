@@ -21,7 +21,7 @@
     }
     @media only screen and (max-width: $bp-xsmall) {
       grid-template-columns: repeat(1, 1fr);
-      grid-template-rows: repeat(2, max-content)  1fr max-content;
+      grid-template-rows: repeat(2, max-content) 1fr max-content;
     }
   }
 
@@ -98,6 +98,7 @@
 
     @media only screen and (max-width: $bp-xsmall) {
       font-size: $responsive-font;
+      line-height: 1.5;
     }
 
     i {
@@ -118,7 +119,7 @@
     justify-content: center;
     align-items: center;
     font-size: 1.4rem;
-    padding-top: .9rem;
+    padding-top: 0.9rem;
 
     @media only screen and (max-width: $bp-xsmall) {
       flex-direction: column;
