@@ -525,20 +525,11 @@
 
   &__cards {
     display: flex;
-    // grid-template-columns: repeat(4, minmax(24%, 1fr));
     margin-top: 2rem;
     align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
 
-    // @media only screen and (max-width: $bp-992) {
-    //   grid-template-columns: repeat(2, 1fr);
-    //   grid-template-rows: repeat(4, min-content);
-    // }
-    // @media only screen and (max-width: $bp-xsmall) {
-    //   padding: 0 0.8rem;
-    //   gap: 20px;
-    // }
   }
 
   &__single-card {
@@ -571,7 +562,6 @@
   }
   &__content {
     padding: 2rem 0.5rem;
-    // background-color: #fff;
     text-align: left;
     width: 100%;
     justify-self: stretch;
