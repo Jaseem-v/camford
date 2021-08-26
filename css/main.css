@@ -2009,6 +2009,56 @@ p {
 /*=================================================*/
 /*             About start                         */
 /*=================================================*/
+.page-banner-image {
+  background-image: url(../../../assets/img/camford-programestop.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 40vh;
+}
+
+.page-banner-image--about {
+  background-image: url(../../../assets/img/PFA/PFA-about.jpg);
+}
+
+@media only screen and (max-width: 37.5em) {
+  .page-banner-image--about {
+    background-position: 58%;
+  }
+}
+
+.page-banner-image--corporate-training {
+  background-image: url(../../../assets/img/PFA/PFA-corporate.jpg);
+  background-position: center;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .page-banner-image--corporate-training {
+    background-position: 65%;
+  }
+}
+
+.page-banner-image--placement {
+  background-image: url(../../../assets/img/PFA/PFA-palcement.jpg);
+}
+
+@media only screen and (max-width: 37.5em) {
+  .page-banner-image--placement {
+    background-position: 80%;
+  }
+}
+
+.page-banner-image--courses {
+  background-image: url(../../../assets/img/PFA/PFA-training.jpg);
+}
+
+@media only screen and (max-width: 37.5em) {
+  .page-banner-image--courses {
+    background-position: 80%;
+  }
+}
+
 .who-we-are .vision-mission__left-part p {
   margin-bottom: 0;
 }
@@ -2389,21 +2439,6 @@ p {
 /*=================================================*/
 /*             Single-Course  start                 */
 /*=================================================*/
-.page-banner-image {
-  background-image: url(../../../assets/img/camford-programestop.jpg);
-  background-position: top center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 40vh;
-}
-
-@media only screen and (max-width: 37.5em) {
-  .page-banner-image {
-    background-position: left;
-  }
-}
-
 .single-course__content {
   padding: 5rem 0;
 }
