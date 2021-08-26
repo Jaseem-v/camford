@@ -520,6 +520,14 @@ p {
 @media only screen and (max-width: 61.875em) {
   .navigation__dropdown-menu {
     display: none;
+    height: 0;
+    visibility: hidden;
+    opacity: none;
+  }
+  .navigation__dropdown-menu:hover {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
   }
 }
 
@@ -590,6 +598,16 @@ p {
 .courses-dropdown:hover + .navigation__dropdown-menu,
 .courses-dropdown:hover + .navigation__dropdown-menu:hover {
   display: block;
+}
+
+@media only screen and (max-width: 61.875em) {
+  .courses-dropdown:hover + .navigation__dropdown-menu,
+  .courses-dropdown:hover + .navigation__dropdown-menu:hover {
+    display: none;
+    height: 0;
+    visibility: hidden;
+    opacity: none;
+  }
 }
 
 /*=================================================*/
