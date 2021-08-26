@@ -28,10 +28,10 @@ var swiper1 = new Swiper(".testimonial__swiper", {
             spaceBetween: 40,
         },
     },
-    // autoplay: {
-    //     delay: 3500,
-    //     disableOnInteraction: false,
-    // },
-    // loop: true,
+    autoplay: {
+        delay: 3500,
+        disableOnInteraction: false,
+    },
+    loop: true,
     grabCursor:true,
 });

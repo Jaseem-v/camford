@@ -352,12 +352,12 @@
   @media only screen and (max-width: $bp-small) {
     height: 37rem;
   }
-  // @media only screen and (max-width: $bp-xsmall) {
-  //   height: 36rem;
-  // }
-  @media only screen and (max-width: $bp-340) {
-    height: 40rem;
+  @media only screen and (max-width: $bp-xsmall) {
+    height: auto;
   }
+  // @media only screen and (max-width: $bp-340) {
+  //   // height: 40rem;
+  // }
 
   &::before {
     content: '\201d';
