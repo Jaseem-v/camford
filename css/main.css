@@ -1877,28 +1877,15 @@ p {
 
 .faculty {
   padding: 8rem 0;
+  background: #f8f8f8;
 }
 
 .faculty__cards {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(24%, 1fr));
-  gap: 30px;
+  display: flex;
   margin-top: 2rem;
   align-items: center;
-}
-
-@media only screen and (max-width: 61.875em) {
-  .faculty__cards {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, max-content);
-  }
-}
-
-@media only screen and (max-width: 37.5em) {
-  .faculty__cards {
-    padding: 0 0.8rem;
-    gap: 20px;
-  }
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 .faculty__single-card {
@@ -1907,20 +1894,19 @@ p {
   flex-direction: column;
   justify-content: center;
   height: 100%;
-  width: 100%;
+  width: 30rem;
+  margin-bottom: 2rem;
+  align-self: stretch;
 }
 
 @media only screen and (max-width: 37.5em) {
   .faculty__single-card {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: 25rem min-content;
-    justify-content: flex-start;
+    width: 45%;
   }
 }
 
 .faculty__image {
-  width: 80%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1929,10 +1915,7 @@ p {
 
 @media only screen and (max-width: 37.5em) {
   .faculty__image {
-    grid-row: 1/2;
     align-items: flex-end;
-    height: 100%;
-    width: 100%;
   }
 }
 
@@ -1942,20 +1925,11 @@ p {
 }
 
 .faculty__content {
-  padding: 2rem;
-  background-color: #fff;
-  text-align: center;
-  width: 80%;
+  padding: 2rem 0.5rem;
+  text-align: left;
+  width: 100%;
   justify-self: stretch;
-  height: 15rem;
-}
-
-@media only screen and (max-width: 37.5em) {
-  .faculty__content {
-    width: 100%;
-    grid-row: 2/-1;
-    height: 15rem;
-  }
+  height: 100%;
 }
 
 .faculty__name {
