@@ -377,6 +377,12 @@ p {
   color: #d2dddd;
 }
 
+@media only screen and (max-width: 61.875em) {
+  .navigation__items:hover {
+    transform: translateY(0px);
+  }
+}
+
 .navigation__link {
   color: #221638;
   font-size: 1.5rem;
@@ -523,11 +529,13 @@ p {
     height: 0;
     visibility: hidden;
     opacity: none;
+    top: -50rem;
   }
   .navigation__dropdown-menu:hover {
     display: none;
     opacity: 0;
     visibility: hidden;
+    top: -50rem;
   }
 }
 
@@ -607,6 +615,7 @@ p {
     height: 0;
     visibility: hidden;
     opacity: none;
+    top: -50rem;
   }
 }
 

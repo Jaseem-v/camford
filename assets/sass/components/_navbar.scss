@@ -99,6 +99,9 @@
     &:hover {
       transform: translateY(-3px);
       color: rgb(210, 221, 221);
+      @media only screen and (max-width: $bp-992) {
+        transform: translateY(0px);
+      }
     }
   }
 
@@ -234,10 +237,12 @@
         height: 0;
         visibility: hidden;
         opacity: none;
+        top: -50rem;
         &:hover {
           display: none;
           opacity: 0;
           visibility: hidden;
+          top: -50rem;
         }
       }
     }
@@ -316,6 +321,7 @@
       height: 0;
       visibility: hidden;
       opacity: none;
+      top: -50rem;
     }
   }
 }
