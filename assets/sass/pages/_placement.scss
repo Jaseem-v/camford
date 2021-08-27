@@ -2,19 +2,15 @@
 /*             Placement-page  start                 */
 /*=================================================*/
 
-
-
 .placement {
   padding: 8rem 0;
-  background: rgba(#f4f1f1,.58);
-
-
+  background: rgba(#f4f1f1, 0.58);
 
   &__cards {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    column-gap:2.5rem;
+    column-gap: 2.5rem;
     row-gap: 1rem;
     @media only screen and (max-width: $bp-992) {
       grid-template-columns: repeat(4, 1fr);
@@ -44,7 +40,7 @@
         padding: 1.5rem 0 1rem;
       }
       &-title {
-        font-size: 1.6rem;
+        font-size: 1.4rem;
         font-weight: 800;
       }
       h4 {
@@ -59,24 +55,73 @@
       }
     }
   }
-
-  & .features__single-features {
-    padding: 0rem !important;
-    background-color: #fff8f8;
-  }
 }
 
 .placement-page {
   &__jobs {
-    & .features__single-features {
-      padding: 0rem !important;
-      background-color: #fff8f8;
+    & .features {
+      &__placement-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+
+      &__single-features {
+        padding: 0rem !important;
+        background-color: #fff8f8;
+        margin-bottom: 2rem;
+        align-self: stretch;
+        margin-right: 1rem;
+        height: 100%;
+        // width: 30rem;
+        flex: 1 0 32%;
+        @media only screen and (max-width: $bp-992) {
+          flex: 1 0 48%;
+        }
+        @media only screen and (max-width: $bp-xsmall) {
+          flex: 1 0 100%;
+          margin-right: 0;
+        }
+      }
+
+      &__details {
+        position: relative;
+        padding-left: 1rem;
+        i {
+          margin-right: 0.8rem;
+        }
+      }
+
+      &__send-cv {
+        // color: $color-secondary;
+        padding: 0.5rem 1rem;
+        margin-left: 1rem;
+        font-size: 1.8rem;
+        font-weight: 700;
+        position: relative;
+        // display: inblock;
+        margin-top: 1rem;
+        margin-left: 1rem;
+        background: $color-secondary;
+        i {
+          color: #fff;
+        }
+
+        &:hover {
+          color: #fff;
+          span {
+            background: $color-primary;
+          }
+        }
+        // text-decoration: underline;
+      }
     }
   }
 }
 
-.placement__instant-courses{
-  background: #faf4f4 ;
+.placement__instant-courses {
+  background: #faf4f4;
 }
 /*=================================================*/
 /*             Placement-page  End                 */

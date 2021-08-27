@@ -31,7 +31,7 @@
       bottom: 0;
       border-radius: 0.5rem;
       background-color: $color-primary;
-      opacity: 0.75;
+      opacity: 0.67;
       z-index: 1;
     }
 
@@ -541,12 +541,12 @@
     margin-bottom: 2rem;
     align-self: stretch;
 
-    &:not(:nth-child(4n)){
+    &:not(:nth-child(4n)) {
       margin-right: 2rem;
     }
 
     @media only screen and (max-width: $bp-largest) {
-      &:not(:nth-child(4n)){
+      &:not(:nth-child(4n)) {
         margin-right: 0rem;
       }
     }
@@ -603,6 +603,18 @@
     color: #6a6a6a;
     @media only screen and (max-width: $bp-xsmall) {
       font-size: 1.35rem;
+    }
+  }
+
+ & .social-link {
+
+    li {
+      a {
+        width: auto;
+        height: auto;
+        font-size: 1.4rem;
+        padding: 0.2rem .5rem;
+      }
     }
   }
 }
