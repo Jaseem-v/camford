@@ -3215,7 +3215,7 @@ p {
 /*=================================================*/
 .placement {
   padding: 8rem 0;
-  background: rgba(244, 241, 241, 0.2);
+  background: rgba(244, 241, 241, 0.58);
 }
 
 .placement__cards {
