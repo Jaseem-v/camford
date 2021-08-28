@@ -1967,6 +1967,7 @@ p {
 .faculty__image img {
   width: 100%;
   height: 100%;
+  border-radius: 4%;
 }
 
 .faculty__content {
@@ -2022,7 +2023,11 @@ p {
   width: auto;
   height: auto;
   font-size: 1.4rem;
-  padding: 0.2rem .5rem;
+  padding: 0.2rem 0.5rem;
+}
+
+.faculty .social-link li a i {
+  transform: translateY(-0.25rem);
 }
 
 .recruitment {
@@ -3295,65 +3300,101 @@ p {
   width: 100%;
 }
 
-.placement-page__jobs .features__placement-box {
+.jobs {
+  padding: 8rem 0rem;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .jobs {
+    padding: 8rem 2rem;
+  }
+}
+
+.jobs__placement-box {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
 }
 
-.placement-page__jobs .features__single-features {
+.jobs__single-jobs {
   padding: 0rem !important;
   background-color: #fff8f8;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
   align-self: stretch;
-  margin-right: 1rem;
+  margin-right: 2.5rem;
   height: 100%;
-  flex: 1 0 32%;
+  flex: 1 0 25%;
+  box-shadow: 0 0 1.5rem 0 rgba(0, 0, 0, 0.1);
 }
 
 @media only screen and (max-width: 61.875em) {
-  .placement-page__jobs .features__single-features {
-    flex: 1 0 48%;
+  .jobs__single-jobs {
+    flex: 0 0 46%;
   }
 }
 
 @media only screen and (max-width: 37.5em) {
-  .placement-page__jobs .features__single-features {
+  .jobs__single-jobs {
     flex: 1 0 100%;
     margin-right: 0;
   }
 }
 
-.placement-page__jobs .features__details {
-  position: relative;
-  padding-left: 1rem;
+.jobs__content-box {
+  padding: 2rem;
 }
 
-.placement-page__jobs .features__details i {
+.jobs__title {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #221638;
+}
+
+.jobs__details {
+  position: relative;
+  margin-bottom: 0;
+}
+
+.jobs__details i {
   margin-right: 0.8rem;
 }
 
-.placement-page__jobs .features__send-cv {
+.jobs__company {
+  margin-bottom: 1rem;
+}
+
+.jobs__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.jobs__info li {
+  width: 50%;
+}
+
+.jobs__send-cv {
   padding: 0.5rem 1rem;
   margin-left: 1rem;
   font-size: 1.8rem;
   font-weight: 700;
   position: relative;
-  margin-top: 1rem;
-  margin-left: 1rem;
+  margin-top: 0rem;
+  margin-left: 0rem;
   background: #fe4a55;
 }
 
-.placement-page__jobs .features__send-cv i {
+.jobs__send-cv i {
   color: #fff;
 }
 
-.placement-page__jobs .features__send-cv:hover {
+.jobs__send-cv:hover {
   color: #fff;
 }
 
-.placement-page__jobs .features__send-cv:hover span {
+.jobs__send-cv:hover span {
   background: #221638;
 }
 

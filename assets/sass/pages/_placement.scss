@@ -57,66 +57,97 @@
   }
 }
 
-.placement-page {
-  &__jobs {
-    & .features {
-      &__placement-box {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: wrap;
-      }
+.jobs {
+  padding: 8rem 0rem;
+  @media only screen and (max-width: $bp-xsmall) {
+    padding: 8rem 2rem;
+  }
+}
 
-      &__single-features {
-        padding: 0rem !important;
-        background-color: #fff8f8;
-        margin-bottom: 2rem;
-        align-self: stretch;
-        margin-right: 1rem;
-        height: 100%;
-        // width: 30rem;
-        flex: 1 0 32%;
-        @media only screen and (max-width: $bp-992) {
-          flex: 1 0 48%;
-        }
-        @media only screen and (max-width: $bp-xsmall) {
-          flex: 1 0 100%;
-          margin-right: 0;
-        }
-      }
+.jobs {
+  &__placement-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
 
-      &__details {
-        position: relative;
-        padding-left: 1rem;
-        i {
-          margin-right: 0.8rem;
-        }
-      }
+  &__single-jobs {
+    padding: 0rem !important;
+    background-color: #fff8f8;
+    margin-bottom: 4rem;
+    align-self: stretch;
+    margin-right: 2.5rem;
+    height: 100%;
+    // width: 30rem;
+    flex: 1 0 25%;
+    box-shadow: 0 0 1.5rem 0 rgba(0, 0, 0, 0.1);
+    @media only screen and (max-width: $bp-992) {
+      flex: 0 0 46%;
+    }
+    @media only screen and (max-width: $bp-xsmall) {
+      flex: 1 0 100%;
+      margin-right: 0;
+    }
+  }
 
-      &__send-cv {
-        // color: $color-secondary;
-        padding: 0.5rem 1rem;
-        margin-left: 1rem;
-        font-size: 1.8rem;
-        font-weight: 700;
-        position: relative;
-        // display: inblock;
-        margin-top: 1rem;
-        margin-left: 1rem;
-        background: $color-secondary;
-        i {
-          color: #fff;
-        }
+  &__content-box {
+    padding: 2rem;
+  }
 
-        &:hover {
-          color: #fff;
-          span {
-            background: $color-primary;
-          }
-        }
-        // text-decoration: underline;
+  &__title {
+    font-size: 2rem;
+    font-weight: 800;
+    color: $color-primary;
+  }
+
+  &__details {
+    position: relative;
+    // padding-left: 1rem;
+    margin-bottom: 0;
+    i {
+      margin-right: 0.8rem;
+    }
+  }
+
+  &__company {
+    margin-bottom: 1rem;
+  }
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    // width: 80%;
+    align-items: center;
+    margin-bottom: 1rem;
+
+    li {
+      width: 50%;
+    }
+  }
+
+  &__send-cv {
+    // color: $color-secondary;
+    padding: 0.5rem 1rem;
+    margin-left: 1rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+    position: relative;
+    // display: inblock;
+    margin-top: 0rem;
+    margin-left: 0rem;
+    background: $color-secondary;
+    i {
+      color: #fff;
+    }
+
+    &:hover {
+      color: #fff;
+      span {
+        background: $color-primary;
       }
     }
+    // text-decoration: underline;
   }
 }
 
