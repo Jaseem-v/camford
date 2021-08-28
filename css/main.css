@@ -3319,16 +3319,16 @@ p {
 
 .jobs__single-jobs {
   padding: 0rem !important;
-  background-color: #fff8f8;
+  background-color: #fff;
   margin-bottom: 4rem;
   align-self: stretch;
   margin-right: 2.5rem;
   height: 100%;
-  flex: 1 0 25%;
+  flex: 0 0 30%;
   box-shadow: 0 0 1.5rem 0 rgba(0, 0, 0, 0.1);
 }
 
-@media only screen and (max-width: 61.875em) {
+@media only screen and (max-width: 75em) {
   .jobs__single-jobs {
     flex: 0 0 46%;
   }
@@ -3341,6 +3341,10 @@ p {
   }
 }
 
+.jobs__image img {
+  width: 100%;
+}
+
 .jobs__content-box {
   padding: 2rem;
 }
@@ -3351,28 +3355,42 @@ p {
   color: #221638;
 }
 
-.jobs__details {
-  position: relative;
-  margin-bottom: 0;
-}
-
-.jobs__details i {
-  margin-right: 0.8rem;
-}
-
 .jobs__company {
   margin-bottom: 1rem;
 }
 
 .jobs__info {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   margin-bottom: 1rem;
+  color: #8b9aa5;
 }
 
-.jobs__info li {
-  width: 50%;
+.jobs__details {
+  display: flex;
+  align-items: center;
+}
+
+@media only screen and (max-width: 52.25em) {
+  .jobs__details {
+    display: none;
+  }
+}
+
+.jobs__details-item {
+  margin-right: 1rem;
+  background: rgba(170, 170, 170, 0.1);
+  padding: 0.5rem 1rem;
+}
+
+.jobs__apply {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding-left: 2rem;
+  height: 100%;
+  justify-content: space-between;
+  flex-direction: row;
+  padding-left: 0rem;
 }
 
 .jobs__send-cv {
@@ -3396,6 +3414,34 @@ p {
 
 .jobs__send-cv:hover span {
   background: #221638;
+}
+
+.jobs__last-date {
+  font-size: 1.2rem;
+  margin-top: 0.8rem;
+  margin-bottom: 1.8rem;
+}
+
+.jobs__mobile {
+  display: block;
+}
+
+@media only screen and (max-width: 52.25em) {
+  .jobs__mobile {
+    display: block;
+  }
+}
+
+.jobs__mobile .jobs__details {
+  flex-direction: row;
+  display: inline-block;
+  display: flex;
+  align-items: center;
+  padding-top: 0.8rem;
+}
+
+.jobs__mobile .jobs__details-item {
+  margin-right: 1rem;
 }
 
 .placement__instant-courses {

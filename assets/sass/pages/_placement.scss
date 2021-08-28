@@ -74,21 +74,36 @@
 
   &__single-jobs {
     padding: 0rem !important;
-    background-color: #fff8f8;
+    background-color: #fff;
     margin-bottom: 4rem;
     align-self: stretch;
     margin-right: 2.5rem;
     height: 100%;
     // width: 30rem;
-    flex: 1 0 25%;
+    flex: 0 0 30%;
     box-shadow: 0 0 1.5rem 0 rgba(0, 0, 0, 0.1);
-    @media only screen and (max-width: $bp-992) {
+    @media only screen and (max-width: $bp-largest) {
       flex: 0 0 46%;
     }
     @media only screen and (max-width: $bp-xsmall) {
       flex: 1 0 100%;
       margin-right: 0;
     }
+  }
+
+  // &__layout{
+  //   @media only screen and (max-width: $bp-xsmall) {
+  //     flex-direction: ;
+  //   }
+  // }
+
+  &__image {
+    img {
+      width: 100%;
+    }
+    // @media only screen and (max-width: $bp-xsmall) {
+    //   display: none;
+    // }
   }
 
   &__content-box {
@@ -101,29 +116,45 @@
     color: $color-primary;
   }
 
-  &__details {
-    position: relative;
-    // padding-left: 1rem;
-    margin-bottom: 0;
-    i {
-      margin-right: 0.8rem;
-    }
-  }
-
   &__company {
     margin-bottom: 1rem;
   }
 
   &__info {
-    display: flex;
-    justify-content: space-between;
-    // width: 80%;
-    align-items: center;
     margin-bottom: 1rem;
+    color: #8b9aa5;
+  }
 
-    li {
-      width: 50%;
+  &__details {
+    display: flex;
+    align-items: center;
+    @media only screen and (max-width: $bp-small) {
+      display: none;
     }
+
+    &-item {
+      margin-right: 1rem;
+      background: rgba(#aaa, 0.1);
+      padding: 0.5rem 1rem;
+    }
+  }
+  &__apply {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding-left: 2rem;
+    height: 100%;
+    // @media only screen and (max-width: $bp-small) {
+    justify-content: space-between;
+    flex-direction: row;
+    padding-left: 0rem;
+    // }
+    // @media only screen and (max-width: $bp-xsmall) {
+    //   align-items: center;
+    //   justify-content: flex-end;
+    //   padding-left: 0;
+    // }
   }
 
   &__send-cv {
@@ -148,6 +179,31 @@
       }
     }
     // text-decoration: underline;
+  }
+
+  &__last-date {
+    font-size: 1.2rem;
+    margin-top: 0.8rem;
+    margin-bottom: 1.8rem;
+  }
+
+  &__mobile {
+    display: block;
+    @media only screen and (max-width: $bp-small) {
+      display: block;
+    }
+    & .jobs__details {
+      flex-direction: row;
+      display: inline-block;
+      display: flex;
+      align-items: center;
+      padding-top: 0.8rem;
+
+      &-item {
+        margin-right: 1rem;
+        // width: 50%;
+      }
+    }
   }
 }
 
