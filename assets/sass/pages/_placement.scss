@@ -98,31 +98,53 @@
   // }
 
   &__image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     img {
       width: 100%;
     }
-    // @media only screen and (max-width: $bp-xsmall) {
-    //   display: none;
-    // }
+    
   }
 
   &__content-box {
     padding: 2rem;
+    @media only screen and (max-width: $bp-xsmall) {
+      padding: 2.7rem;
+    }
+    @media only screen and (max-width: $bp-380) {
+      padding: 1.8rem;
+    }
   }
 
   &__title {
     font-size: 2rem;
     font-weight: 800;
     color: $color-primary;
+    @media only screen and (max-width: $bp-xsmall) {
+      font-size: 2.3rem;
+      margin-bottom: 1rem;
+
+    }
   }
 
   &__company {
-    margin-bottom: 1rem;
+    margin-bottom: 0.7rem;
+    color: #8b9aa5;
+    @media only screen and (max-width: $bp-xsmall) {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
   }
 
-  &__info {
-    margin-bottom: 1rem;
+  &__place {
+    margin-bottom: 0.7rem;
     color: #8b9aa5;
+    margin-top: 0.7rem;
+    @media only screen and (max-width: $bp-xsmall) {
+      font-size: 2rem;
+      margin-top: 1.5rem;
+    }
   }
 
   &__details {
@@ -136,18 +158,20 @@
       margin-right: 1rem;
       background: rgba(#aaa, 0.1);
       padding: 0.5rem 1rem;
+      margin-bottom: 1rem;
     }
   }
   &__apply {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-end;
+    // flex-direction: column;
+    // align-items: flex-start;
+    // justify-content: flex-end;
     padding-left: 2rem;
     height: 100%;
     // @media only screen and (max-width: $bp-small) {
     justify-content: space-between;
-    flex-direction: row;
+    align-items: center;
+    // flex-direction: row;
     padding-left: 0rem;
     // }
     // @media only screen and (max-width: $bp-xsmall) {
@@ -184,7 +208,7 @@
   &__last-date {
     font-size: 1.2rem;
     margin-top: 0.8rem;
-    margin-bottom: 1.8rem;
+    margin-bottom: 0rem;
   }
 
   &__mobile {
