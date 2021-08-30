@@ -22,7 +22,8 @@ a:hover {
   color: currentColor;
 }
 
-ul, ol {
+ul,
+ol {
   padding: 0;
   list-style: none;
   margin: 0;
@@ -75,6 +76,12 @@ html {
 @media only screen and (max-width: 21.25em) {
   html {
     font-size: 42%;
+  }
+}
+
+@media only screen and (max-width: 18.125em) {
+  html {
+    font-size: 35%;
   }
 }
 
