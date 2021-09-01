@@ -17,12 +17,12 @@
     z-index: 0;
     margin-left: -.1rem;
 
-    &--1 {
-      background-image: url(../../../assets/img/banner-slide-1.jpg);
-    }
-    &--2 {
-      background-image: url(../../../assets/img/banner-slide-2.jpg);
-    }
+    // &--1 {
+    //   background-image: url(../../../assets/img/banner-slide-1.jpg);
+    // }
+    // &--2 {
+    //   background-image: url(../../../assets/img/banner-slide-2.jpg);
+    // }
 
     @media only screen and (max-width: $bp-992) {
       height: auto;

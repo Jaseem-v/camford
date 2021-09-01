@@ -85,6 +85,12 @@ html {
   }
 }
 
+@media only screen and (min-width: 112.5em) {
+  .container {
+    max-width: 137rem;
+  }
+}
+
 /* ---xxx------general-------xx-----*/
 /*=================================================*/
 /*             Base End                   */
@@ -584,12 +590,6 @@ p {
   height: 90vh;
   z-index: 0;
   margin-left: -0.1rem;
-}
-.header__bg--1 {
-  background-image: url(../../../assets/img/banner-slide-1.jpg);
-}
-.header__bg--2 {
-  background-image: url(../../../assets/img/banner-slide-2.jpg);
 }
 @media only screen and (max-width: 61.875em) {
   .header__bg {
@@ -1827,15 +1827,11 @@ p {
 /*             About start                         */
 /*=================================================*/
 .page-banner-image {
-  background-image: url(../../../assets/img/camford-programestop.jpg);
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
   height: 40vh;
-}
-.page-banner-image--about {
-  background-image: url(../../../assets/img/PFA/PFA-about-1.png);
 }
 @media only screen and (max-width: 37.5em) {
   .page-banner-image--about {
@@ -1843,7 +1839,6 @@ p {
   }
 }
 .page-banner-image--corporate-training {
-  background-image: url(../../../assets/img/PFA/PFA-corporate.jpg);
   background-position: center;
 }
 @media only screen and (max-width: 37.5em) {
@@ -1851,16 +1846,10 @@ p {
     background-position: 65%;
   }
 }
-.page-banner-image--placement {
-  background-image: url(../../../assets/img/PFA/PFA-palcement.jpg);
-}
 @media only screen and (max-width: 37.5em) {
   .page-banner-image--placement {
     background-position: 80%;
   }
-}
-.page-banner-image--courses {
-  background-image: url(../../../assets/img/PFA/PFA-training.jpg);
 }
 @media only screen and (max-width: 37.5em) {
   .page-banner-image--courses {

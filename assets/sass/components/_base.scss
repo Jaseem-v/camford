@@ -85,6 +85,12 @@ html {
     font-size: 75%;
   }
 }
+
+.container{
+  @media only screen and (min-width: $bp-xlarge) {
+    max-width: 137rem;
+  }
+}
 /* ---xxx------general-------xx-----*/
 
 /*=================================================*/

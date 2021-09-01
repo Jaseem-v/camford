@@ -5,7 +5,6 @@
 // PAGE BANNER IMAGE
 
 .page-banner-image {
-  background-image: url(../../../assets/img/camford-programestop.jpg);
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -16,27 +15,24 @@
   // }
 
   &--about {
-    background-image: url(../../../assets/img/PFA/PFA-about-1.png);
     @media only screen and (max-width: $bp-xsmall) {
       background-position: 58%;
     }
   }
   &--corporate-training {
-    background-image: url(../../../assets/img/PFA/PFA-corporate.jpg);
     background-position: center;
     @media only screen and (max-width: $bp-xsmall) {
       background-position: 65%;
     }
   }
   &--placement {
-    background-image: url(../../../assets/img/PFA/PFA-palcement.jpg);
     @media only screen and (max-width: $bp-xsmall) {
       background-position: 80%;
     }
   }
 
   &--courses {
-    background-image: url(../../../assets/img/PFA/PFA-training.jpg);
+    
     @media only screen and (max-width: $bp-xsmall) {
       background-position: 50%;
     }
