@@ -2097,6 +2097,10 @@ p {
   }
 }
 
+.who-we-are {
+  background-color: #fff8f8;
+}
+
 .who-we-are .vision-mission__left-part p {
   margin-bottom: 0;
 }
@@ -2105,62 +2109,9 @@ p {
   font-size: 3rem;
 }
 
-.gov-body {
-  background-color: #fff;
-}
-
-.gov-body .faculty {
-  background: #fff;
-}
-
-.gov-body .faculty__single-card {
-  flex: 1 0 25%;
-  background: #fff;
-  margin-top: 2rem;
-}
-
-.gov-body .faculty__single-card:not(:nth-child(3n)) {
-  margin-right: 10rem;
-}
-
-@media only screen and (max-width: 52.25em) {
-  .gov-body .faculty__single-card:not(:nth-child(3n)) {
-    margin-right: 2rem;
-  }
-}
-
-@media only screen and (max-width: 37.5em) {
-  .gov-body .faculty__single-card {
-    flex: 1 0 45%;
-  }
-  .gov-body .faculty__single-card:not(:nth-child(3n)) {
-    margin-right: 0rem;
-  }
-  .gov-body .faculty__single-card:not(:nth-child(2n)) {
-    margin-right: 2rem;
-  }
-}
-
-.gov-body .faculty__content {
-  text-align: center;
-}
-
-.gov-body .faculty__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.gov-body .faculty__link .social-link {
-  width: auto;
-}
-
-.gov-body .faculty__image img {
-  border-radius: 0%;
-}
-
 .ceo-message {
   padding: 8rem 0;
+  background: #fff8f8;
 }
 
 .ceo-message__left-part {
@@ -2213,8 +2164,98 @@ p {
   }
 }
 
+.gov-body {
+  background-color: transparent;
+}
+
+.gov-body .faculty {
+  background: transparent;
+}
+
+.gov-body .faculty__cards {
+  justify-content: center;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .gov-body .faculty__cards {
+    justify-content: space-between;
+    padding: 1rem;
+  }
+}
+
+.gov-body .faculty__single-card {
+  background: transparent;
+  margin-top: 2rem;
+  width: 30rem;
+}
+
+.gov-body .faculty__single-card:not(:nth-child(3n)) {
+  margin-right: 7rem;
+}
+
+@media only screen and (max-width: 61.875em) {
+  .gov-body .faculty__single-card {
+    width: 28rem;
+  }
+  .gov-body .faculty__single-card:not(:nth-child(3n)) {
+    margin-right: 0rem;
+  }
+  .gov-body .faculty__single-card:not(:nth-child(2n)) {
+    margin-right: 2.5rem;
+  }
+}
+
+@media only screen and (max-width: 52.25em) {
+  .gov-body .faculty__single-card {
+    width: 27rem;
+  }
+  .gov-body .faculty__single-card:not(:nth-child(2n)) {
+    margin-right: 0;
+  }
+  .gov-body .faculty__single-card:not(:nth-child(3n)) {
+    margin-right: 2rem;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .gov-body .faculty__single-card {
+    width: 47%;
+  }
+  .gov-body .faculty__single-card:not(:nth-child(3n)) {
+    margin-right: 0rem;
+  }
+  .gov-body .faculty__single-card:not(:nth-child(2n)) {
+    margin-right: 2.5rem;
+  }
+}
+
+.gov-body .faculty__content {
+  text-align: center;
+}
+
+.gov-body .faculty__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gov-body .faculty__link .social-link {
+  width: auto;
+}
+
+.gov-body .faculty__image img {
+  border-radius: 0%;
+}
+
+.managment-team {
+  background: #fff8f8;
+}
+
+.administration-team {
+  background: #fff8f8;
+}
+
 .team {
-  background: #f6f6f6;
   padding: 8rem 0;
 }
 

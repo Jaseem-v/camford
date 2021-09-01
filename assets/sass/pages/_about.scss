@@ -47,6 +47,7 @@
 //// who we are
 .who-we-are {
   // background: #f6f6f6;
+  background-color: #fff8f8;
   & .vision-mission {
     &__left-part p {
       margin-bottom: 0;
@@ -60,63 +61,11 @@
   font-size: 3rem;
 }
 
-////////////////////////////////////////
-// governing Body
-.gov-body {
-  background-color: #fff;
-  & .faculty {
-    background: #fff;
-    &__single-card {
-      flex: 1 0 25%;
-      background: #fff;
-      // box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-      margin-top: 2rem;
-
-      &:not(:nth-child(3n)) {
-        margin-right: 10rem;
-      }
-
-      @media only screen and (max-width: $bp-small) {
-        &:not(:nth-child(3n)) {
-          margin-right: 2rem;
-        }
-      }
-      @media only screen and (max-width: $bp-xsmall) {
-        &:not(:nth-child(3n)) {
-          margin-right: 0rem;
-        }
-        &:not(:nth-child(2n)) {
-          margin-right: 2rem;
-        }
-        flex: 1 0 45%;
-      }
-    }
-
-    &__content {
-      text-align: center;
-    }
-
-    &__link {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-      .social-link {
-        width: auto;
-      }
-    }
-
-    &__image {
-      img {
-        border-radius: 0%;
-      }
-    }
-  }
-}
 /////////////////////////////////////
 // CEO MESSAGE
 .ceo-message {
   padding: 8rem 0;
+  background: #fff8f8;
 
   &__left-part {
     display: flex;
@@ -163,11 +112,98 @@
   }
 }
 
+////////////////////////////////////////
+// governing Body
+.gov-body {
+  background-color: transparent;
+  & .faculty {
+    background: transparent;
+    &__cards {
+      justify-content: center;
+      @media only screen and (max-width: $bp-xsmall) {
+        justify-content: space-between;
+        padding: 1rem;
+      }
+    }
+    &__single-card {
+      // flex: 1 0 25%;
+      background: transparent;
+      // box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+      margin-top: 2rem;
+      width: 30rem;
+      &:not(:nth-child(3n)) {
+        margin-right: 7rem;
+      }
+      @media only screen and (max-width: $bp-992) {
+        &:not(:nth-child(3n)) {
+          margin-right: 0rem;
+        }
+        &:not(:nth-child(2n)) {
+          margin-right: 2.5rem;
+        }
+        width: 28rem;
+      }
+      @media only screen and (max-width: $bp-small) {
+        &:not(:nth-child(2n)) {
+          margin-right: 0;
+        }
+        &:not(:nth-child(3n)) {
+          margin-right: 2rem;
+        }
+
+        width: 27rem;
+      }
+      @media only screen and (max-width: $bp-xsmall) {
+        &:not(:nth-child(3n)) {
+          margin-right: 0rem;
+        }
+        &:not(:nth-child(2n)) {
+          margin-right: 2.5rem;
+        }
+        width: 47%;
+      }
+    }
+
+    &__content {
+      text-align: center;
+    }
+
+    &__link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .social-link {
+        width: auto;
+      }
+    }
+
+    &__image {
+      img {
+        border-radius: 0%;
+      }
+    }
+  }
+}
+
+/////////////////////////////////////////
+/// Managment Team
+
+.managment-team {
+  background: #fff8f8;
+}
+
+////////////////////////////////////////////
+// Administration Team
+
+.administration-team {
+  background: #fff8f8;
+}
 ///////////////////////////////////////////
 /// TEAM
 
 .team {
-  background: #f6f6f6;
+  // background: #f6f6f6;
   padding: 8rem 0;
   &__cards {
     display: flex;
