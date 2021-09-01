@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+  <defs>
+    <clipPath id="clip-favicon_">
+      <rect width="32" height="32"/>
+    </clipPath>
+  </defs>
+  <g id="favicon_" data-name="favicon " clip-path="url(#clip-favicon_)">
+    <rect width="32" height="32" fill="#fff"/>
+    <g id="Group_406" data-name="Group 406" transform="translate(0 -0.794)">
+      <path id="Path_519" data-name="Path 519" d="M3990.373,5433.956a11.052,11.052,0,1,0-.107,22.054l.006-1.324a8.734,8.734,0,1,1,.085-17.44Z" transform="translate(-3973.472 -5425.826)" fill="#006496" stroke="#006496" stroke-width="1" fill-rule="evenodd"/>
+      <path id="Path_522" data-name="Path 522" d="M11031.682,4153.648h-1.964v12.937h-2.519v-19.267a3.306,3.306,0,0,1,1-2.427,3.27,3.27,0,0,1,2.4-1h1.9v2.549h-1.9a.991.991,0,0,0-.621.2.66.66,0,0,0-.259.562v3.964h1.964Z" transform="translate(-11008.762 -4141.096)" fill="#ff3232" stroke="#fe3232" stroke-width="1"/>
+    </g>
+  </g>
+</svg>
