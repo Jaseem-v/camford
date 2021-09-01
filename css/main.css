@@ -2105,6 +2105,60 @@ p {
   font-size: 3rem;
 }
 
+.gov-body {
+  background-color: #fff;
+}
+
+.gov-body .faculty {
+  background: #fff;
+}
+
+.gov-body .faculty__single-card {
+  flex: 1 0 25%;
+  background: #fff;
+  margin-top: 2rem;
+}
+
+.gov-body .faculty__single-card:not(:nth-child(3n)) {
+  margin-right: 10rem;
+}
+
+@media only screen and (max-width: 52.25em) {
+  .gov-body .faculty__single-card:not(:nth-child(3n)) {
+    margin-right: 2rem;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .gov-body .faculty__single-card {
+    flex: 1 0 45%;
+  }
+  .gov-body .faculty__single-card:not(:nth-child(3n)) {
+    margin-right: 0rem;
+  }
+  .gov-body .faculty__single-card:not(:nth-child(2n)) {
+    margin-right: 2rem;
+  }
+}
+
+.gov-body .faculty__content {
+  text-align: center;
+}
+
+.gov-body .faculty__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gov-body .faculty__link .social-link {
+  width: auto;
+}
+
+.gov-body .faculty__image img {
+  border-radius: 0%;
+}
+
 .ceo-message {
   padding: 8rem 0;
 }
@@ -3319,25 +3373,32 @@ p {
 
 .jobs__placement-box {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   flex-wrap: wrap;
+  flex-flow: row wrap;
 }
 
 .jobs__single-jobs {
   padding: 0rem !important;
   background-color: #fff;
+  box-shadow: 0 0 1.5rem 0 rgba(0, 0, 0, 0.1);
+  display: flex;
   margin-bottom: 4rem;
   align-self: stretch;
   margin-right: 2.5rem;
-  height: 100%;
   flex: 0 0 31%;
-  box-shadow: 0 0 1.5rem 0 rgba(0, 0, 0, 0.1);
 }
 
 @media only screen and (max-width: 75em) {
   .jobs__single-jobs {
     flex: 0 0 46%;
+  }
+}
+
+@media only screen and (max-width: 52.25em) {
+  .jobs__single-jobs {
+    flex: 0 0 47%;
   }
 }
 
@@ -3359,7 +3420,14 @@ p {
 }
 
 .jobs__content-box {
+  align-self: stretch;
   padding: 2rem;
+}
+
+@media only screen and (max-width: 52.25em) {
+  .jobs__content-box {
+    padding: 2rem 1.5rem;
+  }
 }
 
 @media only screen and (max-width: 37.5em) {
@@ -3378,6 +3446,7 @@ p {
   font-size: 2rem;
   font-weight: 800;
   color: #221638;
+  margin-bottom: 0.7rem;
 }
 
 @media only screen and (max-width: 37.5em) {
@@ -3388,8 +3457,9 @@ p {
 }
 
 .jobs__company {
-  margin-bottom: 0.7rem;
-  color: #8b9aa5;
+  margin-bottom: 0.4rem;
+  color: #606060;
+  text-transform: lowercase;
 }
 
 @media only screen and (max-width: 37.5em) {
@@ -3401,14 +3471,16 @@ p {
 
 .jobs__place {
   margin-bottom: 0.7rem;
-  color: #8b9aa5;
-  margin-top: 0.7rem;
+  color: #606060;
+}
+
+.jobs__place i {
+  margin-right: 0.5rem;
 }
 
 @media only screen and (max-width: 37.5em) {
   .jobs__place {
     font-size: 2rem;
-    margin-top: 1.5rem;
   }
 }
 
@@ -3427,7 +3499,7 @@ p {
   margin-right: 1rem;
   background: rgba(170, 170, 170, 0.1);
   padding: 0.5rem 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0rem;
 }
 
 .jobs__apply {
@@ -3437,6 +3509,18 @@ p {
   justify-content: space-between;
   align-items: center;
   padding-left: 0rem;
+  margin-top: 0.6rem;
+}
+
+.jobs__details {
+  flex-direction: row;
+  display: inline-block;
+  display: flex;
+  align-items: center;
+}
+
+.jobs__details-item {
+  margin-right: 1rem;
 }
 
 .jobs__send-cv {
@@ -3466,28 +3550,6 @@ p {
   font-size: 1.2rem;
   margin-top: 0.8rem;
   margin-bottom: 0rem;
-}
-
-.jobs__mobile {
-  display: block;
-}
-
-@media only screen and (max-width: 52.25em) {
-  .jobs__mobile {
-    display: block;
-  }
-}
-
-.jobs__mobile .jobs__details {
-  flex-direction: row;
-  display: inline-block;
-  display: flex;
-  align-items: center;
-  padding-top: 0.8rem;
-}
-
-.jobs__mobile .jobs__details-item {
-  margin-right: 1rem;
 }
 
 .placement__instant-courses {
