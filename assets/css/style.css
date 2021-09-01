@@ -1,6 +1,30 @@
 @charset "UTF-8";
 /*=================================================*/
-/*                  Main  start                    */
+/*                  Table of content        
+                  --------------------
+
+   1.base
+   2.typography
+   3.navbar
+   4.header
+   5.components
+   6.footer
+
+   pages:-
+
+   7.home
+   8.about
+   9.course
+   10.single-courses
+   11.corporate-training
+   12.contact
+   13.form
+   14.placement
+
+   please note : each sections are sepertaed by comments where startting is
+                 mentioned as 'START' and End as 'END'
+
+*/
 /*=================================================*/
 /*=================================================*/
 /*             Base start                   */
@@ -11,10 +35,17 @@
   box-sizing: border-box;
 }
 
-/*-------color----------*/
-/*-------color----------*/
-/*-------font-size----------*/
-/*-------font-size----------*/
+:root {
+  /*-------color----------*/
+  --color-primary: #221638;
+  --color-secondary: #fe4a55;
+  --color-teritiary: #024773;
+  /*-------color----------*/
+  /*-------font-size----------*/
+  --responsive-font: 1.83rem;
+  /*-------font-size----------*/
+}
+
 a {
   text-decoration: none;
 }
@@ -110,7 +141,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #221638;
+  color: var(--color-primary);
   font-family: Nunito, sans-serif;
 }
 
@@ -122,12 +153,12 @@ h3,
 h4,
 h5,
 h6 {
-  color: #024773;
+  color: var(--color-teritiary);
   letter-spacing: 1px;
 }
 
 i {
-  color: #fe4a55;
+  color: var(--color-secondary);
 }
 
 p {
@@ -144,7 +175,7 @@ p {
 }
 @media only screen and (max-width: 52.25em) {
   p {
-    font-size: 1.83rem;
+    font-size: var(--responsive-font);
   }
 }
 
@@ -168,7 +199,7 @@ p {
   margin-bottom: 0;
   font-size: 3.3rem;
   font-weight: 800;
-  color: #221638;
+  color: var(--color-primary);
   text-transform: uppercase;
 }
 @media only screen and (max-width: 37.5em) {
@@ -179,12 +210,12 @@ p {
 .heading--teritiary {
   font-size: 2.5rem;
   font-weight: 700;
-  color: #221638;
+  color: var(--color-primary);
   margin-bottom: 1.5rem;
 }
 .heading--side {
   font-weight: 800;
-  color: #221638;
+  color: var(--color-primary);
   font-size: 2.8rem;
   display: inline-block;
   position: relative;
@@ -204,7 +235,7 @@ p {
 }
 @media only screen and (max-width: 52.25em) {
   .paragraph--primary {
-    font-size: 1.83rem;
+    font-size: var(--responsive-font);
   }
 }
 .paragraph--secondary {
@@ -214,7 +245,7 @@ p {
 }
 @media only screen and (max-width: 52.25em) {
   .paragraph--secondary {
-    font-size: 1.83rem;
+    font-size: var(--responsive-font);
   }
 }
 .paragraph--teritiary {
@@ -223,7 +254,7 @@ p {
 }
 @media only screen and (max-width: 52.25em) {
   .paragraph--teritiary {
-    font-size: 1.83rem;
+    font-size: var(--responsive-font);
   }
 }
 .paragraph--footer {
@@ -362,7 +393,7 @@ p {
   }
 }
 .navigation__link {
-  color: #221638;
+  color: var(--color-primary);
   font-size: 1.5rem;
   font-weight: 700;
   margin-left: 1.3rem;
@@ -371,7 +402,7 @@ p {
 .navigation__link i {
   font-size: 2rem;
   margin-left: 0.5rem;
-  color: #221638;
+  color: var(--color-primary);
   transform: translateY(0.15rem);
 }
 @media only screen and (max-width: 61.875em) {
@@ -417,7 +448,7 @@ p {
   list-style: none;
   width: 100%;
   height: 3.5px;
-  background: #221638;
+  background: var(--color-primary);
   position: absolute;
   left: 0;
   transform: translateY(-50%);
@@ -466,10 +497,10 @@ p {
   transition: 0.2s;
 }
 .navigation__dropdown-menu {
-  color: #221638;
+  color: var(--color-primary);
   background: #fff;
   padding: 2rem 0;
-  border-top: 1.5px solid #fe4a55;
+  border-top: 1.5px solid var(--color-secondary);
   position: fixed;
   top: 10.3rem;
   left: 0;
@@ -501,7 +532,7 @@ p {
   position: relative;
 }
 .navigation__dropdown-item:hover .navigation__dropdown-icon {
-  background: #fe4a55;
+  background: var(--color-secondary);
 }
 .navigation__dropdown-item:hover .navigation__dropdown-icon i {
   color: #fff;
@@ -519,14 +550,14 @@ p {
   margin-bottom: 2rem;
 }
 .navigation__dropdown-icon i {
-  color: #024773;
+  color: var(--color-teritiary);
 }
 .navigation__dropdown-title {
   font-weight: 600;
   font-size: 1.6rem;
   text-transform: capitalize;
   max-width: 14.5rem;
-  color: #221638;
+  color: var(--color-primary);
 }
 .navigation__dropdown-link {
   position: absolute;
@@ -720,7 +751,7 @@ p {
   overflow: hidden;
   z-index: 1;
   color: #fff;
-  background-color: #fe4a55;
+  background-color: var(--color-secondary);
   transition: 0.5s;
   border-radius: 0.5rem;
   font-weight: 700;
@@ -743,15 +774,15 @@ p {
   transform: translateY(-5px);
 }
 .btn:hover {
-  color: #221638;
+  color: var(--color-primary);
 }
 .btn:hover span {
   width: 225%;
   height: 562.5px;
-  background-color: #221638;
+  background-color: var(--color-primary);
 }
 .btn--cta:hover {
-  color: #221638;
+  color: var(--color-primary);
 }
 .btn--cta:hover span {
   background-color: #fff;
@@ -760,7 +791,7 @@ p {
   text-transform: uppercase;
   margin-top: -3px;
   padding: 1.3rem 2rem 1rem 2rem;
-  background-color: #024773;
+  background-color: var(--color-teritiary);
 }
 @media only screen and (max-width: 61.875em) {
   .btn--contact {
@@ -773,13 +804,13 @@ p {
   color: #fff;
 }
 .btn--contact:hover span {
-  background-color: #fe4a55;
+  background-color: var(--color-secondary);
 }
 .btn--training:hover {
   color: #fff;
 }
 .btn--training:hover span {
-  background-color: #221638;
+  background-color: var(--color-primary);
 }
 .btn--training i {
   color: #fff;
@@ -791,13 +822,13 @@ p {
 
 .line-btn {
   display: inline-block;
-  color: #fe4a55;
+  color: var(--color-secondary);
   font-size: 1.7rem;
   font-weight: 700;
   margin-top: 1rem;
 }
 .line-btn:hover {
-  color: #221638;
+  color: var(--color-primary);
 }
 
 .video-btn {
@@ -814,7 +845,7 @@ p {
   -webkit-transform: translateY(-50%) translateX(-50%);
   -moz-transform: translateY(-50%) translateX(-50%);
   transform: translateY(-50%) translateX(-50%);
-  background-color: #fe4a55;
+  background-color: var(--color-secondary);
   border-radius: 50%;
   color: #fff;
 }
@@ -835,7 +866,7 @@ p {
   -moz-transition: 0.5s;
   transition: 0.5s;
   border-radius: 50%;
-  border: 1px solid #fe4a55;
+  border: 1px solid var(--color-secondary);
 }
 .video-btn::before {
   animation: ripple 2s linear infinite;
@@ -845,10 +876,10 @@ p {
 }
 .video-btn:hover {
   color: #fff;
-  background-color: #221638;
+  background-color: var(--color-primary);
 }
 .video-btn:hover::after, .video-btn:hover::before {
-  border: 1px solid #221638;
+  border: 1px solid var(--color-primary);
 }
 .video-btn i {
   color: #fff;
@@ -896,7 +927,7 @@ p {
 }
 #tabs .nav-tabs .nav-item {
   margin-right: 2rem;
-  background-color: #221638;
+  background-color: var(--color-primary);
 }
 #tabs .nav-tabs .nav-item .nav-link {
   margin-right: 0px;
@@ -908,16 +939,16 @@ p {
 #tabs .nav-tabs .nav-item .nav-link:hover {
   background-color: #fff;
   border: none;
-  color: #fe4a55;
+  color: var(--color-secondary);
 }
 #tabs .nav-tabs .nav-item .nav-link:hover i {
-  color: #fe4a55;
+  color: var(--color-secondary);
 }
 #tabs .nav-tabs .nav-item .nav-link i {
   color: #fff;
 }
 #tabs .nav-tabs .active {
-  background-color: #fe4a55;
+  background-color: var(--color-secondary);
   border: none;
   color: #fff;
 }
@@ -954,7 +985,7 @@ p {
   padding: 0.5rem;
   transition: 0.2s;
   color: #fff;
-  background-color: #024773;
+  background-color: var(--color-teritiary);
   margin-right: 0.8rem;
 }
 .social-link li a i {
@@ -963,7 +994,7 @@ p {
 }
 .social-link li:hover a {
   color: #fff;
-  background-color: #fe4a55;
+  background-color: var(--color-secondary);
 }
 
 .bread-crumbs {
@@ -982,12 +1013,12 @@ p {
   display: inline-block;
   margin-right: 2rem;
   position: relative;
-  color: #221638;
+  color: var(--color-primary);
   font-size: 1.6rem;
   font-weight: 600;
 }
 .bread-crumbs__content ul li a {
-  color: #fe4a55;
+  color: var(--color-secondary);
 }
 .bread-crumbs__content ul li::before {
   content: "";
@@ -1042,7 +1073,7 @@ p {
   padding: 3rem;
 }
 .card__download-brochure {
-  color: #fe4a55;
+  color: var(--color-secondary);
   font-weight: 600;
   font-size: 1.8rem;
   margin-bottom: 1rem;
@@ -1057,7 +1088,7 @@ p {
   text-transform: uppercase;
 }
 .card__title:hover {
-  color: #221638;
+  color: var(--color-primary);
 }
 .card__box-footer {
   list-style: none;
@@ -1075,7 +1106,7 @@ p {
   position: relative;
 }
 .card__box-footer__item i {
-  color: #fe4a55;
+  color: var(--color-secondary);
   position: absolute;
   left: 0;
   top: 0.65rem;
@@ -1105,7 +1136,7 @@ p {
 }
 .pagination__numbers.current, .pagination__numbers:hover {
   color: #fff;
-  background-color: #fe4a55;
+  background-color: var(--color-secondary);
 }
 
 /*=================================================*/
@@ -1185,11 +1216,11 @@ p {
   text-decoration: none;
 }
 .footer__nav-items:hover {
-  color: #fe4a55;
+  color: var(--color-secondary);
 }
 @media only screen and (max-width: 37.5em) {
   .footer__nav-items {
-    font-size: 1.83rem;
+    font-size: var(--responsive-font);
   }
 }
 .footer__address {
@@ -1207,7 +1238,7 @@ p {
 }
 @media only screen and (max-width: 37.5em) {
   .footer__address {
-    font-size: 1.83rem;
+    font-size: var(--responsive-font);
     line-height: 1.5;
   }
 }
@@ -1279,7 +1310,7 @@ p {
   top: 0;
   bottom: 0;
   border-radius: 0.5rem;
-  background-color: #221638;
+  background-color: var(--color-primary);
   opacity: 0.67;
   z-index: 1;
 }
@@ -1426,7 +1457,7 @@ p {
   top: 0;
   bottom: 0;
   border-radius: 5px;
-  background-color: #221638;
+  background-color: var(--color-primary);
   opacity: 0.3;
   z-index: 1;
 }
@@ -1460,13 +1491,13 @@ p {
 }
 .funfacts__item h3 {
   margin-bottom: 0;
-  color: #fe4a55;
+  color: var(--color-secondary);
   font-size: 4.4rem;
   font-weight: 800;
 }
 .funfacts__item p {
   text-transform: uppercase;
-  color: #221638;
+  color: var(--color-primary);
   line-height: 1;
   margin-top: 1rem;
   font-weight: 700;
@@ -1539,14 +1570,14 @@ p {
 }
 .testimonial .swiper-pagination-bullet-active {
   opacity: 1;
-  border: 1px solid #fe4a55;
+  border: 1px solid var(--color-secondary);
 }
 .testimonial .swiper-pagination-bullet-active::before {
   content: "";
   position: absolute;
   top: 50%;
   left: 50%;
-  background: #fe4a55;
+  background: var(--color-secondary);
   height: 6px;
   width: 6px;
   transform: translate(-50%, -50%);
@@ -1625,7 +1656,7 @@ p {
   margin-top: -1rem;
 }
 .review__user-name {
-  color: #fe4a55;
+  color: var(--color-secondary);
   font-size: 1.7rem;
   font-weight: 800;
   margin: 1rem 0;
@@ -1695,7 +1726,7 @@ p {
   margin-top: 1rem;
 }
 .workshops__date {
-  color: #fe4a55;
+  color: var(--color-secondary);
   font-size: 1.5rem;
   padding: 0rem 0;
   padding-left: 3rem;
@@ -1788,7 +1819,7 @@ p {
 }
 .faculty__sub-title {
   font-weight: 600;
-  color: #fe4a55;
+  color: var(--color-secondary);
   font-size: 1.6rem;
 }
 @media only screen and (max-width: 37.5em) {
@@ -1900,7 +1931,7 @@ p {
   font-size: 2.1rem;
 }
 .ceo-message__sub-title {
-  color: #fe4a55;
+  color: var(--color-secondary);
   font-size: 1.8rem;
   margin-top: 1rem;
   font-weight: 700;
@@ -2112,7 +2143,7 @@ p {
 .team__content .readMoreBtn {
   border: none;
   outline: none;
-  color: #fe4a55;
+  color: var(--color-secondary);
   background: none;
   display: inline;
 }
@@ -2196,7 +2227,7 @@ p {
   height: 4px;
   left: 2rem;
   transform: translateY(-50%) skewX(-10deg);
-  background-color: #fe4a55;
+  background-color: var(--color-secondary);
 }
 
 .training-programmes {
@@ -2285,7 +2316,7 @@ p {
 }
 .single-course__nav-tabs .slider {
   height: 2px !important;
-  background-color: #fe4a55 !important;
+  background-color: var(--color-secondary) !important;
 }
 .single-course__nav-item {
   background-color: #f8f9f8;
@@ -2298,12 +2329,12 @@ p {
   }
 }
 .single-course__nav-item .active {
-  background-color: #fe4a55;
+  background-color: var(--color-secondary);
   border: none;
   color: #fff;
 }
 .single-course__nav-link {
-  color: #221638;
+  color: var(--color-primary);
   font-size: 1.5rem;
   padding: 1.4rem 1.2rem;
   font-size: 1.8rem;
@@ -2312,7 +2343,7 @@ p {
   margin-bottom: 1rem;
 }
 .single-course__nav-link:hover {
-  background-color: #fe4a55;
+  background-color: var(--color-secondary);
   color: #fff;
 }
 .single-course__curriculum {
@@ -2337,7 +2368,7 @@ p {
   background: #fff;
 }
 .single-course__curriculum-item i {
-  color: #fe4a55;
+  color: var(--color-secondary);
   transform: translateY(-50%);
   position: absolute;
   top: 2.1rem;
@@ -2369,7 +2400,7 @@ p {
   right: 0;
   bottom: 0;
   z-index: 1;
-  background-color: #221638;
+  background-color: var(--color-primary);
   opacity: 0.25;
 }
 .single-course__download-image img {
@@ -2391,7 +2422,7 @@ p {
   color: #fff;
   border-radius: 0.5rem;
   padding: 0.4rem 2rem;
-  background-color: #221638;
+  background-color: var(--color-primary);
   font-size: 1.7rem;
   font-weight: 700;
   position: relative;
@@ -2431,12 +2462,12 @@ p {
 }
 .single-course__info-item span {
   font-weight: 800;
-  color: #221638;
+  color: var(--color-primary);
   position: relative;
   padding-left: 2.8rem;
 }
 .single-course__info-item i {
-  color: #fe4a55;
+  color: var(--color-secondary);
   font-size: 2rem;
   margin-right: 1.2rem;
   position: absolute;
@@ -2459,7 +2490,7 @@ p {
   position: relative;
 }
 .single-course__paragraph i {
-  color: #fe4a55;
+  color: var(--color-secondary);
   transform: translateY(-50%);
   position: absolute;
   top: 1.2rem;
@@ -2507,7 +2538,7 @@ p {
   }
 }
 .reviews__name {
-  color: #221638;
+  color: var(--color-primary);
   font-weight: 700;
   margin-left: 1rem;
   font-size: 1.8rem;
@@ -2522,7 +2553,7 @@ p {
 }
 .reviews__comment {
   font-weight: 700;
-  color: #221638;
+  color: var(--color-primary);
   font-size: 1.6rem;
 }
 
@@ -2552,12 +2583,12 @@ p {
 }
 .instractor__title {
   font-size: 1.7rem;
-  color: #024773;
+  color: var(--color-teritiary);
   font-weight: 800;
 }
 .instractor__sub-title {
   font-size: 1.5rem;
-  color: #fe4a55;
+  color: var(--color-secondary);
   font-weight: 600;
   margin-top: 0.5rem;
 }
@@ -2615,7 +2646,7 @@ p {
   width: 100%;
   display: block;
   margin-top: 2rem;
-  color: #fe4a55;
+  color: var(--color-secondary);
   z-index: 5;
   position: relative;
 }
@@ -2633,7 +2664,7 @@ p {
   font-size: 1.8rem;
 }
 .workshops-small-heading-date {
-  color: #fe4a55;
+  color: var(--color-secondary);
   margin-top: 1.5rem;
 }
 .workshops-small-heading-date i {
@@ -2687,7 +2718,7 @@ p {
   font-weight: 900;
 }
 .training__section-2 .card__title:hover {
-  color: #221638;
+  color: var(--color-primary);
 }
 @media only screen and (max-width: 37.5em) {
   .training__section-2 .container {
@@ -2755,7 +2786,7 @@ p {
 }
 .contact__items i {
   position: absolute;
-  color: #fe4a55;
+  color: var(--color-secondary);
   font-size: 1.5rem;
   top: 0;
   left: 0;
@@ -2830,7 +2861,7 @@ p {
   left: 50%;
   bottom: 0%;
   height: 4px;
-  background: #fe4a55;
+  background: var(--color-secondary);
   width: 10rem;
   border-radius: 5rem;
   transform: translateX(-50%);
@@ -2878,14 +2909,14 @@ p {
   font-size: 1.8rem;
   height: 4rem;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.1);
-  border: 1px solid rgba(254, 74, 85, 0.51);
+  border: 1px solid rgba(var(--color-secondary), 0.51);
 }
 .form__input:focus {
-  border-bottom: 0.3rem solid #28b485;
+  border-bottom: 0.3rem solid var(--color-primary) -dark;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
 }
 .form__input:focus:invalid {
-  border-bottom: 0.3rem solid #ff7730;
+  border-bottom: 0.3rem solid var(--color-secondary) -dark;
 }
 .form__input::-webkit-input-placeholder {
   font-weight: 500;
@@ -2911,7 +2942,7 @@ p {
   font-size: 1.6rem;
   height: 9rem;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.1);
-  border: 1px solid rgba(254, 74, 85, 0.51);
+  border: 1px solid rgba(var(--color-secondary), 0.51);
   text-align: left;
   font-weight: 500;
   padding: 1rem 1rem;
@@ -3046,7 +3077,7 @@ p {
 .jobs__title {
   font-size: 2rem;
   font-weight: 800;
-  color: #221638;
+  color: var(--color-primary);
   margin-bottom: 0.7rem;
 }
 @media only screen and (max-width: 37.5em) {
@@ -3119,7 +3150,7 @@ p {
   position: relative;
   margin-top: 0rem;
   margin-left: 0rem;
-  background: #fe4a55;
+  background: var(--color-secondary);
 }
 .jobs__send-cv i {
   color: #fff;
@@ -3128,7 +3159,7 @@ p {
   color: #fff;
 }
 .jobs__send-cv:hover span {
-  background: #221638;
+  background: var(--color-primary);
 }
 .jobs__last-date {
   font-size: 1.2rem;

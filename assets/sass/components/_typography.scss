@@ -14,7 +14,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: $color-primary;
+  color: var(--color-primary);
   font-family: Nunito, sans-serif;
 }
 
@@ -26,12 +26,12 @@ h3,
 h4,
 h5,
 h6 {
-  color: $color-teritiary;
+  color: var(--color-teritiary);
   letter-spacing: 1px;
 }
 
 i {
-  color: $color-secondary;
+  color: var(--color-secondary);
 }
 
 p {
@@ -45,7 +45,7 @@ p {
   }
 
   @media only screen and (max-width: $bp-small) {
-    font-size: $responsive-font;
+    font-size: var(--responsive-font);
   }
 }
 
@@ -68,7 +68,7 @@ p {
     margin-bottom: 0;
     font-size: 3.3rem;
     font-weight: 800;
-    color: $color-primary;
+    color: var(--color-primary);
     text-transform: uppercase;
     // max-width: 61.5rem;
 
@@ -79,13 +79,13 @@ p {
   &--teritiary {
     font-size: 2.5rem;
     font-weight: 700;
-    color: $color-primary;
+    color: var(--color-primary);
     margin-bottom: 1.5rem;
   }
 
   &--side {
     font-weight: 800;
-    color: $color-primary;
+    color: var(--color-primary);
     font-size: 2.8rem;
     display: inline-block;
     position: relative;
@@ -104,7 +104,7 @@ p {
     }
 
     @media only screen and (max-width: $bp-small) {
-      font-size: $responsive-font;
+      font-size: var(--responsive-font);
     }
   }
 
@@ -114,7 +114,7 @@ p {
     font-size: 1.6rem;
 
     @media only screen and (max-width: $bp-small) {
-      font-size: $responsive-font;
+      font-size: var(--responsive-font);
     }
   }
   &--teritiary {
@@ -122,7 +122,7 @@ p {
     font-size: 1.6rem;
 
     @media only screen and (max-width: $bp-small) {
-      font-size: $responsive-font;
+      font-size: var(--responsive-font);
     }
   }
 

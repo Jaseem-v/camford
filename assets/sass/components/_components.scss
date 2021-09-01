@@ -12,7 +12,7 @@
   overflow: hidden;
   z-index: 1;
   color: #fff;
-  background-color: $color-secondary;
+  background-color: var(--color-secondary);
   transition: 0.5s;
   border-radius: 0.5rem;
   font-weight: 700;
@@ -37,17 +37,17 @@
   }
 
   &:hover {
-    color: $color-primary;
+    color: var(--color-primary);
     & span {
       width: 225%;
       height: 562.5px;
-      background-color: $color-primary;
+      background-color: var(--color-primary);
     }
   }
 
   &--cta {
     &:hover {
-      color: $color-primary;
+      color: var(--color-primary);
       & span {
         background-color: #fff;
       }
@@ -58,7 +58,7 @@
     text-transform: uppercase;
     margin-top: -3px;
     padding: 1.3rem 2rem 1rem 2rem;
-    background-color: $color-teritiary;
+    background-color: var(--color-teritiary);
 
     @media only screen and (max-width: $bp-992) {
       display: none;
@@ -69,7 +69,7 @@
     &:hover {
       color: #fff;
       & span {
-        background-color: $color-secondary;
+        background-color: var(--color-secondary);
       }
     }
   }
@@ -78,7 +78,7 @@
     &:hover {
       color: #fff;
       & span {
-        background-color: $color-primary;
+        background-color: var(--color-primary);
       }
     }
 
@@ -95,13 +95,13 @@
 
 .line-btn {
   display: inline-block;
-  color: $color-secondary;
+  color: var(--color-secondary);
   font-size: 1.7rem;
   font-weight: 700;
   margin-top: 1rem;
 
   &:hover {
-    color: $color-primary;
+    color: var(--color-primary);
   }
 }
 
@@ -122,7 +122,7 @@
   -webkit-transform: translateY(-50%) translateX(-50%);
   -moz-transform: translateY(-50%) translateX(-50%);
   transform: translateY(-50%) translateX(-50%);
-  background-color: $color-secondary;
+  background-color: var(--color-secondary);
   border-radius: 50%;
   color: #fff;
   @media only screen and (max-width: $bp-xsmall) {
@@ -141,7 +141,7 @@
     -moz-transition: 0.5s;
     transition: 0.5s;
     border-radius: 50%;
-    border: 1px solid $color-secondary;
+    border: 1px solid var(--color-secondary);
   }
 
   &::before {
@@ -154,11 +154,11 @@
 
   &:hover {
     color: #fff;
-    background-color: $color-primary;
+    background-color: var(--color-primary);
 
     &::after,
     &::before {
-      border: 1px solid $color-primary;
+      border: 1px solid var(--color-primary);
     }
   }
   i {
@@ -210,7 +210,7 @@
 
     & .nav-item {
       margin-right: 2rem;
-      background-color: $color-primary;
+      background-color: var(--color-primary);
 
       & .nav-link {
         // position: relative;
@@ -223,10 +223,10 @@
         &:hover {
           background-color: #fff;
           border: none;
-          color: $color-secondary;
+          color: var(--color-secondary);
 
           i {
-            color: $color-secondary;
+            color: var(--color-secondary);
           }
         }
 
@@ -237,7 +237,7 @@
     }
 
     .active {
-      background-color: $color-secondary;
+      background-color: var(--color-secondary);
       border: none;
       color: #fff;
     }
@@ -281,7 +281,7 @@
       padding: 0.5rem;
       transition: 0.2s;
       color: #fff;
-      background-color: $color-teritiary;
+      background-color: var(--color-teritiary);
       margin-right: 0.8rem;
 
       i {
@@ -292,7 +292,7 @@
     &:hover {
       a {
         color: #fff;
-        background-color: $color-secondary;
+        background-color: var(--color-secondary);
       }
     }
   }
@@ -317,12 +317,12 @@
         display: inline-block;
         margin-right: 2rem;
         position: relative;
-        color: $color-primary;
+        color: var(--color-primary);
         font-size: 1.6rem;
         font-weight: 600;
 
         a {
-          color: $color-secondary;
+          color: var(--color-secondary);
         }
 
         &::before {
@@ -392,7 +392,7 @@
   }
 
   &__download-brochure {
-    color: $color-secondary;
+    color: var(--color-secondary);
     font-weight: 600;
     font-size: 1.8rem;
     margin-bottom: 1rem;
@@ -408,7 +408,7 @@
     font-weight: 700;
     text-transform: uppercase;
     &:hover {
-      color: $color-primary;
+      color: var(--color-primary);
     }
   }
 
@@ -428,7 +428,7 @@
       position: relative;
 
       i {
-        color: $color-secondary;
+        color: var(--color-secondary);
         position: absolute;
         left: 0;
         top: 0.65rem;
@@ -462,7 +462,7 @@
     &.current,
     &:hover {
       color: #fff;
-      background-color: $color-secondary;
+      background-color: var(--color-secondary);
     }
   }
 }

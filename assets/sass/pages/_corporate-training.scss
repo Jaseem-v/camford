@@ -48,7 +48,7 @@
         font-weight: 900;
 
         &:hover {
-          color: $color-primary;
+          color: var(--color-primary);
         }
       }
     }

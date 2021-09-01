@@ -54,7 +54,7 @@
     height: 4px;
     left: 2rem;
     transform: translateY(-50%) skewX(-10deg);
-    background-color: $color-secondary;
+    background-color: var(--color-secondary);
   }
 }
 

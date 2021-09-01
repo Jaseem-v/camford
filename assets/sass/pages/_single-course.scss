@@ -20,7 +20,7 @@
     }
     .slider {
       height: 2px !important;
-      background-color: $color-secondary !important;
+      background-color: var(--color-secondary) !important;
     }
   }
 
@@ -34,14 +34,14 @@
     }
 
     .active {
-      background-color: $color-secondary;
+      background-color: var(--color-secondary);
       border: none;
       color: #fff;
     }
   }
 
   &__nav-link {
-    color: $color-primary;
+    color: var(--color-primary);
     font-size: 1.5rem;
     padding: 1.4rem 1.2rem;
     font-size: 1.8rem;
@@ -49,7 +49,7 @@
     border: none;
     margin-bottom: 1rem;
     &:hover {
-      background-color: $color-secondary;
+      background-color: var(--color-secondary);
       color: #fff;
     }
   }
@@ -78,7 +78,7 @@
       }
 
       i {
-        color: $color-secondary;
+        color: var(--color-secondary);
         transform: translateY(-50%);
         position: absolute;
         top: 2.1rem;
@@ -110,7 +110,7 @@
       right: 0;
       bottom: 0;
       z-index: 1;
-      background-color: $color-primary;
+      background-color: var(--color-primary);
       opacity: 0.25;
     }
 
@@ -134,7 +134,7 @@
         color: #fff;
         border-radius: 0.5rem;
         padding: 0.4rem 2rem;
-        background-color: $color-primary;
+        background-color: var(--color-primary);
         font-size: 1.7rem;
         font-weight: 700;
         position: relative;
@@ -176,14 +176,14 @@
 
       span {
         font-weight: 800;
-        color: $color-primary;
+        color: var(--color-primary);
         // transform: translateY(0.5rem);
         position: relative;
         padding-left: 2.8rem;
       }
 
       i {
-        color: $color-secondary;
+        color: var(--color-secondary);
         font-size: 2rem;
         margin-right: 1.2rem;
         position: absolute;
@@ -208,7 +208,7 @@
     padding-left: 4rem;
     position: relative;
     i {
-      color: $color-secondary;
+      color: var(--color-secondary);
       transform: translateY(-50%);
       position: absolute;
       top: 1.2rem;
@@ -257,7 +257,7 @@
   }
 
   &__name {
-    color: $color-primary;
+    color: var(--color-primary);
     font-weight: 700;
     margin-left: 1rem;
     font-size: 1.8rem;
@@ -271,7 +271,7 @@
 
   &__comment {
     font-weight: 700;
-    color: $color-primary;
+    color: var(--color-primary);
     font-size: 1.6rem;
   }
 }
@@ -309,13 +309,13 @@
 
   &__title {
     font-size: 1.7rem;
-    color: $color-teritiary;
+    color: var(--color-teritiary);
     font-weight: 800;
   }
 
   &__sub-title {
     font-size: 1.5rem;
-    color: $color-secondary;
+    color: var(--color-secondary);
     font-weight: 600;
     margin-top: 0.5rem;
   }
@@ -383,7 +383,7 @@
     width: 100%;
     display: block;
     margin-top: 2rem;
-    color: $color-secondary;
+    color: var(--color-secondary);
     z-index: 5;
     position: relative;
 
@@ -407,7 +407,7 @@
   font-size: 1.8rem;
 
   &-date {
-    color: $color-secondary;
+    color: var(--color-secondary);
     margin-top: 1.5rem;
 
     i {

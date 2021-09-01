@@ -94,7 +94,7 @@
   }
 
   &__sub-title {
-    color: $color-secondary;
+    color: var(--color-secondary);
     font-size: 1.8rem;
     margin-top: 1rem;
     font-weight: 700;
@@ -310,7 +310,7 @@
     .readMoreBtn {
       border: none;
       outline: none;
-      color: $color-secondary;
+      color: var(--color-secondary);
       background: none;
       display: inline;
     }

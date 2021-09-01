@@ -8,14 +8,16 @@
   box-sizing: border-box;
 }
 
-/*-------color----------*/
-$color-primary: #221638;
-$color-secondary: #fe4a55;
-$color-teritiary: #024773;
-/*-------color----------*/
-/*-------font-size----------*/
-$responsive-font: 1.83rem;
-/*-------font-size----------*/
+:root {
+  /*-------color----------*/
+  --color-primary: #221638;
+  --color-secondary: #fe4a55;
+  --color-teritiary: #024773;
+  /*-------color----------*/
+  /*-------font-size----------*/
+  --responsive-font: 1.83rem;
+  /*-------font-size----------*/
+}
 a {
   text-decoration: none;
   &:hover {
@@ -86,7 +88,7 @@ html {
   }
 }
 
-.container{
+.container {
   @media only screen and (min-width: $bp-xlarge) {
     max-width: 137rem;
   }

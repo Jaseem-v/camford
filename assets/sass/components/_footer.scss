@@ -77,11 +77,11 @@
     text-decoration: none;
 
     &:hover {
-      color: $color-secondary;
+      color: var(--color-secondary);
     }
 
     @media only screen and (max-width: $bp-xsmall) {
-      font-size: $responsive-font;
+      font-size: var(--responsive-font);
     }
   }
 
@@ -97,7 +97,7 @@
     }
 
     @media only screen and (max-width: $bp-xsmall) {
-      font-size: $responsive-font;
+      font-size: var(--responsive-font);
       line-height: 1.5;
     }
 
