@@ -1,5 +1,5 @@
 $color-primary-dark: #28b485;
-$color-secondar-dark: #ff7730;
+$color-secondary-dark: #ff7730;
 
 .form {
   padding: 1rem 5rem;
@@ -14,9 +14,8 @@ $color-secondar-dark: #ff7730;
     margin-left: 1rem;
 
     @media only screen and (max-width: $bp-xsmall) {
-        margin-left: 0rem;
-
-      }
+      margin-left: 0rem;
+    }
   }
   &__input {
     display: block;
@@ -27,15 +26,15 @@ $color-secondar-dark: #ff7730;
     font-size: 1.8rem;
     height: 4rem;
     box-shadow: 0 1.5rem 4rem rgba(#000, 0.1);
-    border: 1px solid rgba($color: var(--color-secondary), $alpha: 0.51);
+    border: 1px solid rgba(#ff7730, $alpha: 0.51);
 
     &:focus {
-      border-bottom: 0.3rem solid var(--color-primary)-dark;
+      border-bottom: 0.3rem solid #28b485;
       box-shadow: 0 1.5rem 4rem rgba(#000, 0.15);
     }
 
     &:focus:invalid {
-      border-bottom: 0.3rem solid var(--color-secondary)-dark;
+      border-bottom: 0.3rem solid #ff7730;
     }
 
     &::-webkit-input-placeholder {
@@ -66,9 +65,9 @@ $color-secondar-dark: #ff7730;
     font-size: 1.6rem;
     height: 9rem;
     box-shadow: 0 1.5rem 4rem rgba(#000, 0.1);
-    border: 1px solid rgba($color: var(--color-secondary), $alpha: 0.51);
     text-align: left;
     font-weight: 500;
     padding: 1rem 1rem;
+    border: 1px solid rgba(#ff7730, $alpha: 0.51);
   }
 }

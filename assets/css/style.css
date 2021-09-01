@@ -2909,14 +2909,14 @@ p {
   font-size: 1.8rem;
   height: 4rem;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.1);
-  border: 1px solid rgba(var(--color-secondary), 0.51);
+  border: 1px solid rgba(255, 119, 48, 0.51);
 }
 .form__input:focus {
-  border-bottom: 0.3rem solid var(--color-primary) -dark;
+  border-bottom: 0.3rem solid #28b485;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
 }
 .form__input:focus:invalid {
-  border-bottom: 0.3rem solid var(--color-secondary) -dark;
+  border-bottom: 0.3rem solid #ff7730;
 }
 .form__input::-webkit-input-placeholder {
   font-weight: 500;
@@ -2942,10 +2942,10 @@ p {
   font-size: 1.6rem;
   height: 9rem;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.1);
-  border: 1px solid rgba(var(--color-secondary), 0.51);
   text-align: left;
   font-weight: 500;
   padding: 1rem 1rem;
+  border: 1px solid rgba(255, 119, 48, 0.51);
 }
 
 /*=================================================*/
